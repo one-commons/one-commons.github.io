@@ -1,0 +1,697 @@
+
+=================================================================
+[*] O.N.E. AUTONOMOUS CHAPTER TRANSLATION DAEMON STARTED
+[*] Cutoff Time: 07:00 AM local time
+[*] PID: 61269
+[*] Queue: ['pt', 'ru', 'ja', 'de', 'fr', 'tr', 'ar', 'ko', 'id']
+=================================================================
+
+
+>>> PROCESSING LANGUAGE: PORTUGUESE (pt) <<<
+[*] Volume 0 for pt already complete (1266 KB). Skipping.
+[*] Volume 1 for pt already complete (1312 KB). Skipping.
+
+=======================================================
+[*] Translating Volume 2 -> Portuguese (pt)
+[*] Chapters: 50 | Target: O.N.E._Vol2_Open_Networked_Earth_pt.epub
+=======================================================
+
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+    [✓] vol2_ch01_pt.md | 3,121 in / 3,352 out | Cost: $0.00165 (0.00145 CHF) | Total Spent: 0.0029 CHF
+    [✓] vol2_ch02_pt.md | 2,741 in / 2,823 out | Cost: $0.00140 (0.00123 CHF) | Total Spent: 0.0041 CHF
+    [✓] vol2_ch03_pt.md | 3,298 in / 3,520 out | Cost: $0.00174 (0.00153 CHF) | Total Spent: 0.0056 CHF
+    [✓] vol2_ch04_pt.md | 2,890 in / 2,973 out | Cost: $0.00148 (0.00130 CHF) | Total Spent: 0.0069 CHF
+    [✓] vol2_ch05_pt.md | 3,080 in / 3,324 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.0084 CHF
+    [✓] vol2_ch06_pt.md | 3,017 in / 3,244 out | Cost: $0.00160 (0.00141 CHF) | Total Spent: 0.0098 CHF
+    [✓] vol2_ch07_pt.md | 2,903 in / 2,917 out | Cost: $0.00146 (0.00128 CHF) | Total Spent: 0.0111 CHF
+    [✓] vol2_ch08_pt.md | 2,832 in / 3,055 out | Cost: $0.00151 (0.00132 CHF) | Total Spent: 0.0124 CHF
+    [✓] vol2_ch09_pt.md | 2,875 in / 2,917 out | Cost: $0.00145 (0.00128 CHF) | Total Spent: 0.0137 CHF
+    [✓] vol2_ch10_pt.md | 2,883 in / 3,052 out | Cost: $0.00151 (0.00133 CHF) | Total Spent: 0.0150 CHF
+    [✓] vol2_ch11_pt.md | 2,856 in / 2,998 out | Cost: $0.00148 (0.00131 CHF) | Total Spent: 0.0163 CHF
+    [✓] vol2_ch12_pt.md | 3,102 in / 3,296 out | Cost: $0.00163 (0.00143 CHF) | Total Spent: 0.0177 CHF
+    [✓] vol2_ch13_pt.md | 2,706 in / 2,787 out | Cost: $0.00139 (0.00122 CHF) | Total Spent: 0.0189 CHF
+    [✓] vol2_ch14_pt.md | 3,050 in / 3,148 out | Cost: $0.00156 (0.00138 CHF) | Total Spent: 0.0203 CHF
+    [✓] vol2_ch15_pt.md | 2,908 in / 2,956 out | Cost: $0.00147 (0.00130 CHF) | Total Spent: 0.0216 CHF
+    [✓] vol2_ch16_pt.md | 4,194 in / 4,723 out | Cost: $0.00231 (0.00203 CHF) | Total Spent: 0.0237 CHF
+    [✓] vol2_ch17_pt.md | 2,684 in / 2,666 out | Cost: $0.00133 (0.00117 CHF) | Total Spent: 0.0248 CHF
+    [✓] vol2_ch18_pt.md | 2,832 in / 2,843 out | Cost: $0.00142 (0.00125 CHF) | Total Spent: 0.0261 CHF
+    [✓] vol2_ch19_pt.md | 3,379 in / 3,694 out | Cost: $0.00182 (0.00160 CHF) | Total Spent: 0.0277 CHF
+    [✓] vol2_ch20_pt.md | 3,246 in / 3,491 out | Cost: $0.00172 (0.00151 CHF) | Total Spent: 0.0292 CHF
+    [✓] vol2_ch21_pt.md | 3,111 in / 3,311 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.0306 CHF
+    [✓] vol2_ch22_pt.md | 3,344 in / 3,576 out | Cost: $0.00176 (0.00155 CHF) | Total Spent: 0.0322 CHF
+    [✓] vol2_ch23_pt.md | 3,250 in / 3,491 out | Cost: $0.00172 (0.00151 CHF) | Total Spent: 0.0337 CHF
+    [✓] vol2_ch24_pt.md | 3,383 in / 3,659 out | Cost: $0.00180 (0.00159 CHF) | Total Spent: 0.0353 CHF
+    [✓] vol2_ch25_pt.md | 2,726 in / 2,821 out | Cost: $0.00140 (0.00123 CHF) | Total Spent: 0.0365 CHF
+    [✓] vol2_ch26_pt.md | 2,773 in / 2,865 out | Cost: $0.00142 (0.00125 CHF) | Total Spent: 0.0378 CHF
+    [✓] vol2_ch27_pt.md | 3,015 in / 3,119 out | Cost: $0.00155 (0.00136 CHF) | Total Spent: 0.0391 CHF
+    [✓] vol2_ch28_pt.md | 3,003 in / 3,106 out | Cost: $0.00154 (0.00136 CHF) | Total Spent: 0.0405 CHF
+    [✓] vol2_ch29_pt.md | 3,001 in / 3,140 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.0419 CHF
+    [✓] vol2_ch30_pt.md | 3,412 in / 3,782 out | Cost: $0.00185 (0.00163 CHF) | Total Spent: 0.0435 CHF
+    [✓] vol2_ch31_pt.md | 2,820 in / 2,869 out | Cost: $0.00143 (0.00126 CHF) | Total Spent: 0.0447 CHF
+    [✓] vol2_ch32_pt.md | 3,045 in / 3,143 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.0461 CHF
+    [✓] vol2_ch33_pt.md | 2,585 in / 2,649 out | Cost: $0.00132 (0.00116 CHF) | Total Spent: 0.0473 CHF
+    [✓] vol2_ch34_pt.md | 2,952 in / 3,018 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.0486 CHF
+    [✓] vol2_ch35_pt.md | 3,139 in / 3,239 out | Cost: $0.00161 (0.00142 CHF) | Total Spent: 0.0500 CHF
+    [✓] vol2_ch36_pt.md | 2,952 in / 3,090 out | Cost: $0.00153 (0.00135 CHF) | Total Spent: 0.0514 CHF
+    [✓] vol2_ch37_pt.md | 3,252 in / 3,432 out | Cost: $0.00170 (0.00149 CHF) | Total Spent: 0.0529 CHF
+    [✓] vol2_ch38_pt.md | 2,955 in / 3,258 out | Cost: $0.00160 (0.00141 CHF) | Total Spent: 0.0543 CHF
+    [✓] vol2_ch39_pt.md | 2,800 in / 2,919 out | Cost: $0.00145 (0.00127 CHF) | Total Spent: 0.0555 CHF
+    [✓] vol2_ch40_pt.md | 2,780 in / 2,913 out | Cost: $0.00144 (0.00127 CHF) | Total Spent: 0.0568 CHF
+    [✓] vol2_ch41_pt.md | 2,642 in / 2,657 out | Cost: $0.00133 (0.00117 CHF) | Total Spent: 0.0580 CHF
+    [✓] vol2_ch42_pt.md | 2,646 in / 2,651 out | Cost: $0.00133 (0.00117 CHF) | Total Spent: 0.0591 CHF
+    [✓] vol2_ch43_pt.md | 2,662 in / 2,777 out | Cost: $0.00138 (0.00121 CHF) | Total Spent: 0.0604 CHF
+    [✓] vol2_ch44_pt.md | 2,723 in / 2,721 out | Cost: $0.00136 (0.00120 CHF) | Total Spent: 0.0616 CHF
+    [✓] vol2_ch45_pt.md | 3,090 in / 3,230 out | Cost: $0.00160 (0.00141 CHF) | Total Spent: 0.0630 CHF
+    [✓] vol2_ch46_pt.md | 2,876 in / 2,942 out | Cost: $0.00146 (0.00129 CHF) | Total Spent: 0.0643 CHF
+    [✓] vol2_ch47_pt.md | 3,238 in / 3,546 out | Cost: $0.00174 (0.00153 CHF) | Total Spent: 0.0658 CHF
+    [✓] vol2_ch48_pt.md | 2,807 in / 2,945 out | Cost: $0.00146 (0.00128 CHF) | Total Spent: 0.0671 CHF
+    [✓] vol2_epilogue_pt.md | 2,990 in / 3,141 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.0684 CHF
+  [*] Compiling Master EPUB: O.N.E._Vol2_Open_Networked_Earth_pt.epub...
+  [✓] Master EPUB compiled successfully: O.N.E._Vol2_Open_Networked_Earth_pt.epub (1453 KB)
+The following paths are ignored by one of your .gitignore files:
+webapp/assets/ebooks/pipeline_status.json
+hint: Use -f if you really want to add them.
+hint: Disable this message with "git config set advice.addIgnoredFile false"
+  [!] Git push non-fatal error: Command '['git', 'add', '/Users/rudy/Documents/SW/AG/one/books/vol2/chapters_pt', '/Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/O.N.E._Vol2_Open_Networked_Earth_pt.epub', '/Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/translation_cost_ledger.json', '/Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/pipeline_status.json']' returned non-zero exit status 1.
+
+=======================================================
+[*] Translating Volume 3 -> Portuguese (pt)
+[*] Chapters: 50 | Target: O.N.E._Vol3_Open_Networked_Earth_pt.epub
+=======================================================
+
+    [✓] vol3_prologue_pt.md | 2,991 in / 3,082 out | Cost: $0.00153 (0.00135 CHF) | Total Spent: 0.0698 CHF
+    [✓] vol3_ch01_pt.md | 2,975 in / 3,153 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.0712 CHF
+    [✓] vol3_ch02_pt.md | 3,112 in / 3,287 out | Cost: $0.00163 (0.00143 CHF) | Total Spent: 0.0726 CHF
+    [✓] vol3_ch03_pt.md | 3,323 in / 3,621 out | Cost: $0.00178 (0.00157 CHF) | Total Spent: 0.0742 CHF
+
+[!] Fatal exception in daemon: Failed translation after 5 attempts: vol3_ch04_en.md
+Traceback (most recent call last):
+  File "/Users/rudy/Documents/SW/AG/one/scripts/autonomous_translation_daemon.py", line 514, in <module>
+    main()
+  File "/Users/rudy/Documents/SW/AG/one/scripts/autonomous_translation_daemon.py", line 460, in main
+    success = process_volume_novel(client, model_name, v, lang)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rudy/Documents/SW/AG/one/scripts/autonomous_translation_daemon.py", line 425, in process_volume_novel
+    translate_single_file(client, model_name, src_file, dst_file, lang_code, is_constitution=False)
+  File "/Users/rudy/Documents/SW/AG/one/scripts/autonomous_translation_daemon.py", line 219, in translate_single_file
+    raise RuntimeError(f"Failed translation after {max_retries} attempts: {src_path.name}")
+RuntimeError: Failed translation after 5 attempts: vol3_ch04_en.md
+
+=================================================================
+[*] O.N.E. AUTONOMOUS CHAPTER TRANSLATION DAEMON STARTED
+[*] Cutoff Time: 07:00 AM local time
+[*] PID: 62207
+[*] Queue: ['pt', 'ru', 'ja', 'de', 'fr', 'tr', 'ar', 'ko', 'id']
+=================================================================
+
+
+>>> PROCESSING LANGUAGE: PORTUGUESE (pt) <<<
+[*] Volume 0 for pt already complete (1266 KB). Skipping.
+[*] Volume 1 for pt already complete (1312 KB). Skipping.
+[*] Volume 2 for pt already complete (1453 KB). Skipping.
+
+=======================================================
+[*] Translating Volume 3 -> Portuguese (pt)
+[*] Chapters: 50 | Target: O.N.E._Vol3_Open_Networked_Earth_pt.epub
+=======================================================
+
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+    [✓] vol3_ch04_pt.md | 2,922 in / 3,133 out | Cost: $0.00155 (0.00136 CHF) | Total Spent: 0.0755 CHF
+    [✓] vol3_ch05_pt.md | 3,188 in / 3,330 out | Cost: $0.00165 (0.00145 CHF) | Total Spent: 0.0770 CHF
+    [✓] vol3_ch06_pt.md | 2,826 in / 2,992 out | Cost: $0.00148 (0.00130 CHF) | Total Spent: 0.0783 CHF
+    [✓] vol3_ch07_pt.md | 2,819 in / 2,774 out | Cost: $0.00139 (0.00122 CHF) | Total Spent: 0.0795 CHF
+    [✓] vol3_ch08_pt.md | 3,233 in / 3,427 out | Cost: $0.00169 (0.00149 CHF) | Total Spent: 0.0810 CHF
+    [✓] vol3_ch09_pt.md | 3,126 in / 3,242 out | Cost: $0.00161 (0.00142 CHF) | Total Spent: 0.0824 CHF
+    [✓] vol3_ch10_pt.md | 3,871 in / 4,237 out | Cost: $0.00208 (0.00183 CHF) | Total Spent: 0.0842 CHF
+    [✓] vol3_ch11_pt.md | 2,667 in / 2,630 out | Cost: $0.00132 (0.00116 CHF) | Total Spent: 0.0854 CHF
+    [✓] vol3_ch12_pt.md | 2,884 in / 3,070 out | Cost: $0.00152 (0.00133 CHF) | Total Spent: 0.0867 CHF
+    [✓] vol3_ch13_pt.md | 2,778 in / 2,843 out | Cost: $0.00142 (0.00125 CHF) | Total Spent: 0.0880 CHF
+    [✓] vol3_ch14_pt.md | 3,051 in / 3,181 out | Cost: $0.00158 (0.00139 CHF) | Total Spent: 0.0894 CHF
+    [✓] vol3_ch15_pt.md | 3,018 in / 3,115 out | Cost: $0.00155 (0.00136 CHF) | Total Spent: 0.0907 CHF
+    [✓] vol3_ch16_pt.md | 2,710 in / 2,888 out | Cost: $0.00143 (0.00126 CHF) | Total Spent: 0.0920 CHF
+    [✓] vol3_ch17_pt.md | 3,011 in / 3,163 out | Cost: $0.00157 (0.00138 CHF) | Total Spent: 0.0934 CHF
+    [✓] vol3_ch18_pt.md | 2,936 in / 2,962 out | Cost: $0.00148 (0.00130 CHF) | Total Spent: 0.0947 CHF
+    [✓] vol3_ch19_pt.md | 2,807 in / 2,872 out | Cost: $0.00143 (0.00126 CHF) | Total Spent: 0.0959 CHF
+    [✓] vol3_ch20_pt.md | 3,630 in / 3,879 out | Cost: $0.00191 (0.00168 CHF) | Total Spent: 0.0976 CHF
+    [✓] vol3_ch21_pt.md | 2,686 in / 2,783 out | Cost: $0.00138 (0.00122 CHF) | Total Spent: 0.0988 CHF
+    [✓] vol3_ch22_pt.md | 2,835 in / 3,016 out | Cost: $0.00149 (0.00131 CHF) | Total Spent: 0.1001 CHF
+    [✓] vol3_ch23_pt.md | 3,055 in / 3,156 out | Cost: $0.00157 (0.00138 CHF) | Total Spent: 0.1015 CHF
+    [✓] vol3_ch24_pt.md | 3,251 in / 3,537 out | Cost: $0.00174 (0.00153 CHF) | Total Spent: 0.1030 CHF
+    [✓] vol3_ch25_pt.md | 2,858 in / 2,965 out | Cost: $0.00147 (0.00130 CHF) | Total Spent: 0.1043 CHF
+    [✓] vol3_ch26_pt.md | 2,840 in / 2,889 out | Cost: $0.00144 (0.00127 CHF) | Total Spent: 0.1056 CHF
+    [✓] vol3_ch27_pt.md | 2,813 in / 2,941 out | Cost: $0.00146 (0.00128 CHF) | Total Spent: 0.1069 CHF
+    [✓] vol3_ch28_pt.md | 2,716 in / 2,747 out | Cost: $0.00137 (0.00121 CHF) | Total Spent: 0.1081 CHF
+    [✓] vol3_ch29_pt.md | 3,816 in / 4,166 out | Cost: $0.00205 (0.00180 CHF) | Total Spent: 0.1099 CHF
+    [✓] vol3_ch30_pt.md | 2,935 in / 3,039 out | Cost: $0.00151 (0.00133 CHF) | Total Spent: 0.1112 CHF
+    [✓] vol3_ch31_pt.md | 2,753 in / 2,833 out | Cost: $0.00141 (0.00124 CHF) | Total Spent: 0.1125 CHF
+    [✓] vol3_ch32_pt.md | 3,179 in / 3,299 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.1139 CHF
+    [✓] vol3_ch33_pt.md | 2,755 in / 2,791 out | Cost: $0.00139 (0.00122 CHF) | Total Spent: 0.1151 CHF
+    [✓] vol3_ch34_pt.md | 3,052 in / 3,178 out | Cost: $0.00158 (0.00139 CHF) | Total Spent: 0.1165 CHF
+    [✓] vol3_ch35_pt.md | 3,178 in / 3,368 out | Cost: $0.00167 (0.00147 CHF) | Total Spent: 0.1180 CHF
+    [✓] vol3_ch36_pt.md | 2,992 in / 3,140 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.1193 CHF
+    [✓] vol3_ch37_pt.md | 2,796 in / 2,776 out | Cost: $0.00139 (0.00122 CHF) | Total Spent: 0.1206 CHF
+    [✓] vol3_ch38_pt.md | 2,813 in / 2,800 out | Cost: $0.00140 (0.00123 CHF) | Total Spent: 0.1218 CHF
+    [✓] vol3_ch39_pt.md | 2,748 in / 2,863 out | Cost: $0.00142 (0.00125 CHF) | Total Spent: 0.1231 CHF
+    [✓] vol3_ch40_pt.md | 3,113 in / 3,250 out | Cost: $0.00161 (0.00142 CHF) | Total Spent: 0.1245 CHF
+    [✓] vol3_ch41_pt.md | 3,031 in / 3,170 out | Cost: $0.00157 (0.00138 CHF) | Total Spent: 0.1259 CHF
+    [✓] vol3_ch42_pt.md | 3,046 in / 3,183 out | Cost: $0.00158 (0.00139 CHF) | Total Spent: 0.1272 CHF
+    [✓] vol3_ch43_pt.md | 3,182 in / 3,395 out | Cost: $0.00168 (0.00148 CHF) | Total Spent: 0.1287 CHF
+    [✓] vol3_ch44_pt.md | 3,275 in / 3,489 out | Cost: $0.00172 (0.00152 CHF) | Total Spent: 0.1302 CHF
+    [✓] vol3_ch45_pt.md | 2,844 in / 2,953 out | Cost: $0.00147 (0.00129 CHF) | Total Spent: 0.1315 CHF
+    [✓] vol3_ch46_pt.md | 2,965 in / 3,014 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.1328 CHF
+    [✓] vol3_ch47_pt.md | 3,171 in / 3,371 out | Cost: $0.00167 (0.00147 CHF) | Total Spent: 0.1343 CHF
+    [✓] vol3_ch48_pt.md | 2,900 in / 2,987 out | Cost: $0.00148 (0.00131 CHF) | Total Spent: 0.1356 CHF
+    [✓] vol3_epilogue_pt.md | 3,323 in / 3,586 out | Cost: $0.00177 (0.00155 CHF) | Total Spent: 0.1372 CHF
+  [*] Compiling Master EPUB: O.N.E._Vol3_Open_Networked_Earth_pt.epub...
+  [✓] Master EPUB compiled successfully: O.N.E._Vol3_Open_Networked_Earth_pt.epub (1401 KB)
+[main b681929] feat(i18n): complete Vol 3 PT master edition
+ 52 files changed, 5359 insertions(+), 5 deletions(-)
+ create mode 100644 books/vol3/chapters_pt/vol3_ch01_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch02_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch03_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch04_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch05_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch06_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch07_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch08_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch09_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch10_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch11_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch12_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch13_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch14_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch15_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch16_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch17_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch18_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch19_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch20_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch21_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch22_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch23_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch24_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch25_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch26_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch27_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch28_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch29_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch30_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch31_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch32_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch33_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch34_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch35_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch36_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch37_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch38_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch39_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch40_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch41_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch42_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch43_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch44_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch45_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch46_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch47_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_ch48_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_epilogue_pt.md
+ create mode 100644 books/vol3/chapters_pt/vol3_prologue_pt.md
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol3_Open_Networked_Earth_pt.epub
+To https://github.com/innubili/one.git
+   8b69d8c..b681929  main -> main
+  [✓] Git commit & push complete: feat(i18n): complete Vol 3 PT master edition
+
+=======================================================
+[*] Translating Volume 4 -> Portuguese (pt)
+[*] Chapters: 50 | Target: O.N.E._Vol4_Open_Networked_Earth_pt.epub
+=======================================================
+
+    [✓] vol4_prologue_pt.md | 3,010 in / 3,170 out | Cost: $0.00157 (0.00138 CHF) | Total Spent: 0.1386 CHF
+    [✓] vol4_ch01_pt.md | 2,633 in / 2,771 out | Cost: $0.00137 (0.00121 CHF) | Total Spent: 0.1398 CHF
+    [✓] vol4_ch02_pt.md | 3,328 in / 3,673 out | Cost: $0.00180 (0.00159 CHF) | Total Spent: 0.1413 CHF
+    [✓] vol4_ch03_pt.md | 3,177 in / 3,398 out | Cost: $0.00168 (0.00148 CHF) | Total Spent: 0.1428 CHF
+    [✓] vol4_ch04_pt.md | 3,126 in / 3,320 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.1443 CHF
+    [✓] vol4_ch05_pt.md | 3,121 in / 3,163 out | Cost: $0.00158 (0.00139 CHF) | Total Spent: 0.1457 CHF
+    [✓] vol4_ch06_pt.md | 2,864 in / 3,039 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.1470 CHF
+    [✓] vol4_ch07_pt.md | 3,051 in / 3,249 out | Cost: $0.00160 (0.00141 CHF) | Total Spent: 0.1484 CHF
+    [✓] vol4_ch08_pt.md | 2,775 in / 2,911 out | Cost: $0.00144 (0.00127 CHF) | Total Spent: 0.1497 CHF
+    [✓] vol4_ch09_pt.md | 2,692 in / 2,708 out | Cost: $0.00135 (0.00119 CHF) | Total Spent: 0.1508 CHF
+    [✓] vol4_ch10_pt.md | 2,896 in / 3,093 out | Cost: $0.00153 (0.00134 CHF) | Total Spent: 0.1522 CHF
+    [✓] vol4_ch11_pt.md | 3,043 in / 3,283 out | Cost: $0.00162 (0.00142 CHF) | Total Spent: 0.1536 CHF
+    [✓] vol4_ch12_pt.md | 2,914 in / 3,120 out | Cost: $0.00154 (0.00135 CHF) | Total Spent: 0.1550 CHF
+    [✓] vol4_ch13_pt.md | 2,926 in / 3,105 out | Cost: $0.00153 (0.00135 CHF) | Total Spent: 0.1563 CHF
+    [✓] vol4_ch14_pt.md | 3,370 in / 3,695 out | Cost: $0.00182 (0.00160 CHF) | Total Spent: 0.1579 CHF
+    [✓] vol4_ch15_pt.md | 2,937 in / 3,041 out | Cost: $0.00151 (0.00133 CHF) | Total Spent: 0.1592 CHF
+    [✓] vol4_ch16_pt.md | 2,998 in / 3,230 out | Cost: $0.00159 (0.00140 CHF) | Total Spent: 0.1606 CHF
+    [✓] vol4_ch17_pt.md | 2,775 in / 2,863 out | Cost: $0.00142 (0.00125 CHF) | Total Spent: 0.1619 CHF
+    [✓] vol4_ch18_pt.md | 2,818 in / 2,988 out | Cost: $0.00148 (0.00130 CHF) | Total Spent: 0.1632 CHF
+    [✓] vol4_ch19_pt.md | 2,922 in / 3,114 out | Cost: $0.00154 (0.00135 CHF) | Total Spent: 0.1645 CHF
+    [✓] vol4_ch20_pt.md | 3,132 in / 3,354 out | Cost: $0.00165 (0.00146 CHF) | Total Spent: 0.1660 CHF
+    [✓] vol4_ch21_pt.md | 3,122 in / 3,323 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.1674 CHF
+    [✓] vol4_ch22_pt.md | 3,020 in / 3,205 out | Cost: $0.00158 (0.00139 CHF) | Total Spent: 0.1688 CHF
+    [✓] vol4_ch23_pt.md | 2,723 in / 2,834 out | Cost: $0.00141 (0.00124 CHF) | Total Spent: 0.1701 CHF
+    [✓] vol4_ch24_pt.md | 3,028 in / 3,211 out | Cost: $0.00159 (0.00140 CHF) | Total Spent: 0.1715 CHF
+    [✓] vol4_ch25_pt.md | 2,759 in / 2,841 out | Cost: $0.00141 (0.00124 CHF) | Total Spent: 0.1727 CHF
+    [✓] vol4_ch26_pt.md | 2,658 in / 2,723 out | Cost: $0.00136 (0.00119 CHF) | Total Spent: 0.1739 CHF
+    [✓] vol4_ch27_pt.md | 2,869 in / 3,013 out | Cost: $0.00149 (0.00131 CHF) | Total Spent: 0.1752 CHF
+    [✓] vol4_ch28_pt.md | 2,985 in / 3,143 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.1766 CHF
+    [✓] vol4_ch29_pt.md | 2,932 in / 3,180 out | Cost: $0.00157 (0.00138 CHF) | Total Spent: 0.1780 CHF
+    [✓] vol4_ch30_pt.md | 2,749 in / 2,899 out | Cost: $0.00143 (0.00126 CHF) | Total Spent: 0.1792 CHF
+    [✓] vol4_ch31_pt.md | 3,009 in / 3,115 out | Cost: $0.00155 (0.00136 CHF) | Total Spent: 0.1806 CHF
+    [✓] vol4_ch32_pt.md | 3,038 in / 3,277 out | Cost: $0.00161 (0.00142 CHF) | Total Spent: 0.1820 CHF
+    [✓] vol4_ch33_pt.md | 2,928 in / 3,065 out | Cost: $0.00152 (0.00134 CHF) | Total Spent: 0.1834 CHF
+    [✓] vol4_ch34_pt.md | 3,488 in / 3,796 out | Cost: $0.00187 (0.00164 CHF) | Total Spent: 0.1850 CHF
+    [✓] vol4_ch35_pt.md | 3,531 in / 3,825 out | Cost: $0.00188 (0.00166 CHF) | Total Spent: 0.1867 CHF
+    [✓] vol4_ch36_pt.md | 3,109 in / 3,332 out | Cost: $0.00164 (0.00145 CHF) | Total Spent: 0.1881 CHF
+    [✓] vol4_ch37_pt.md | 3,075 in / 3,206 out | Cost: $0.00159 (0.00140 CHF) | Total Spent: 0.1895 CHF
+    [✓] vol4_ch38_pt.md | 2,748 in / 2,769 out | Cost: $0.00138 (0.00122 CHF) | Total Spent: 0.1907 CHF
+    [✓] vol4_ch39_pt.md | 3,419 in / 3,619 out | Cost: $0.00179 (0.00157 CHF) | Total Spent: 0.1923 CHF
+    [✓] vol4_ch40_pt.md | 2,969 in / 3,147 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.1937 CHF
+    [✓] vol4_ch41_pt.md | 3,313 in / 3,542 out | Cost: $0.00175 (0.00154 CHF) | Total Spent: 0.1952 CHF
+    [✓] vol4_ch42_pt.md | 2,827 in / 2,992 out | Cost: $0.00148 (0.00130 CHF) | Total Spent: 0.1965 CHF
+    [✓] vol4_ch43_pt.md | 2,693 in / 2,766 out | Cost: $0.00138 (0.00121 CHF) | Total Spent: 0.1977 CHF
+    [✓] vol4_ch44_pt.md | 2,912 in / 3,076 out | Cost: $0.00152 (0.00134 CHF) | Total Spent: 0.1990 CHF
+    [✓] vol4_ch45_pt.md | 3,047 in / 3,253 out | Cost: $0.00161 (0.00141 CHF) | Total Spent: 0.2005 CHF
+    [✓] vol4_ch46_pt.md | 3,474 in / 3,734 out | Cost: $0.00184 (0.00162 CHF) | Total Spent: 0.2021 CHF
+    [✓] vol4_ch47_pt.md | 3,064 in / 3,284 out | Cost: $0.00162 (0.00143 CHF) | Total Spent: 0.2035 CHF
+    [✓] vol4_ch48_pt.md | 2,735 in / 2,808 out | Cost: $0.00140 (0.00123 CHF) | Total Spent: 0.2047 CHF
+    [✓] vol4_epilogue_pt.md | 2,810 in / 2,952 out | Cost: $0.00146 (0.00129 CHF) | Total Spent: 0.2060 CHF
+  [*] Compiling Master EPUB: O.N.E._Vol4_Open_Networked_Earth_pt.epub...
+  [✓] Master EPUB compiled successfully: O.N.E._Vol4_Open_Networked_Earth_pt.epub (1373 KB)
+[main 10cab6d] feat(i18n): complete Vol 4 PT master edition
+ 52 files changed, 5009 insertions(+), 5 deletions(-)
+ create mode 100644 books/vol4/chapters_pt/vol4_ch01_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch02_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch03_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch04_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch05_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch06_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch07_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch08_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch09_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch10_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch11_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch12_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch13_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch14_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch15_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch16_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch17_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch18_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch19_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch20_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch21_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch22_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch23_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch24_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch25_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch26_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch27_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch28_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch29_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch30_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch31_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch32_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch33_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch34_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch35_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch36_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch37_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch38_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch39_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch40_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch41_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch42_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch43_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch44_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch45_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch46_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch47_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_ch48_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_epilogue_pt.md
+ create mode 100644 books/vol4/chapters_pt/vol4_prologue_pt.md
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol4_Open_Networked_Earth_pt.epub
+To https://github.com/innubili/one.git
+   b681929..10cab6d  main -> main
+  [✓] Git commit & push complete: feat(i18n): complete Vol 4 PT master edition
+
+=======================================================
+[*] Translating Volume 5 -> Portuguese (pt)
+[*] Chapters: 50 | Target: O.N.E._Vol5_Open_Networked_Earth_pt.epub
+=======================================================
+
+    [✓] vol5_prologue_pt.md | 2,830 in / 2,919 out | Cost: $0.00145 (0.00128 CHF) | Total Spent: 0.2073 CHF
+    [✓] vol5_ch01_pt.md | 2,730 in / 2,730 out | Cost: $0.00137 (0.00120 CHF) | Total Spent: 0.2085 CHF
+    [✓] vol5_ch02_pt.md | 3,219 in / 3,396 out | Cost: $0.00168 (0.00148 CHF) | Total Spent: 0.2100 CHF
+    [✓] vol5_ch03_pt.md | 3,303 in / 3,613 out | Cost: $0.00178 (0.00156 CHF) | Total Spent: 0.2115 CHF
+    [✓] vol5_ch04_pt.md | 2,845 in / 2,941 out | Cost: $0.00146 (0.00129 CHF) | Total Spent: 0.2128 CHF
+    [✓] vol5_ch05_pt.md | 3,216 in / 3,425 out | Cost: $0.00169 (0.00149 CHF) | Total Spent: 0.2143 CHF
+    [✓] vol5_ch06_pt.md | 2,801 in / 2,874 out | Cost: $0.00143 (0.00126 CHF) | Total Spent: 0.2156 CHF
+    [✓] vol5_ch07_pt.md | 3,800 in / 4,139 out | Cost: $0.00204 (0.00179 CHF) | Total Spent: 0.2174 CHF
+    [✓] vol5_ch08_pt.md | 2,743 in / 2,772 out | Cost: $0.00138 (0.00122 CHF) | Total Spent: 0.2186 CHF
+    [✓] vol5_ch09_pt.md | 2,954 in / 3,164 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.2200 CHF
+    [✓] vol5_ch10_pt.md | 2,711 in / 2,769 out | Cost: $0.00138 (0.00121 CHF) | Total Spent: 0.2212 CHF
+    [✓] vol5_ch11_pt.md | 2,882 in / 3,034 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.2225 CHF
+    [✓] vol5_ch12_pt.md | 2,889 in / 3,043 out | Cost: $0.00151 (0.00133 CHF) | Total Spent: 0.2238 CHF
+    [✓] vol5_ch13_pt.md | 2,771 in / 2,752 out | Cost: $0.00138 (0.00121 CHF) | Total Spent: 0.2250 CHF
+    [!] Attempt 1/6 (gemini-3.6-flash): empty candidate text. Retrying...
+    [✓] vol5_ch14_pt.md | 3,815 in / 4,188 out | Cost: $0.00206 (0.00181 CHF) | Total Spent: 0.2268 CHF
+    [✓] vol5_ch15_pt.md | 3,118 in / 3,253 out | Cost: $0.00161 (0.00142 CHF) | Total Spent: 0.2283 CHF
+    [✓] vol5_ch16_pt.md | 2,739 in / 2,780 out | Cost: $0.00139 (0.00122 CHF) | Total Spent: 0.2295 CHF
+    [✓] vol5_ch17_pt.md | 2,819 in / 2,864 out | Cost: $0.00143 (0.00126 CHF) | Total Spent: 0.2307 CHF
+    [✓] vol5_ch18_pt.md | 2,865 in / 2,968 out | Cost: $0.00147 (0.00130 CHF) | Total Spent: 0.2320 CHF
+    [✓] vol5_ch19_pt.md | 2,920 in / 3,026 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.2334 CHF
+    [✓] vol5_ch20_pt.md | 2,804 in / 2,833 out | Cost: $0.00141 (0.00124 CHF) | Total Spent: 0.2346 CHF
+    [✓] vol5_ch21_pt.md | 2,972 in / 3,031 out | Cost: $0.00151 (0.00133 CHF) | Total Spent: 0.2359 CHF
+    [✓] vol5_ch22_pt.md | 2,812 in / 2,860 out | Cost: $0.00143 (0.00125 CHF) | Total Spent: 0.2372 CHF
+    [✓] vol5_ch23_pt.md | 3,312 in / 3,563 out | Cost: $0.00176 (0.00155 CHF) | Total Spent: 0.2387 CHF
+    [✓] vol5_ch24_pt.md | 2,919 in / 3,022 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.2400 CHF
+    [✓] vol5_ch25_pt.md | 2,786 in / 2,839 out | Cost: $0.00141 (0.00124 CHF) | Total Spent: 0.2413 CHF
+    [✓] vol5_ch26_pt.md | 3,309 in / 3,587 out | Cost: $0.00177 (0.00155 CHF) | Total Spent: 0.2428 CHF
+    [✓] vol5_ch27_pt.md | 2,794 in / 2,897 out | Cost: $0.00144 (0.00127 CHF) | Total Spent: 0.2441 CHF
+    [✓] vol5_ch28_pt.md | 2,820 in / 2,915 out | Cost: $0.00145 (0.00127 CHF) | Total Spent: 0.2454 CHF
+    [✓] vol5_ch29_pt.md | 2,985 in / 3,005 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.2467 CHF
+    [✓] vol5_ch30_pt.md | 2,937 in / 2,963 out | Cost: $0.00148 (0.00130 CHF) | Total Spent: 0.2480 CHF
+    [✓] vol5_ch31_pt.md | 3,523 in / 3,760 out | Cost: $0.00186 (0.00163 CHF) | Total Spent: 0.2496 CHF
+    [✓] vol5_ch32_pt.md | 3,168 in / 3,315 out | Cost: $0.00164 (0.00145 CHF) | Total Spent: 0.2511 CHF
+    [✓] vol5_ch33_pt.md | 3,120 in / 3,249 out | Cost: $0.00161 (0.00142 CHF) | Total Spent: 0.2525 CHF
+    [✓] vol5_ch34_pt.md | 2,778 in / 2,871 out | Cost: $0.00143 (0.00126 CHF) | Total Spent: 0.2538 CHF
+    [✓] vol5_ch35_pt.md | 2,859 in / 2,956 out | Cost: $0.00147 (0.00129 CHF) | Total Spent: 0.2551 CHF
+    [✓] vol5_ch36_pt.md | 3,587 in / 3,895 out | Cost: $0.00192 (0.00169 CHF) | Total Spent: 0.2567 CHF
+    [✓] vol5_ch37_pt.md | 2,934 in / 3,043 out | Cost: $0.00151 (0.00133 CHF) | Total Spent: 0.2581 CHF
+    [✓] vol5_ch38_pt.md | 2,751 in / 2,791 out | Cost: $0.00139 (0.00122 CHF) | Total Spent: 0.2593 CHF
+    [✓] vol5_ch39_pt.md | 2,888 in / 2,979 out | Cost: $0.00148 (0.00130 CHF) | Total Spent: 0.2606 CHF
+    [✓] vol5_ch40_pt.md | 3,599 in / 3,874 out | Cost: $0.00191 (0.00168 CHF) | Total Spent: 0.2623 CHF
+    [✓] vol5_ch41_pt.md | 2,928 in / 3,080 out | Cost: $0.00152 (0.00134 CHF) | Total Spent: 0.2636 CHF
+    [✓] vol5_ch42_pt.md | 3,088 in / 3,251 out | Cost: $0.00161 (0.00142 CHF) | Total Spent: 0.2650 CHF
+    [✓] vol5_ch43_pt.md | 2,841 in / 3,014 out | Cost: $0.00149 (0.00131 CHF) | Total Spent: 0.2663 CHF
+    [✓] vol5_ch44_pt.md | 3,269 in / 3,527 out | Cost: $0.00174 (0.00153 CHF) | Total Spent: 0.2679 CHF
+    [✓] vol5_ch45_pt.md | 2,954 in / 3,052 out | Cost: $0.00152 (0.00133 CHF) | Total Spent: 0.2692 CHF
+    [!] Attempt 1/6 (gemini-3.6-flash): empty candidate text. Retrying...
+    [✓] vol5_ch46_pt.md | 2,701 in / 2,761 out | Cost: $0.00137 (0.00121 CHF) | Total Spent: 0.2704 CHF
+    [✓] vol5_ch47_pt.md | 3,061 in / 3,116 out | Cost: $0.00155 (0.00137 CHF) | Total Spent: 0.2718 CHF
+    [✓] vol5_ch48_pt.md | 3,128 in / 3,309 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.2732 CHF
+    [✓] vol5_epilogue_pt.md | 2,957 in / 3,015 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.2745 CHF
+  [*] Compiling Master EPUB: O.N.E._Vol5_Open_Networked_Earth_pt.epub...
+  [✓] Master EPUB compiled successfully: O.N.E._Vol5_Open_Networked_Earth_pt.epub (1467 KB)
+[main a6be895] feat(i18n): complete Vol 5 PT master edition
+ 52 files changed, 4961 insertions(+), 5 deletions(-)
+ create mode 100644 books/vol5/chapters_pt/vol5_ch01_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch02_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch03_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch04_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch05_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch06_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch07_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch08_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch09_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch10_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch11_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch12_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch13_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch14_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch15_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch16_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch17_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch18_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch19_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch20_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch21_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch22_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch23_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch24_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch25_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch26_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch27_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch28_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch29_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch30_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch31_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch32_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch33_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch34_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch35_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch36_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch37_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch38_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch39_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch40_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch41_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch42_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch43_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch44_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch45_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch46_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch47_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_ch48_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_epilogue_pt.md
+ create mode 100644 books/vol5/chapters_pt/vol5_prologue_pt.md
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol5_Open_Networked_Earth_pt.epub
+To https://github.com/innubili/one.git
+   10cab6d..a6be895  main -> main
+  [✓] Git commit & push complete: feat(i18n): complete Vol 5 PT master edition
+
+[*] Processing Canonical Constitution for Portuguese (pt)...
+    [✓] chapter_01_pt.md | 1,798 in / 1,646 out | Cost: $0.00084 (0.00074 CHF) | Total Spent: 0.2753 CHF
+    [✓] chapter_02_pt.md | 1,634 in / 1,472 out | Cost: $0.00075 (0.00066 CHF) | Total Spent: 0.2759 CHF
+    [✓] chapter_03_pt.md | 1,923 in / 1,934 out | Cost: $0.00097 (0.00085 CHF) | Total Spent: 0.2768 CHF
+    [✓] chapter_04_pt.md | 1,794 in / 1,733 out | Cost: $0.00087 (0.00077 CHF) | Total Spent: 0.2776 CHF
+    [✓] chapter_05_pt.md | 1,939 in / 1,989 out | Cost: $0.00099 (0.00087 CHF) | Total Spent: 0.2784 CHF
+    [✓] chapter_06_pt.md | 1,672 in / 1,589 out | Cost: $0.00080 (0.00071 CHF) | Total Spent: 0.2791 CHF
+    [✓] chapter_07_pt.md | 1,682 in / 1,603 out | Cost: $0.00081 (0.00071 CHF) | Total Spent: 0.2799 CHF
+    [✓] chapter_08_pt.md | 1,999 in / 1,994 out | Cost: $0.00100 (0.00088 CHF) | Total Spent: 0.2807 CHF
+    [✓] chapter_09_pt.md | 1,859 in / 1,829 out | Cost: $0.00092 (0.00081 CHF) | Total Spent: 0.2815 CHF
+    [✓] chapter_10_pt.md | 1,957 in / 2,026 out | Cost: $0.00101 (0.00089 CHF) | Total Spent: 0.2824 CHF
+  [✓] Master Constitution MD assembled: ONE NETWORKED EARTH (O.N.E.)_pt.md
+  [*] Compiling Constitution EPUB: ONE NETWORKED EARTH (O.N.E.)_pt.epub...
+  [✓] Constitution EPUB ready: ONE NETWORKED EARTH (O.N.E.)_pt.epub
+[main 9f1e4a6] feat(i18n): complete Constitution PT edition
+ 12 files changed, 1038 insertions(+)
+ create mode 100644 bible/ONE NETWORKED EARTH (O.N.E.)_pt.md
+ create mode 100644 bible/chapters_pt/chapter_01_pt.md
+ create mode 100644 bible/chapters_pt/chapter_02_pt.md
+ create mode 100644 bible/chapters_pt/chapter_03_pt.md
+ create mode 100644 bible/chapters_pt/chapter_04_pt.md
+ create mode 100644 bible/chapters_pt/chapter_05_pt.md
+ create mode 100644 bible/chapters_pt/chapter_06_pt.md
+ create mode 100644 bible/chapters_pt/chapter_07_pt.md
+ create mode 100644 bible/chapters_pt/chapter_08_pt.md
+ create mode 100644 bible/chapters_pt/chapter_09_pt.md
+ create mode 100644 bible/chapters_pt/chapter_10_pt.md
+ create mode 100644 webapp/assets/ebooks/ONE NETWORKED EARTH (O.N.E.)_pt.epub
+To https://github.com/innubili/one.git
+   a6be895..9f1e4a6  main -> main
+[🎉] CONGRATULATIONS! All 7 volumes for PT are 100% COMPLETE!
+
+>>> PROCESSING LANGUAGE: RUSSIAN (ru) <<<
+
+=======================================================
+[*] Translating Volume 0 -> Russian (ru)
+[*] Chapters: 24 | Target: O.N.E._Vol0_Genesis_ru.epub
+=======================================================
+
+    [✓] vol0_ch01_ru.md | 2,908 in / 3,216 out | Cost: $0.00158 (0.00139 CHF) | Total Spent: 0.2838 CHF
+    [✓] vol0_ch02_ru.md | 3,038 in / 3,411 out | Cost: $0.00167 (0.00147 CHF) | Total Spent: 0.2853 CHF
+    [✓] vol0_ch03_ru.md | 2,946 in / 3,231 out | Cost: $0.00159 (0.00140 CHF) | Total Spent: 0.2867 CHF
+    [✓] vol0_ch04_ru.md | 3,230 in / 3,575 out | Cost: $0.00175 (0.00154 CHF) | Total Spent: 0.2882 CHF
+    [✓] vol0_ch05_ru.md | 3,196 in / 3,602 out | Cost: $0.00176 (0.00155 CHF) | Total Spent: 0.2898 CHF
+    [✓] vol0_ch06_ru.md | 3,133 in / 3,502 out | Cost: $0.00171 (0.00151 CHF) | Total Spent: 0.2913 CHF
+    [✓] vol0_ch07_ru.md | 2,956 in / 3,298 out | Cost: $0.00161 (0.00142 CHF) | Total Spent: 0.2927 CHF
+    [✓] vol0_ch08_ru.md | 3,033 in / 3,433 out | Cost: $0.00168 (0.00148 CHF) | Total Spent: 0.2942 CHF
+    [✓] vol0_ch09_ru.md | 3,191 in / 3,461 out | Cost: $0.00170 (0.00150 CHF) | Total Spent: 0.2957 CHF
+    [✓] vol0_ch10_ru.md | 2,895 in / 3,068 out | Cost: $0.00152 (0.00133 CHF) | Total Spent: 0.2970 CHF
+    [✓] vol0_ch11_ru.md | 3,128 in / 3,308 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.2984 CHF
+    [✓] vol0_ch12_ru.md | 3,609 in / 4,156 out | Cost: $0.00202 (0.00178 CHF) | Total Spent: 0.3002 CHF
+    [✓] vol0_ch13_ru.md | 2,963 in / 3,169 out | Cost: $0.00156 (0.00138 CHF) | Total Spent: 0.3016 CHF
+    [✓] vol0_ch14_ru.md | 3,072 in / 3,414 out | Cost: $0.00167 (0.00147 CHF) | Total Spent: 0.3031 CHF
+    [✓] vol0_ch15_ru.md | 2,842 in / 3,079 out | Cost: $0.00152 (0.00133 CHF) | Total Spent: 0.3044 CHF
+    [✓] vol0_ch16_ru.md | 3,096 in / 3,465 out | Cost: $0.00170 (0.00149 CHF) | Total Spent: 0.3059 CHF
+    [✓] vol0_ch17_ru.md | 3,162 in / 3,459 out | Cost: $0.00170 (0.00150 CHF) | Total Spent: 0.3074 CHF
+    [✓] vol0_ch18_ru.md | 3,146 in / 3,404 out | Cost: $0.00168 (0.00148 CHF) | Total Spent: 0.3089 CHF
+    [✓] vol0_ch19_ru.md | 2,859 in / 3,265 out | Cost: $0.00159 (0.00140 CHF) | Total Spent: 0.3103 CHF
+    [✓] vol0_ch20_ru.md | 2,879 in / 3,200 out | Cost: $0.00157 (0.00138 CHF) | Total Spent: 0.3117 CHF
+    [✓] vol0_ch21_ru.md | 3,181 in / 3,770 out | Cost: $0.00183 (0.00161 CHF) | Total Spent: 0.3133 CHF
+    [✓] vol0_ch22_ru.md | 2,900 in / 3,173 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.3146 CHF
+    [✓] vol0_ch23_ru.md | 3,197 in / 3,584 out | Cost: $0.00175 (0.00154 CHF) | Total Spent: 0.3162 CHF
+    [✓] vol0_ch24_ru.md | 2,915 in / 3,209 out | Cost: $0.00158 (0.00139 CHF) | Total Spent: 0.3176 CHF
+  [*] Compiling Master EPUB: O.N.E._Vol0_Genesis_ru.epub...
+  [✓] Master EPUB compiled successfully: O.N.E._Vol0_Genesis_ru.epub (1302 KB)
+[main 6f94a8a] feat(i18n): complete Vol 0 RU master edition
+ 26 files changed, 2626 insertions(+), 5 deletions(-)
+ create mode 100644 books/vol0/chapters_ru/vol0_ch01_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch02_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch03_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch04_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch05_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch06_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch07_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch08_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch09_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch10_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch11_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch12_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch13_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch14_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch15_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch16_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch17_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch18_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch19_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch20_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch21_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch22_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch23_ru.md
+ create mode 100644 books/vol0/chapters_ru/vol0_ch24_ru.md
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol0_Genesis_ru.epub
+To https://github.com/innubili/one.git
+   9f1e4a6..6f94a8a  main -> main
+  [✓] Git commit & push complete: feat(i18n): complete Vol 0 RU master edition
+
+=======================================================
+[*] Translating Volume 1 -> Russian (ru)
+[*] Chapters: 50 | Target: O.N.E._Vol1_Open_Networked_Earth_ru.epub
+=======================================================
+
+    [✓] vol1_prologue_ru.md | 3,382 in / 3,789 out | Cost: $0.00185 (0.00163 CHF) | Total Spent: 0.3192 CHF
+    [✓] vol1_ch01_ru.md | 3,213 in / 3,608 out | Cost: $0.00176 (0.00155 CHF) | Total Spent: 0.3207 CHF
+    [✓] vol1_ch02_ru.md | 3,087 in / 3,398 out | Cost: $0.00167 (0.00147 CHF) | Total Spent: 0.3222 CHF
+    [✓] vol1_ch03_ru.md | 3,422 in / 3,844 out | Cost: $0.00188 (0.00165 CHF) | Total Spent: 0.3239 CHF
+    [✓] vol1_ch04_ru.md | 3,103 in / 3,464 out | Cost: $0.00170 (0.00149 CHF) | Total Spent: 0.3254 CHF
+    [✓] vol1_ch05_ru.md | 3,349 in / 3,687 out | Cost: $0.00181 (0.00159 CHF) | Total Spent: 0.3270 CHF
+    [✓] vol1_ch06_ru.md | 3,136 in / 3,344 out | Cost: $0.00165 (0.00145 CHF) | Total Spent: 0.3284 CHF
+    [✓] vol1_ch07_ru.md | 3,384 in / 3,818 out | Cost: $0.00187 (0.00164 CHF) | Total Spent: 0.3300 CHF
+    [✓] vol1_ch08_ru.md | 2,934 in / 3,154 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.3314 CHF
+    [✓] vol1_ch09_ru.md | 3,245 in / 3,690 out | Cost: $0.00180 (0.00158 CHF) | Total Spent: 0.3330 CHF
+    [✓] vol1_ch10_ru.md | 2,941 in / 3,121 out | Cost: $0.00154 (0.00136 CHF) | Total Spent: 0.3344 CHF
+    [✓] vol1_ch11_ru.md | 2,884 in / 3,050 out | Cost: $0.00151 (0.00133 CHF) | Total Spent: 0.3357 CHF
+    [✓] vol1_ch12_ru.md | 3,158 in / 3,675 out | Cost: $0.00179 (0.00157 CHF) | Total Spent: 0.3373 CHF
+    [✓] vol1_ch13_ru.md | 3,385 in / 4,004 out | Cost: $0.00194 (0.00171 CHF) | Total Spent: 0.3390 CHF
+    [✓] vol1_ch14_ru.md | 3,936 in / 4,504 out | Cost: $0.00220 (0.00193 CHF) | Total Spent: 0.3409 CHF
+    [✓] vol1_ch15_ru.md | 3,050 in / 3,200 out | Cost: $0.00159 (0.00139 CHF) | Total Spent: 0.3423 CHF
+    [✓] vol1_ch16_ru.md | 3,216 in / 3,618 out | Cost: $0.00177 (0.00156 CHF) | Total Spent: 0.3438 CHF
+    [✓] vol1_ch17_ru.md | 2,920 in / 3,004 out | Cost: $0.00149 (0.00131 CHF) | Total Spent: 0.3452 CHF
+    [✓] vol1_ch18_ru.md | 3,528 in / 4,036 out | Cost: $0.00197 (0.00173 CHF) | Total Spent: 0.3469 CHF
+    [✓] vol1_ch19_ru.md | 2,623 in / 2,694 out | Cost: $0.00134 (0.00118 CHF) | Total Spent: 0.3481 CHF
+    [✓] vol1_ch20_ru.md | 3,019 in / 3,530 out | Cost: $0.00171 (0.00151 CHF) | Total Spent: 0.3496 CHF
+    [✓] vol1_ch21_ru.md | 3,076 in / 3,342 out | Cost: $0.00164 (0.00145 CHF) | Total Spent: 0.3510 CHF
+    [✓] vol1_ch22_ru.md | 3,397 in / 3,813 out | Cost: $0.00186 (0.00164 CHF) | Total Spent: 0.3527 CHF
+    [✓] vol1_ch23_ru.md | 3,167 in / 3,436 out | Cost: $0.00169 (0.00149 CHF) | Total Spent: 0.3542 CHF
+    [✓] vol1_ch24_ru.md | 3,557 in / 4,091 out | Cost: $0.00199 (0.00175 CHF) | Total Spent: 0.3559 CHF
+    [✓] vol1_ch25_ru.md | 2,971 in / 3,372 out | Cost: $0.00165 (0.00145 CHF) | Total Spent: 0.3574 CHF
+    [✓] vol1_ch26_ru.md | 2,761 in / 2,876 out | Cost: $0.00143 (0.00126 CHF) | Total Spent: 0.3586 CHF
+    [✓] vol1_ch27_ru.md | 2,993 in / 3,113 out | Cost: $0.00154 (0.00136 CHF) | Total Spent: 0.3600 CHF
+    [✓] vol1_ch28_ru.md | 2,843 in / 3,155 out | Cost: $0.00155 (0.00136 CHF) | Total Spent: 0.3613 CHF
+    [✓] vol1_ch29_ru.md | 3,424 in / 3,891 out | Cost: $0.00190 (0.00167 CHF) | Total Spent: 0.3630 CHF
+    [✓] vol1_ch30_ru.md | 2,851 in / 3,242 out | Cost: $0.00158 (0.00139 CHF) | Total Spent: 0.3644 CHF
+    [✓] vol1_ch31_ru.md | 3,108 in / 3,411 out | Cost: $0.00168 (0.00147 CHF) | Total Spent: 0.3659 CHF
+    [✓] vol1_ch32_ru.md | 2,924 in / 3,073 out | Cost: $0.00152 (0.00134 CHF) | Total Spent: 0.3672 CHF
+    [✓] vol1_ch33_ru.md | 3,109 in / 3,368 out | Cost: $0.00166 (0.00146 CHF) | Total Spent: 0.3687 CHF
+    [✓] vol1_ch34_ru.md | 2,955 in / 3,260 out | Cost: $0.00160 (0.00141 CHF) | Total Spent: 0.3701 CHF
+    [✓] vol1_ch35_ru.md | 3,081 in / 3,359 out | Cost: $0.00165 (0.00145 CHF) | Total Spent: 0.3715 CHF
+    [✓] vol1_ch36_ru.md | 3,056 in / 3,335 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.3730 CHF
+    [✓] vol1_ch37_ru.md | 3,021 in / 3,306 out | Cost: $0.00162 (0.00143 CHF) | Total Spent: 0.3744 CHF
+    [✓] vol1_ch38_ru.md | 3,170 in / 3,514 out | Cost: $0.00172 (0.00152 CHF) | Total Spent: 0.3759 CHF
+    [✓] vol1_ch39_ru.md | 2,975 in / 3,360 out | Cost: $0.00164 (0.00144 CHF) | Total Spent: 0.3774 CHF
+    [✓] vol1_ch40_ru.md | 3,297 in / 3,806 out | Cost: $0.00185 (0.00163 CHF) | Total Spent: 0.3790 CHF
+    [✓] vol1_ch41_ru.md | 3,441 in / 4,040 out | Cost: $0.00196 (0.00172 CHF) | Total Spent: 0.3807 CHF
+    [✓] vol1_ch42_ru.md | 2,723 in / 2,940 out | Cost: $0.00145 (0.00127 CHF) | Total Spent: 0.3820 CHF
+    [✓] vol1_ch43_ru.md | 2,837 in / 3,030 out | Cost: $0.00150 (0.00132 CHF) | Total Spent: 0.3833 CHF
+    [✓] vol1_ch44_ru.md | 2,932 in / 3,155 out | Cost: $0.00156 (0.00137 CHF) | Total Spent: 0.3847 CHF
+    [✓] vol1_ch45_ru.md | 3,133 in / 3,575 out | Cost: $0.00174 (0.00153 CHF) | Total Spent: 0.3862 CHF
+    [✓] vol1_ch46_ru.md | 2,857 in / 2,964 out | Cost: $0.00147 (0.00129 CHF) | Total Spent: 0.3875 CHF
+    [✓] vol1_ch47_ru.md | 2,716 in / 2,778 out | Cost: $0.00138 (0.00122 CHF) | Total Spent: 0.3887 CHF
+    [✓] vol1_ch48_ru.md | 2,691 in / 2,755 out | Cost: $0.00137 (0.00121 CHF) | Total Spent: 0.3899 CHF
+    [✓] vol1_epilogue_ru.md | 2,773 in / 2,934 out | Cost: $0.00145 (0.00128 CHF) | Total Spent: 0.3912 CHF
+  [*] Compiling Master EPUB: O.N.E._Vol1_Open_Networked_Earth_ru.epub...
+  [✓] Master EPUB compiled successfully: O.N.E._Vol1_Open_Networked_Earth_ru.epub (1383 KB)
+[main de9e681] feat(i18n): complete Vol 1 RU master edition
+ 52 files changed, 5525 insertions(+), 5 deletions(-)
+ create mode 100644 books/vol1/chapters_ru/vol1_ch01_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch02_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch03_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch04_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch05_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch06_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch07_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch08_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch09_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch10_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch11_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch12_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch13_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch14_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch15_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch16_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch17_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch18_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch19_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch20_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch21_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch22_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch23_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch24_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch25_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch26_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch27_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch28_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch29_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch30_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch31_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch32_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch33_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch34_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch35_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch36_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch37_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch38_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch39_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch40_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch41_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch42_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch43_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch44_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch45_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch46_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch47_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_ch48_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_epilogue_ru.md
+ create mode 100644 books/vol1/chapters_ru/vol1_prologue_ru.md
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol1_Open_Networked_Earth_ru.epub
+To https://github.com/innubili/one.git
+   6f94a8a..de9e681  main -> main
+  [✓] Git commit & push complete: feat(i18n): complete Vol 1 RU master edition
+
+=======================================================
+[*] Translating Volume 2 -> Russian (ru)
+[*] Chapters: 50 | Target: O.N.E._Vol2_Open_Networked_Earth_ru.epub
+=======================================================
+
+    [✓] vol2_prologue_ru.md | 3,081 in / 3,456 out | Cost: $0.00169 (0.00149 CHF) | Total Spent: 0.3927 CHF
+    [✓] vol2_ch01_ru.md | 3,194 in / 3,554 out | Cost: $0.00174 (0.00153 CHF) | Total Spent: 0.3942 CHF
+    [✓] vol2_ch02_ru.md | 2,814 in / 3,025 out | Cost: $0.00149 (0.00131 CHF) | Total Spent: 0.3955 CHF
+    [✓] vol2_ch03_ru.md | 3,371 in / 3,742 out | Cost: $0.00183 (0.00161 CHF) | Total Spent: 0.3971 CHF
+    [✓] vol2_ch04_ru.md | 2,963 in / 3,230 out | Cost: $0.00159 (0.00140 CHF) | Total Spent: 0.3985 CHF
+    [✓] vol2_ch05_ru.md | 3,153 in / 3,493 out | Cost: $0.00171 (0.00151 CHF) | Total Spent: 0.4001 CHF
+    [✓] vol2_ch06_ru.md | 3,090 in / 3,469 out | Cost: $0.00170 (0.00149 CHF) | Total Spent: 0.4015 CHF
+    [✓] vol2_ch07_ru.md | 2,976 in / 3,296 out | Cost: $0.00162 (0.00142 CHF) | Total Spent: 0.4030 CHF
+    [✓] vol2_ch08_ru.md | 2,905 in / 3,132 out | Cost: $0.00154 (0.00136 CHF) | Total Spent: 0.4043 CHF
+    [✓] vol2_ch09_ru.md | 2,948 in / 3,254 out | Cost: $0.00160 (0.00140 CHF) | Total Spent: 0.4057 CHF
+    [✓] vol2_ch10_ru.md | 2,956 in / 3,183 out | Cost: $0.00157 (0.00138 CHF) | Total Spent: 0.4071 CHF
+    [✓] vol2_ch11_ru.md | 2,929 in / 3,265 out | Cost: $0.00160 (0.00141 CHF) | Total Spent: 0.4085 CHF
+    [✓] vol2_ch12_ru.md | 3,175 in / 3,530 out | Cost: $0.00173 (0.00152 CHF) | Total Spent: 0.4100 CHF
+    [✓] vol2_ch13_ru.md | 2,779 in / 3,071 out | Cost: $0.00151 (0.00133 CHF) | Total Spent: 0.4114 CHF
+    [✓] vol2_ch14_ru.md | 3,123 in / 3,213 out | Cost: $0.00160 (0.00141 CHF) | Total Spent: 0.4128 CHF
+    [✓] vol2_ch15_ru.md | 2,981 in / 3,049 out | Cost: $0.00152 (0.00134 CHF) | Total Spent: 0.4141 CHF
+    [✓] vol2_ch16_ru.md | 4,267 in / 5,075 out | Cost: $0.00246 (0.00216 CHF) | Total Spent: 0.4163 CHF
+    [✓] vol2_ch17_ru.md | 2,757 in / 2,836 out | Cost: $0.00141 (0.00124 CHF) | Total Spent: 0.4175 CHF
+    [✓] vol2_ch18_ru.md | 2,905 in / 3,088 out | Cost: $0.00153 (0.00134 CHF) | Total Spent: 0.4189 CHF
+    [✓] vol2_ch19_ru.md | 3,452 in / 3,800 out | Cost: $0.00187 (0.00164 CHF) | Total Spent: 0.4205 CHF
+    [✓] vol2_ch20_ru.md | 3,319 in / 3,756 out | Cost: $0.00183 (0.00161 CHF) | Total Spent: 0.4221 CHF
+    [✓] vol2_ch21_ru.md | 3,184 in / 3,472 out | Cost: $0.00171 (0.00150 CHF) | Total Spent: 0.4236 CHF
+    [!] Attempt 1/6 (gemini-3.6-flash): empty candidate text. Retrying...
+    [✓] vol2_ch22_ru.md | 3,417 in / 3,862 out | Cost: $0.00189 (0.00166 CHF) | Total Spent: 0.4253 CHF
+    [✓] vol2_ch23_ru.md | 3,323 in / 3,733 out | Cost: $0.00183 (0.00161 CHF) | Total Spent: 0.4269 CHF
+    [✓] vol2_ch24_ru.md | 3,456 in / 3,742 out | Cost: $0.00184 (0.00162 CHF) | Total Spent: 0.4285 CHF
+[*] [CUTOFF] 07:00 AM reached! Gracefully pausing daemon. Standing down until next window.
+[*] 07:00 AM cutoff reached. Exiting gracefully.
+[*] [SCHEDULE] 07:00 AM Window ended. Pausing daemon for daytime standby.

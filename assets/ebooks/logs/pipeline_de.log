@@ -1,0 +1,84 @@
+
+--- Batch Started at 2026-09-17T12:50:18.462367 ---
+=======================================================
+[*] O.N.E. MASTER TRANSLATION RUN STARTED
+[*] Volumes (7): ['vol0', 'vol1', 'vol2', 'vol3', 'vol4', 'vol5', 'constitution']
+[*] Languages (1): ['de']
+[*] Total target books: 7
+[*] Already completed: 2 / 7
+[*] Model: gemini-3.6-flash
+[*] PDF Generation: DISABLED (EPUB only)
+=======================================================
+
+[✓] Already translated and valid: O.N.E._Vol0_Genesis_de.epub (1277 KB). Skipping.
+
+=======================================================
+[*] Translating: O.N.E._Vol1_Open_Networked_Earth_en.epub -> German (de)
+[*] Model: gemini-3.6-flash | Mode: FULL PRODUCTION
+[*] Glossary: de.txt
+=======================================================
+
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+Warning: the gemini route does not plan automatically: it offers no JSON-schema 
+verdict and holds no classifier conversation, so this run translates the 
+--translate-tags selection. Pass --plan-classify model to plan the whole book 
+here — the same book comes out quite differently with it.
+prompt config:
+{
+    'user': "You are an award-winning master literary localization director and 
+commercial fiction editor.\nTranslate the following text faithfully into German 
+(de) with the SAME literary power, visceral sensory realism, and emotional punch
+as Stephen King, J.K. Rowling, and J.R.R. Tolkien.\n\nCRITICAL RULES:\n1. 
+Visceral Sensory Grounding: Preserve tactile textures and sensory details 
+without flattening into generic prose.\n2. Distinct Character Voices: Marcus is 
+gritty, clipped, blue-collar machinist; Elena is sharp, articulate legal 
+precision; Toby is youthful vulnerability.\n3. Kinetic Rhythm: Keep sentence 
+structures tight and breathless in action scenes.\n4. Anti-Literalism: Transpose
+idioms naturally; never translate word-for-word.\n5. Inviolable Glossaries: 
+Strictly adhere to the canonical terms below.\n6. Output ONLY the clean 
+translation with all markdown and formatting intact.\n\n\nCANONICAL GLOSSARY 
+(Strictly enforce these exact translations):\n# O.N.E. Canonical Glossary — 
+German (de)\nOpen Networked Earth -> Open Networked Earth (Offene Vernetzte 
+Erde)\nO.N.E. -> O.N.E.\nUsufruct -> Nießbrauch\nUniversal Usufruct -> 
+Universeller Nießbrauch\nSortition -> Losverfahren\nRotational Sortition -> 
+Rotierendes Losverfahren\nClass 0 Invariants -> 
+Klasse-0-Invarianten\nThermodynamic Accounting -> Thermodynamische 
+Bilanzierung\nThermodynamic Balance -> Thermodynamisches 
+Gleichgewicht\nHeretic's Commons -> Allmende der Häretiker\nCommunity Land Trust
+-> Community Land Trust\nEcological Carrying Capacity -> Ökologische 
+Tragfähigkeit\nDeterministic Diverse Double-Compilation -> Deterministische 
+diverse Doppelkompilierung (DDC)\nThreshold Multi-Party Computation -> 
+Schwellenwert-Mehrparteienberechnung (t-MPC)\nZero-Knowledge Proof-of-Personhood
+-> Zero-Knowledge-Identitätsnachweis (ZK-PoP)\nExternal Trade Interface -> 
+Externe Handelsschnittstelle (ETI)\nDelray Foundry -> 
+Delray-Gießerei\nAmbassador Bridge -> Ambassador Bridge\nRiver Rouge -> River 
+Rouge\nZug Island -> Zug Island\nAegis-Apex -> Aegis-Apex\nMeridian -> 
+Meridian\nBlackiron -> Blackiron\nMarcus Vance -> Marcus Vance\nElena Cruz -> 
+Elena Cruz\nToby Morales -> Toby Morales\nMaya Lin-Mercado -> Maya 
+Lin-Mercado\nRay Miller -> Ray Miller\nKira Vance -> Kira Vance\nSully -> 
+Sully\nCampbell -> Campbell\nLeo -> Leo\nSarah -> Sarah\nMateo -> Mateo\nFCI 
+Milan -> FCI Milan\nWest Jefferson -> West Jefferson\nDearborn Street -> 
+Dearborn Street\nSandwich -> Sandwich\nWindsor -> Windsor\nDetroit -> 
+Detroit\n\n\nText to translate:\n{text}"
+}
+prompt: user from --prompt
+Using model list ['gemini-3.6-flash']
+plan mode: off (the gemini route has no JSON-schema verdict)
+  0%|          | 0/2480 [00:00<?, ?it/s]
+------------------------------------------------------
+dealing titlepage.xhtml ...
+translating 0/2
+translating 1/2
+------------------------------------------------------
+dealing about.xhtml ...
+translating 0/9
+translating 1/9
+translating 2/9
+translating 3/9
+translating 4/9
+translating 5/9
+translating 6/9
+translating 7/9
+translating 8/9
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,0 +1,112 @@
+[*] O.N.E. Pipeline Daemon starting...
+[*] Next in queue: Language 'it' (Missing: ['vol1', 'vol2', 'vol3', 'vol4', 'vol5'])
+
+=======================================================
+[*] LAUNCHING BATCH: Language 'it' across all volumes
+[*] Logging to: /Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/logs/pipeline_it.log
+=======================================================
+
+[✓] Batch for it finished successfully!
+[*] Committing and pushing completed language: it
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[main d47b261] feat(i18n): complete IT master edition (all 7 volumes)
+ 6 files changed, 11 insertions(+), 9 deletions(-)
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol1_Open_Networked_Earth_it.epub
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol2_Open_Networked_Earth_it.epub
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol3_Open_Networked_Earth_it.epub
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol4_Open_Networked_Earth_it.epub
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol5_Open_Networked_Earth_it.epub
+To https://github.com/innubili/one.git
+   3339d4f..d47b261  main -> main
+[✓] Git commit & push successful for it
+[*] EVENT RECORDED: language_completed - {'lang': 'it', 'volumes': ['constitution', 'vol0', 'vol1', 'vol2', 'vol3', 'vol4', 'vol5']}
+[*] Next in queue: Language 'de' (Missing: ['vol1', 'vol2', 'vol3', 'vol4', 'vol5'])
+
+=======================================================
+[*] LAUNCHING BATCH: Language 'de' across all volumes
+[*] Logging to: /Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/logs/pipeline_de.log
+=======================================================
+
+[*] O.N.E. Pipeline Daemon starting...
+[✓] Language 'it' already 100% complete. Skipping.
+[*] Next in queue: Language 'es' (Missing: ['vol1', 'vol2', 'vol3', 'vol4', 'vol5'])
+
+=======================================================
+[*] LAUNCHING BATCH: Language 'es' across all volumes
+[*] Logging to: /Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/logs/pipeline_es.log
+=======================================================
+
+[*] O.N.E. Pipeline Daemon starting...
+[✓] Language 'it' already 100% complete. Skipping.
+[*] Next in queue: Language 'es' (Missing: ['vol3', 'vol4', 'vol5'])
+
+=======================================================
+[*] LAUNCHING BATCH: Language 'es' across all volumes
+[*] Logging to: /Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/logs/pipeline_es.log
+=======================================================
+
+[*] O.N.E. Pipeline Daemon starting...
+[✓] Language 'it' already 100% complete. Skipping.
+[*] Next in queue: Language 'es' (Missing: ['vol3', 'vol4', 'vol5'])
+
+=======================================================
+[*] LAUNCHING BATCH: Language 'es' across all volumes
+[*] Logging to: /Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/logs/pipeline_es.log
+=======================================================
+
+[✓] Batch process for es completed.
+[✓] All volumes for 'es' verified complete!
+[*] Committing and pushing completed language: es
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[main d1e03a1] feat(i18n): complete ES master edition (all 7 volumes)
+ 2 files changed, 7 insertions(+), 9 deletions(-)
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol5_Open_Networked_Earth_es.epub
+To https://github.com/innubili/one.git
+   bcacd99..d1e03a1  main -> main
+[✓] Git commit & push successful for es
+[*] EVENT RECORDED: language_completed - {'lang': 'es', 'volumes': ['constitution', 'vol0', 'vol1', 'vol2', 'vol3', 'vol4', 'vol5']}
+[*] Next in queue: Language 'hi' (Missing: ['constitution', 'vol0', 'vol1', 'vol2', 'vol3', 'vol4', 'vol5'])
+
+=======================================================
+[*] LAUNCHING BATCH: Language 'hi' across all volumes
+[*] Logging to: /Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/logs/pipeline_hi.log
+=======================================================
+
+[✓] Batch process for hi completed.
+[✓] All volumes for 'hi' verified complete!
+[*] Committing and pushing completed language: hi
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[main 340fcbc] feat(i18n): complete HI master edition (all 7 volumes)
+ 3 files changed, 8 insertions(+), 9 deletions(-)
+ create mode 100644 webapp/assets/ebooks/O.N.E._Vol5_Open_Networked_Earth_hi.epub
+ create mode 100644 webapp/assets/ebooks/ONE NETWORKED EARTH (O.N.E.)_hi.epub
+To https://github.com/innubili/one.git
+   2086126..340fcbc  main -> main
+[✓] Git commit & push successful for hi
+[*] EVENT RECORDED: language_completed - {'lang': 'hi', 'volumes': ['constitution', 'vol0', 'vol1', 'vol2', 'vol3', 'vol4', 'vol5']}
+[*] Next in queue: Language 'pt' (Missing: ['constitution', 'vol0', 'vol1', 'vol2', 'vol3', 'vol4', 'vol5'])
+
+=======================================================
+[*] LAUNCHING BATCH: Language 'pt' across all volumes
+[*] Logging to: /Users/rudy/Documents/SW/AG/one/webapp/assets/ebooks/logs/pipeline_pt.log
+=======================================================
+
+[!] Batch process for pt exited with code 1. Inspecting status...
+[*] Missing volumes for pt: ['constitution', 'vol2', 'vol3', 'vol4', 'vol5']. Resuming in 15 seconds...
+[!] Batch process for pt exited with code 1. Inspecting status...
+[*] Missing volumes for pt: ['constitution', 'vol2', 'vol3', 'vol4', 'vol5']. Resuming in 15 seconds...
+[!] Batch process for pt exited with code 1. Inspecting status...
+[*] Missing volumes for pt: ['constitution', 'vol2', 'vol3', 'vol4', 'vol5']. Resuming in 15 seconds...
+[!] Batch process for pt exited with code 1. Inspecting status...
+[*] Missing volumes for pt: ['constitution', 'vol2', 'vol3', 'vol4', 'vol5']. Resuming in 15 seconds...
+[!] Batch process for pt exited with code 1. Inspecting status...
+[*] Missing volumes for pt: ['constitution', 'vol2', 'vol3', 'vol4', 'vol5']. Resuming in 15 seconds...
+[!] Batch process for pt exited with code 1. Inspecting status...
+[*] Missing volumes for pt: ['constitution', 'vol2', 'vol3', 'vol4', 'vol5']. Resuming in 15 seconds...
+[!] Batch process for pt exited with code 1. Inspecting status...
+[*] Missing volumes for pt: ['constitution', 'vol2', 'vol3', 'vol4', 'vol5']. Resuming in 15 seconds...
+[!] Batch process for pt exited with code 1. Inspecting status...
+[*] Missing volumes for pt: ['constitution', 'vol2', 'vol3', 'vol4', 'vol5']. Resuming in 15 seconds...
