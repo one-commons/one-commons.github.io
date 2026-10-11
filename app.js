@@ -75,6 +75,7 @@
   // DOM Elements Cache
   const elements = {
     // Navigation & i18n
+    header: document.querySelector('.site-header'),
     brandLogo: document.getElementById('brandLogo'),
     navLinks: document.querySelectorAll('.nav-link'),
     mobileMenuBtn: document.getElementById('mobileMenuBtn'),
@@ -148,6 +149,9 @@
     setupQuickQuestions();
     setupInitialChat();
     syncVideoSubtitles(state.lang);
+
+    // Resilient deep-link anchor navigation after dynamic DOM population
+    handleInitialHashNavigation();
   }
 
   // Internationalization (i18n) Engine
@@ -710,6 +714,53 @@
         link.classList.remove('active');
       }
     });
+  }
+
+  // Resilient Anchor Navigation Handler for Initial Page Load & External Deep Links
+  function handleInitialHashNavigation() {
+    const rawHash = window.location.hash;
+    if (!rawHash || rawHash === '#' || rawHash === '#manifesto') return;
+
+    let target = null;
+    try {
+      target = document.querySelector(rawHash);
+    } catch (e) {
+      target = document.getElementById(rawHash.replace(/^#/, ''));
+    }
+    if (!target) return;
+
+    // Track user manual interaction so we never hijack if the user starts scrolling
+    let userInteracted = false;
+    const markInteracted = (e) => {
+      if (e.isTrusted) userInteracted = true;
+    };
+    window.addEventListener('wheel', markInteracted, { passive: true, once: true });
+    window.addEventListener('touchmove', markInteracted, { passive: true, once: true });
+    window.addEventListener('keydown', (e) => {
+      if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Space', 'Home', 'End'].includes(e.code)) {
+        userInteracted = true;
+      }
+    }, { passive: true, once: true });
+
+    const scrollToAnchor = (behavior = 'auto') => {
+      if (userInteracted) return;
+      const header = elements.header || document.querySelector('.site-header');
+      const headerHeight = header ? header.offsetHeight : 80;
+      const targetY = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({
+        top: Math.max(0, targetY),
+        behavior: behavior
+      });
+      handleRoute();
+    };
+
+    // 1. Immediately after dynamic content injection and layout calculation
+    requestAnimationFrame(() => scrollToAnchor('auto'));
+
+    // 2. Scheduled passes to correct for late font rendering, SVG drawing, and image reflows
+    setTimeout(() => scrollToAnchor('auto'), 150);
+    setTimeout(() => scrollToAnchor('auto'), 500);
+    setTimeout(() => scrollToAnchor('auto'), 1000);
   }
 
   // Render Interactive Synoptic Primer Content
