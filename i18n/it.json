@@ -6,7 +6,7 @@
     "roadmap": "Tabella di Marcia",
     "challenge": "Sfida Epistemica",
     "thrillers": "Romanzi",
-    "simulator": "🎮 Living Game ↗",
+    "simulator": "🎮 Gioca & Simula ↗",
     "oracle": "Oracolo AI ↗"
   },
   "hero": {
@@ -14,7 +14,7 @@
     "title_part1": "Quando le macchine fanno il lavoro,",
     "title_part2": "l'umanità eredita la Terra.",
     "subtitle": "L'Intelligenza Artificiale e la robotica stanno eliminando per sempre il lavoro salariato. Invece di precipitare nel tecno-feudalesimo aziendale, <strong>Open Networked Earth (O.N.E.)</strong> trasforma l'automazione in emancipazione umana: cibo, alloggio, energia e sanità garantiti per ogni persona vivente — governati da giurie di cittadini comuni, non da politici.",
-    "btn_simulator": "Gioca a O-ASIS MMO ↗",
+    "btn_simulator": "Gioca & Simula (Hub) ↗",
     "btn_primer": "Guida Rapida (3 min)",
     "btn_video": "Guarda Video (8 min)",
     "btn_constitution": "Esplora la Costituzione",
@@ -452,7 +452,7 @@
     "feat2_desc": "Assemblee di cittadini estratti a sorte in stretta parità dispari per arbitrare i dilemmi comunitari e ratificare i precedenti confederali.",
     "feat3_title": "Ponte Fisico Dual-Track",
     "feat3_desc": "I trionfi nel gioco sbloccano direttamente veri blueprint open hardware stampabili in 3D (.STL) e automazioni per Home Assistant.",
-    "btn_launch": "Avvia il Simulatore O-ASIS (Browser 60 FPS) ↗",
+    "btn_launch": "Avvia Piattaforma Interattiva (Hub) ↗",
     "btn_handbook": "Scarica il Manuale di Sopravvivenza (PDF) ↗"
   }
 }

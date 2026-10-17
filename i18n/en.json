@@ -6,7 +6,7 @@
     "roadmap": "Roadmap",
     "challenge": "Challenge",
     "thrillers": "Thrillers",
-    "simulator": "🎮 Living Game ↗",
+    "simulator": "🎮 Play & Simulate ↗",
     "oracle": "Oracle AI ↗"
   },
   "hero": {
@@ -14,7 +14,7 @@
     "title_part1": "When machines do the work,",
     "title_part2": "humanity inherits the Earth.",
     "subtitle": "Artificial Intelligence and robotics are eliminating wage labor forever. Instead of descending into corporate techno-feudalism, <strong>Open Networked Earth (O.N.E.)</strong> turns automation into human emancipation: guaranteed food, housing, energy, and healthcare for every person alive — governed by ordinary citizen juries, not politicians.",
-    "btn_simulator": "Play O-ASIS MMO ↗",
+    "btn_simulator": "Play & Simulate (Hub) ↗",
     "btn_primer": "3-Minute Primer",
     "btn_video": "Watch Explainer (8 min)",
     "btn_constitution": "Explore Constitution",
@@ -452,7 +452,7 @@
     "feat2_desc": "Citizen assemblies chosen by lot in strict odd parity to arbitrate community dilemmas and ratify confederal case-law precedents.",
     "feat3_title": "Dual-Track Physical Bridge",
     "feat3_desc": "In-game triumphs directly unlock verified, real-world 3D printable .STL open hardware and Home Assistant automations.",
-    "btn_launch": "Launch O-ASIS Simulator (Browser 60 FPS) ↗",
+    "btn_launch": "Launch Interactive Platform (Hub) ↗",
     "btn_handbook": "Download Player Field Manual (PDF) ↗"
   }
 }
