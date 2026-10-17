@@ -94,6 +94,20 @@
     theaterDossierBar: document.getElementById('theaterDossierBar'),
     mapNodes: document.querySelectorAll('.map-node'),
     legendPills: document.querySelectorAll('.legend-pill'),
+    earthPhaseStepper: document.getElementById('earthPhaseStepper'),
+    
+    // Video Briefing Modal
+    briefingModal: document.getElementById('briefingModal'),
+    briefingModalContainer: document.getElementById('briefingModalContainer'),
+    briefingModalCloseBtn: document.getElementById('briefingModalCloseBtn'),
+    briefingVideoPlayer: document.getElementById('briefingVideoPlayer'),
+    briefingVideoSource: document.getElementById('briefingVideoSource'),
+    briefingActBadge: document.getElementById('briefingActBadge'),
+    briefingTitle: document.getElementById('briefingTitle'),
+    briefingSubtitle: document.getElementById('briefingSubtitle'),
+    briefingQuote: document.getElementById('briefingQuote'),
+    briefingSynopsis: document.getElementById('briefingSynopsis'),
+    briefingActions: document.getElementById('briefingActions'),
     
     // Constitution
     chapterTabs: document.getElementById('chapterTabs'),
@@ -518,7 +532,7 @@
     }
 
     // ScrollSpy to highlight active section on scroll
-    const observedSections = ['manifesto', 'synoptic', 'constitution', 'roadmap', 'challenge', 'books'];
+    const observedSections = ['manifesto', 'synoptic', 'constitution', 'roadmap', 'challenge', 'books', 'co-stewards'];
     const sectionElements = observedSections.map(id => document.getElementById(id)).filter(Boolean);
 
     if ('IntersectionObserver' in window && sectionElements.length > 0) {
@@ -548,10 +562,47 @@
       sectionElements.forEach(sec => scrollObserver.observe(sec));
     }
 
-    // Mobile menu toggle
-    if (elements.mobileMenuBtn && elements.navMenu) {
-      elements.mobileMenuBtn.addEventListener('click', () => {
-        elements.navMenu.classList.toggle('active');
+    // Mobile menu toggle & close helpers
+    const closeMobileMenu = () => {
+      if (elements.navMenu) elements.navMenu.classList.remove('active');
+      if (elements.mobileMenuBtn) {
+        elements.mobileMenuBtn.classList.remove('active');
+        elements.mobileMenuBtn.textContent = '☰';
+        elements.mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      }
+    };
+
+    const toggleMobileMenu = () => {
+      if (!elements.navMenu || !elements.mobileMenuBtn) return;
+      const willOpen = !elements.navMenu.classList.contains('active');
+      elements.navMenu.classList.toggle('active', willOpen);
+      elements.mobileMenuBtn.classList.toggle('active', willOpen);
+      elements.mobileMenuBtn.textContent = willOpen ? '✕' : '☰';
+      elements.mobileMenuBtn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      if (willOpen && elements.langDropdown) {
+        elements.langDropdown.classList.remove('active');
+        elements.langSelectorBtn?.classList.remove('active');
+      }
+    };
+
+    if (elements.mobileMenuBtn) {
+      elements.mobileMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMobileMenu();
+      });
+    }
+
+    if (elements.navLinks) {
+      elements.navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          closeMobileMenu();
+        });
+      });
+    }
+
+    if (elements.brandLogo) {
+      elements.brandLogo.addEventListener('click', () => {
+        closeMobileMenu();
       });
     }
 
@@ -640,6 +691,7 @@
     if (elements.langSelectorBtn && elements.langDropdown) {
       elements.langSelectorBtn.addEventListener('click', (e) => {
         e.stopPropagation();
+        closeMobileMenu();
         elements.langDropdown.classList.toggle('active');
         elements.langSelectorBtn.classList.toggle('active');
       });
@@ -658,21 +710,45 @@
       });
     }
 
-    // Close dropdown and modals on backdrop click or escape key
+    // Close dropdown, mobile menu, and modals on backdrop click or escape key
     window.addEventListener('click', (e) => {
       if (e.target === elements.shareModal) elements.shareModal.classList.remove('active');
       if (e.target === elements.blueprintModal) closeBlueprintModal();
+      if (e.target === elements.briefingModal) closeVideoBriefing();
       if (!e.target.closest('.lang-selector-wrap')) {
         elements.langDropdown?.classList.remove('active');
         elements.langSelectorBtn?.classList.remove('active');
       }
+      if (!e.target.closest('#mobileMenuBtn') && !e.target.closest('#navMenu')) {
+        closeMobileMenu();
+      }
     });
+
+    if (elements.briefingModalCloseBtn) {
+      elements.briefingModalCloseBtn.addEventListener('click', closeVideoBriefing);
+    }
+
+    if (elements.earthPhaseStepper) {
+      const phaseBtns = elements.earthPhaseStepper.querySelectorAll('.phase-btn');
+      phaseBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          phaseBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const phase = btn.getAttribute('data-phase');
+          applyEarthMapPhase(phase);
+        });
+      });
+    }
 
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
+        closeMobileMenu();
         if (elements.langDropdown && elements.langDropdown.classList.contains('active')) {
           elements.langDropdown.classList.remove('active');
           elements.langSelectorBtn?.classList.remove('active');
+        }
+        if (elements.briefingModal && elements.briefingModal.classList.contains('active')) {
+          closeVideoBriefing();
         }
         if (elements.shareModal && elements.shareModal.classList.contains('active')) {
           elements.shareModal.classList.remove('active');
@@ -680,6 +756,12 @@
         if (elements.blueprintModal && elements.blueprintModal.classList.contains('active')) {
           closeBlueprintModal();
         }
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1024) {
+        closeMobileMenu();
       }
     });
 
@@ -1520,34 +1602,203 @@
     }
   }
 
-  // Render Volumes Showcase (Focused on Direct EPUB & PDF Downloads)
+  const SAGA_VOL_META = {
+    vol0: {
+      act: "ACT I // SVALBARD (2026)",
+      quote: "“The old world collapses in 18 months. If you don't design what comes next... who will?”",
+      accent: "var(--accent-cyan)",
+      video: "assets/videos/one_vol0_briefing.mp4"
+    },
+    vol1: {
+      act: "ACT II // DETROIT (2027)",
+      quote: "“When the factory locks its doors, the city wakes up.”",
+      accent: "var(--accent-amber)",
+      video: "assets/videos/one_vol1_briefing.mp4"
+    },
+    vol2: {
+      act: "ACT II // THE ALPS (2028)",
+      quote: "“Water, energy, and transit belong to the living watershed.”",
+      accent: "var(--accent-emerald)",
+      video: "assets/videos/one_vol2_briefing.mp4"
+    },
+    vol3: {
+      act: "ACT II // THE ANDES (2029)",
+      quote: "“Defending 4,000-meter glacial water from speculative cartels.”",
+      accent: "var(--accent-cyan)",
+      video: "assets/videos/one_vol3_briefing.mp4"
+    },
+    vol4: {
+      act: "ACT II // MALACCA (2030)",
+      quote: "“A single laser beam through the monsoon to liberate the global fleet.”",
+      accent: "#ffa028",
+      video: "assets/videos/one_vol4_briefing.mp4"
+    },
+    vol5: {
+      act: "ACT III // GENEVA (2031)",
+      quote: "“500 ordinary citizens chosen by lot to ratify humanity's survival.”",
+      accent: "#ffd700",
+      video: "assets/videos/one_vol5_briefing.mp4"
+    }
+  };
+
+  function openVideoBriefing(volId) {
+    if (!elements.briefingModal || !state.books) return;
+    const vol = state.books.volumes.find(v => v.id === volId);
+    if (!vol) return;
+    const meta = SAGA_VOL_META[volId] || {};
+
+    const locVol = state.translations?.volume_details?.[vol.id] || {};
+    const volTitle = locVol.title || vol.title;
+    const volSubtitle = locVol.subtitle || vol.subtitle;
+    const volBlurb = locVol.blurb || vol.blurb;
+
+    if (elements.briefingActBadge) {
+      elements.briefingActBadge.textContent = meta.act || "SAGA BRIEFING";
+      elements.briefingActBadge.style.borderColor = meta.accent || "var(--accent-cyan)";
+      elements.briefingActBadge.style.color = meta.accent || "var(--accent-cyan)";
+    }
+    if (elements.briefingTitle) elements.briefingTitle.textContent = volTitle;
+    if (elements.briefingSubtitle) elements.briefingSubtitle.textContent = volSubtitle;
+    if (elements.briefingQuote) elements.briefingQuote.textContent = meta.quote || "";
+    if (elements.briefingSynopsis) elements.briefingSynopsis.textContent = volBlurb;
+
+    // Resolve download links
+    const res = resolveEbook(vol.id, state.lang);
+    const volNum = vol.id.replace('vol', '');
+    let pdfFilename = volNum === '0'
+      ? (state.lang === 'it' ? 'O.N.E._Vol0_Genesis_it.pdf' : 'O.N.E._Vol0_Genesis_en.pdf')
+      : (state.lang === 'it' && volNum === '1' ? 'O.N.E._Vol1_Terra_Connessa_e_Aperta_it.pdf' : `O.N.E._Vol${volNum}_Open_Networked_Earth_en.pdf`);
+    if (state.availableEbooks && !state.availableEbooks.has(pdfFilename)) {
+      pdfFilename = volNum === '0' ? 'O.N.E._Vol0_Genesis_en.pdf' : `O.N.E._Vol${volNum}_Open_Networked_Earth_en.pdf`;
+    }
+
+    if (elements.briefingActions) {
+      elements.briefingActions.innerHTML = `
+        <a href="${res.url}" class="btn btn-primary" download="${res.filename}" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Download EPUB
+        </a>
+        <a href="assets/ebooks/${pdfFilename}" class="btn btn-secondary" download="${pdfFilename}" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          Download PDF
+        </a>
+      `;
+    }
+
+    if (elements.briefingVideoPlayer && elements.briefingVideoSource) {
+      elements.briefingVideoSource.src = meta.video || `assets/videos/one_${volId}_briefing.mp4`;
+      elements.briefingVideoPlayer.load();
+      elements.briefingVideoPlayer.play().catch(() => {});
+    }
+
+    elements.briefingModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeVideoBriefing() {
+    if (!elements.briefingModal) return;
+    if (elements.briefingVideoPlayer) {
+      elements.briefingVideoPlayer.pause();
+      if (elements.briefingVideoSource) elements.briefingVideoSource.src = '';
+    }
+    elements.briefingModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  window.openVideoBriefing = openVideoBriefing;
+  window.closeVideoBriefing = closeVideoBriefing;
+
+  function applyEarthMapPhase(phase) {
+    const nodes = document.querySelectorAll('.map-node');
+    const arcsDispersal = document.querySelectorAll('.arc-dispersal');
+    const arcsConvergence = document.querySelectorAll('.arc-convergence');
+    const arcsParallel = document.querySelectorAll('.arc-parallel');
+
+    if (phase === 'all') {
+      nodes.forEach(n => { n.style.opacity = '1'; n.style.filter = ''; });
+      arcsDispersal.forEach(a => { a.style.opacity = '0.9'; });
+      arcsConvergence.forEach(a => { a.style.opacity = '0.9'; });
+      arcsParallel.forEach(a => { a.style.opacity = '0.7'; });
+    } else if (phase === 'act1') {
+      nodes.forEach(n => {
+        const isVol0 = n.dataset.vol === 'vol0';
+        n.style.opacity = isVol0 ? '1' : '0.25';
+        n.style.filter = isVol0 ? 'drop-shadow(0 0 16px var(--accent-cyan))' : 'grayscale(80%)';
+      });
+      arcsDispersal.forEach(a => { a.style.opacity = '0.9'; });
+      arcsConvergence.forEach(a => { a.style.opacity = '0.1'; });
+      arcsParallel.forEach(a => { a.style.opacity = '0.1'; });
+    } else if (phase === 'act2') {
+      nodes.forEach(n => {
+        const v = n.dataset.vol;
+        const isParallel = ['vol1', 'vol2', 'vol3', 'vol4'].includes(v);
+        n.style.opacity = isParallel ? '1' : '0.25';
+        n.style.filter = isParallel ? 'drop-shadow(0 0 14px rgba(255,180,20,0.8))' : 'grayscale(80%)';
+      });
+      arcsDispersal.forEach(a => { a.style.opacity = '0.9'; });
+      arcsParallel.forEach(a => { a.style.opacity = '0.9'; });
+      arcsConvergence.forEach(a => { a.style.opacity = '0.2'; });
+    } else if (phase === 'act3') {
+      nodes.forEach(n => {
+        const isVol5 = n.dataset.vol === 'vol5';
+        n.style.opacity = isVol5 ? '1' : '0.3';
+        n.style.filter = isVol5 ? 'drop-shadow(0 0 20px #ffd700)' : 'grayscale(80%)';
+      });
+      arcsDispersal.forEach(a => { a.style.opacity = '0.15'; });
+      arcsParallel.forEach(a => { a.style.opacity = '0.15'; });
+      arcsConvergence.forEach(a => { a.style.opacity = '1'; });
+    }
+  }
+
+  // Render Volumes Showcase (3-Act Architecture: Act I -> Act II Parallel -> Act III)
   function renderVolumes() {
     if (!elements.volumesList || !state.books) return;
     const { volumes } = state.books;
+    if (!volumes || volumes.length < 6) return;
     const t = state.translations?.books || {};
-    const epubLabel = t.btn_epub || 'Download EPUB';
-    const pdfLabel = t.btn_pdf || 'Download PDF';
-    const statusLabel = t.status_complete || 'Complete & Available';
 
-    elements.volumesList.innerHTML = volumes.map((vol) => {
-      // Dynamic autonomous EPUB resolution (zero hardcoded languages)
+    const vol0 = volumes[0];
+    const vol1_4 = volumes.slice(1, 5);
+    const vol5 = volumes[5];
+
+    function createCard(vol, isHero = false, actTag = "") {
       const res = resolveEbook(vol.id, state.lang);
       const isEpubAvailable = res.available;
       const epubUrl = res.url;
-
-      if (!isEpubAvailable) {
-        // Opportunistic probe: detect new files dropped in assets/ebooks/ without manifest update
-        probeEbookAvailability(vol.id, state.lang, () => {
-          renderVolumes();
-        });
-      }
-
+      const epubLabel = t.btn_epub || 'Download EPUB';
+      const pdfLabel = t.btn_pdf || 'Download PDF';
+      const statusLabel = t.status_complete || 'Complete & Available';
       const comingSoonLabel = t.btn_coming_soon || 'Coming Soon';
       const statusComingSoon = t.status_coming_soon || 'In Translation';
       const badgeClass = isEpubAvailable ? 'badge-available' : 'badge-prod';
       const currentBadgeText = isEpubAvailable ? statusLabel : statusComingSoon;
 
-      const epubButtonHtml = isEpubAvailable ? `
+      const volNum = vol.id.replace('vol', '');
+      let pdfFilename = volNum === '0'
+        ? (state.lang === 'it' ? 'O.N.E._Vol0_Genesis_it.pdf' : 'O.N.E._Vol0_Genesis_en.pdf')
+        : (state.lang === 'it' && volNum === '1' ? 'O.N.E._Vol1_Terra_Connessa_e_Aperta_it.pdf' : `O.N.E._Vol${volNum}_Open_Networked_Earth_en.pdf`);
+      
+      if (state.availableEbooks && !state.availableEbooks.has(pdfFilename)) {
+        pdfFilename = volNum === '0' ? 'O.N.E._Vol0_Genesis_en.pdf' : `O.N.E._Vol${volNum}_Open_Networked_Earth_en.pdf`;
+      }
+      const pdfUrl = `assets/ebooks/${pdfFilename}`;
+
+      const locVol = state.translations?.volume_details?.[vol.id] || {};
+      const volTheater = locVol.theater || vol.theater;
+      const volTitle = locVol.title || vol.title;
+      const volSubtitle = locVol.subtitle || vol.subtitle;
+      const volTheme = locVol.core_theme || vol.core_theme;
+      const volHook = locVol.hook || vol.hook;
+      const meta = SAGA_VOL_META[vol.id] || {};
+
+      const briefingBtnHtml = `
+        <button class="btn-download btn-briefing" onclick="openVideoBriefing('${vol.id}')" title="Watch 60s Video Briefing">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          🎬 60s Briefing
+        </button>
+      `;
+
+      const epubBtnHtml = isEpubAvailable ? `
         <a href="${epubUrl}" class="btn-download" download="${res.filename}" target="_blank" rel="noopener noreferrer" title="Download EPUB eBook">
           <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
           ${epubLabel}
@@ -1559,38 +1810,29 @@
         </span>
       `;
 
-      // Localized PDF URL resolution: check if localized exists or use standard en
-      const volNum = vol.id.replace('vol', '');
-      let pdfFilename = volNum === '0'
-        ? (state.lang === 'it' ? 'O.N.E._Vol0_Genesis_it.pdf' : 'O.N.E._Vol0_Genesis_en.pdf')
-        : (state.lang === 'it' && volNum === '1' ? 'O.N.E._Vol1_Terra_Connessa_e_Aperta_it.pdf' : `O.N.E._Vol${volNum}_Open_Networked_Earth_en.pdf`);
-      
-      if (state.availableEbooks && !state.availableEbooks.has(pdfFilename)) {
-        pdfFilename = volNum === '0' ? 'O.N.E._Vol0_Genesis_en.pdf' : `O.N.E._Vol${volNum}_Open_Networked_Earth_en.pdf`;
-      }
-      const pdfUrl = `assets/ebooks/${pdfFilename}`;
-
-      const downloadButtons = `
-        ${epubButtonHtml}
+      const pdfBtnHtml = `
         <a href="${pdfUrl}" class="btn-download btn-download-pdf" download="${pdfFilename}" target="_blank" rel="noopener noreferrer" title="Download PDF Document">
           <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
           ${pdfLabel}
         </a>
       `;
 
-      const locVol = state.translations?.volume_details?.[vol.id] || {};
-      const volTheater = locVol.theater || vol.theater;
-      const volTitle = locVol.title || vol.title;
-      const volSubtitle = locVol.subtitle || vol.subtitle;
-      const volTheme = locVol.core_theme || vol.core_theme;
-      const volHook = locVol.hook || vol.hook;
+      const cardClass = isHero ? 'volume-card hero-volume-card' : 'volume-card parallel-volume-card';
+      const spotlightClass = vol.id === state.selectedTheater ? 'spotlight' : '';
 
       return `
-        <div class="volume-card glass-panel ${vol.id === state.selectedTheater ? 'spotlight' : ''}" data-vol-id="${vol.id}">
-          <img src="${vol.cover_image}" alt="${volTitle}" class="volume-card-thumb">
+        <div class="${cardClass} glass-panel ${spotlightClass}" data-vol-id="${vol.id}" style="--vol-accent: ${meta.accent || 'var(--accent-cyan)'};">
+          <div class="volume-card-thumb-wrap" onclick="openVideoBriefing('${vol.id}')" title="Click to Watch Video Briefing">
+            <img src="${vol.cover_image}" alt="${volTitle}" class="volume-card-thumb">
+            <div class="thumb-play-overlay">
+              <div class="play-circle">▶</div>
+              <span>Watch Briefing</span>
+            </div>
+          </div>
           <div class="volume-card-body">
             <div class="volume-header">
               <div>
+                ${actTag ? `<div class="card-act-tag">${actTag}</div>` : ''}
                 <div class="volume-theater">${volTheater}</div>
                 <h3 class="volume-title">${volTitle}</h3>
                 <div style="font-size:0.88rem; color:var(--text-muted); margin-top:2px;">${volSubtitle}</div>
@@ -1598,14 +1840,63 @@
               <span class="volume-badge ${badgeClass}">${currentBadgeText}</span>
             </div>
             <p class="volume-theme" style="margin-bottom:8px;">${volTheme}</p>
-            ${volHook ? `<p style="font-size:0.82rem; color:var(--accent-cyan); font-style:italic; margin-bottom:14px; line-height:1.4;">${volHook}</p>` : ''}
+            ${volHook ? `<p style="font-size:0.82rem; color:var(--vol-accent, var(--accent-cyan)); font-style:italic; margin-bottom:12px; line-height:1.4;">${volHook}</p>` : ''}
             <div class="download-bar">
-              ${downloadButtons}
+              ${briefingBtnHtml}
+              ${epubBtnHtml}
+              ${pdfBtnHtml}
             </div>
           </div>
         </div>
       `;
-    }).join('');
+    }
+
+    elements.volumesList.innerHTML = `
+      <!-- ACT I: THE GENESIS -->
+      <div class="saga-act-wrap act-1">
+        <div class="act-header-banner">
+          <span class="act-badge-pill" style="--badge-color: var(--accent-cyan);">ACT I: THE CLANDESTINE GENESIS (2026)</span>
+          <span class="act-header-desc">The Seed of the Commons • Svalbard Arctic Permafrost • Station 74-Nord</span>
+        </div>
+        ${createCard(vol0, true, "ACT I // SVALBARD 2026")}
+      </div>
+
+      <!-- SAGA CONDUIT DIVIDER: DISPERSAL -->
+      <div class="saga-phase-divider">
+        <div class="conduit-line"></div>
+        <div class="conduit-badge">
+          <div class="conduit-step-label">ACT II: THE FOUR CONTINENTAL FRONTLINES (2027–2030)</div>
+          <div class="conduit-step-sub">⚡ Four simultaneous uprisings operating in parallel • Read in any order ⚡</div>
+        </div>
+        <div class="conduit-line"></div>
+      </div>
+
+      <!-- ACT II: 4 PARALLEL FRONTLINES -->
+      <div class="saga-act-wrap act-2">
+        <div class="parallel-volumes-grid">
+          ${vol1_4.map((v, i) => createCard(v, false, `ACT II // FRONT ${i + 1}`)).join('')}
+        </div>
+      </div>
+
+      <!-- SAGA CONDUIT DIVIDER: CONVERGENCE -->
+      <div class="saga-phase-divider">
+        <div class="conduit-line"></div>
+        <div class="conduit-badge conduit-convergence">
+          <div class="conduit-step-label">ACT III: THE GLOBAL CONVERGENCE (2031)</div>
+          <div class="conduit-step-sub">🏛️ Palais des Nations, Geneva • Sortition Demarchy & Planetary Ratification 🏛️</div>
+        </div>
+        <div class="conduit-line"></div>
+      </div>
+
+      <!-- ACT III: CONVERGENCE -->
+      <div class="saga-act-wrap act-3">
+        <div class="act-header-banner">
+          <span class="act-badge-pill" style="--badge-color: #ffd700;">ACT III: THE UNIVERSAL JUBILEE (2031)</span>
+          <span class="act-header-desc">The Four Delegations Converge • Ratification of the Living Constitution</span>
+        </div>
+        ${createCard(vol5, true, "ACT III // GENEVA 2031")}
+      </div>
+    `;
   }
 
   // Render Constitution Tabs

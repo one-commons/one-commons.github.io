@@ -67,6 +67,7 @@
           <li><a href="#roadmap" class="nav-link" id="navRoadmap" data-i18n="nav.roadmap">Roadmap</a></li>
           <li><a href="#challenge" class="nav-link" id="navChallenge" data-i18n="nav.challenge">Challenge</a></li>
           <li><a href="#books" class="nav-link" id="navBooks" data-i18n="nav.thrillers">Thrillers</a></li>
+          <li><a href="#co-stewards" class="nav-link" id="navStewards">Co-Stewards</a></li>
           <li><a href="https://one-oasis.surge.sh" target="_blank" rel="noopener noreferrer" class="nav-link nav-link-simulator" id="navSimulator" title="O-ASIS Living Thermodynamic Sandbox & Resilience MMO" data-i18n="nav.simulator">🎮 Living Game ↗</a></li>
           <li><a href="https://github.com/kyberlex/one/discussions" target="_blank" rel="noopener noreferrer" class="nav-link" id="navForum" title="O.N.E. Dialectic Forum & RFC Proposals">Forum / RFC ↗</a></li>
         </ul>
@@ -97,7 +98,7 @@
             <button class="lang-opt" data-lang="tr">🇹🇷 Türkçe</button>
           </div>
         </div>
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">☰</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navMenu">☰</button>
       </div>
     </div>
   </header>
@@ -975,7 +976,14 @@
             <div>
               <span class="earth-tag" data-i18n="books.chart_tag">Interactive World Chart</span>
               <h3 class="earth-title" data-i18n="books.chart_title">The Six Theaters of the Saga</h3>
-              <p class="earth-desc" data-i18n="books.chart_desc">Click any pulsing beacon on the globe to inspect the theater narrative and download the volume.</p>
+              <p class="earth-desc" data-i18n="books.chart_desc">Timeline Architecture: Act I Genesis (Svalbard 2026) ➔ Act II Dispersal (4 Theaters in Parallel) ➔ Act III Convergence (Geneva 2031).</p>
+            </div>
+            <!-- Interactive Chronological Phase Stepper -->
+            <div class="earth-phase-stepper" id="earthPhaseStepper">
+              <button class="phase-btn active" data-phase="all" title="View Full Planetary Network">🌐 All Theaters</button>
+              <button class="phase-btn" data-phase="act1" title="Act I: Svalbard Genesis (2026)">❄️ Act I: Genesis</button>
+              <button class="phase-btn" data-phase="act2" title="Act II: 4 Parallel Frontlines (2027–30)">⚡ Act II: 4 Frontlines (Parallel)</button>
+              <button class="phase-btn" data-phase="act3" title="Act III: Geneva Convergence (2031)">🏛️ Act III: Convergence</button>
             </div>
           </div>
 
@@ -1003,26 +1011,26 @@
 
               <!-- Optical Dispersal & Network Arcs connecting Svalbard & The 5 Theaters -->
               <!-- Svalbard (1970, 280) -> Detroit (953, 643) [Dispersal Arc] -->
-              <path d="M 1970 280 Q 1400 350 953 643" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="20,15" class="network-arc"/>
+              <path d="M 1970 280 Q 1400 350 953 643" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="20,15" class="network-arc arc-dispersal"/>
               <!-- Svalbard (1970, 280) -> Alps (1905, 621) [Dispersal Arc] -->
-              <path d="M 1970 280 L 1905 621" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="16,12" class="network-arc"/>
+              <path d="M 1970 280 L 1905 621" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="16,12" class="network-arc arc-dispersal"/>
               <!-- Svalbard (1970, 280) -> Amazon / Atacama (1005, 1817) [Dispersal Arc] -->
-              <path d="M 1970 280 Q 1350 1000 1005 1817" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="20,15" class="network-arc"/>
+              <path d="M 1970 280 Q 1350 1000 1005 1817" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="20,15" class="network-arc arc-dispersal"/>
               <!-- Svalbard (1970, 280) -> Malacca (3501, 1690) [Dispersal Arc] -->
-              <path d="M 1970 280 Q 2800 900 3501 1690" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="20,15" class="network-arc"/>
+              <path d="M 1970 280 Q 2800 900 3501 1690" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="20,15" class="network-arc arc-dispersal"/>
               <!-- Svalbard (1970, 280) -> Geneva (1834, 639) [Dispersal Arc] -->
-              <path d="M 1970 280 L 1834 639" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="16,12" class="network-arc"/>
+              <path d="M 1970 280 L 1834 639" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="16,12" class="network-arc arc-dispersal"/>
 
-              <!-- Detroit (953, 643) -> Geneva (1834, 639) -->
-              <path d="M 953 643 Q 1390 380 1834 639" fill="none" stroke="url(#networkLineGrad)" stroke-width="7" stroke-dasharray="28,18" class="network-arc"/>
-              <!-- Geneva (1834, 639) -> Alps (1905, 621) -->
-              <path d="M 1834 639 L 1905 621" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="14,10" class="network-arc"/>
+              <!-- Detroit (953, 643) -> Geneva (1834, 639) [Convergence Arc] -->
+              <path d="M 953 643 Q 1390 380 1834 639" fill="none" stroke="url(#networkLineGrad)" stroke-width="7" stroke-dasharray="28,18" class="network-arc arc-convergence"/>
+              <!-- Geneva (1834, 639) -> Alps (1905, 621) [Convergence Arc] -->
+              <path d="M 1834 639 L 1905 621" fill="none" stroke="url(#networkLineGrad)" stroke-width="6" stroke-dasharray="14,10" class="network-arc arc-convergence"/>
               <!-- Detroit (953, 643) -> Amazon (1005, 1817) -->
-              <path d="M 953 643 Q 860 1200 1005 1817" fill="none" stroke="url(#networkLineGrad)" stroke-width="7" stroke-dasharray="28,18" class="network-arc"/>
-              <!-- Amazon (1005, 1817) -> Geneva (1834, 639) -->
-              <path d="M 1005 1817 Q 1550 1350 1834 639" fill="none" stroke="url(#networkLineGrad)" stroke-width="7" stroke-dasharray="28,18" class="network-arc"/>
+              <path d="M 953 643 Q 860 1200 1005 1817" fill="none" stroke="url(#networkLineGrad)" stroke-width="7" stroke-dasharray="28,18" class="network-arc arc-parallel"/>
+              <!-- Amazon (1005, 1817) -> Geneva (1834, 639) [Convergence Arc] -->
+              <path d="M 1005 1817 Q 1550 1350 1834 639" fill="none" stroke="url(#networkLineGrad)" stroke-width="7" stroke-dasharray="28,18" class="network-arc arc-convergence"/>
               <!-- Alps (1905, 621) -> Malacca (3501, 1690) -->
-              <path d="M 1905 621 Q 2850 1050 3501 1690" fill="none" stroke="url(#networkLineGrad)" stroke-width="7" stroke-dasharray="28,18" class="network-arc"/>
+              <path d="M 1905 621 Q 2850 1050 3501 1690" fill="none" stroke="url(#networkLineGrad)" stroke-width="7" stroke-dasharray="28,18" class="network-arc arc-parallel"/>
 
               <!-- Interactive Pulsing Theater Nodes -->
               <!-- Pin 0: Station 74-Nord, Svalbard (Vol 0) - (1970, 280) -->
@@ -1110,46 +1118,98 @@
       </div>
     </section>
 
-    <!-- 6. SWISS FOUNDATION & REAL-WORLD ACTION (HIDDEN FOR NOW) -->
-    <section class="section" id="foundation" style="display: none;" aria-hidden="true">
+    <!-- 7. CALL FOR CO-STEWARDS & DOMAIN CRITICS (PHASE 0 ARCHITECTURAL HARDENING) -->
+    <section class="section" id="co-stewards">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Real-World Grounding</span>
-          <h2 class="section-title">The Swiss Node & Local Seed Actions</h2>
+          <span class="section-tag" style="background: rgba(0, 229, 255, 0.1); border-color: rgba(0, 229, 255, 0.3); color: var(--accent-cyan);">Phase 0 Genesis Hardening</span>
+          <h2 class="section-title">Call for Co-Stewards & Domain Critics</h2>
           <p class="section-desc">
-            How O.N.E. anchors in physical reality today: starting as a zero-capital Swiss Association (<em>Verein</em>) under Swiss Civil Code Art. 60 ff., 
-            transitioning to a statutory Foundation (<em>Stiftung</em>).
+            Open Networked Earth is built on open peer production. Before the Living Constitution is permanently deposited under Swiss Civil Law (ZGB Art. 80 ff.), each of our four foundational pillars must be stress-tested through adversarial peer review. We seek four domain builders (Co-Stewards) and rigorous specialists (Critics) to challenge and harden the architecture.
           </p>
         </div>
 
-        <div class="synoptic-grid">
-          <div class="synoptic-card glass-panel">
-            <h3>🇨🇭 The Swiss Verein Legal Armor</h3>
-            <p>
-              Swiss law allows an association to exist without state authorization, without minimum capital, and with full privacy for founding members. 
-              The association holds copyright under Copyfarleft open covenants, accepts transparent donations, and manages banking with ethical institutions.
-            </p>
-            <div style="margin-top:16px;">
-              <span class="article-tag">Swiss ZGB Art. 60 ff.</span>
-              <span class="article-tag">FusG Art. 86 ff.</span>
-              <span class="article-tag">Baurecht Land Trusts</span>
+        <div class="stewards-grid">
+          <!-- Pillar 1: Economy -->
+          <div class="steward-card glass-panel" style="--pillar-accent: var(--accent-amber);">
+            <div class="steward-card-header">
+              <span class="pillar-num">Pillar 1</span>
+              <span class="steward-badge badge-seeking">🔍 Seeking Co-Steward & Critics</span>
+            </div>
+            <h3 class="steward-title">Economy & Thermodynamic Balances</h3>
+            <div class="steward-role">Domain: Ecological / Heterodox Economics, Leontief Input-Output</div>
+            <div class="steward-doubt">
+              <strong>Open Dialectic & Doubt:</strong> Can money-less thermodynamic accounting completely replace market price discovery and Gosplan bureaucracy without supply shortages or rationing?
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Join Economic Dialectic →</a>
             </div>
           </div>
 
-          <div class="synoptic-card glass-panel">
-            <h3>🌱 Launching a Bioregional Seed Node</h3>
-            <p>
-              You don't need a global revolution to start. Three people can establish a local study circle, Community Land Trust (CLT), 
-              or decentralized microgrid node utilizing open-source O.N.E. governance covenants.
-            </p>
-            <p>
-              Download our complete legal blueprint, articles of association template, and banking compliance protocols.
-            </p>
-            <div style="margin-top:16px;">
-              <a href="../foundation/legal_framework.md" class="btn-download" target="_blank">
-                View Legal Blueprint (Markdown)
-              </a>
+          <!-- Pillar 2: Governance -->
+          <div class="steward-card glass-panel" style="--pillar-accent: var(--accent-emerald);">
+            <div class="steward-card-header">
+              <span class="pillar-num">Pillar 2</span>
+              <span class="steward-badge badge-seeking">🔍 Seeking Co-Steward & Critics</span>
             </div>
+            <h3 class="steward-title">Governance, Law & Dynamic Usufruct</h3>
+            <div class="steward-role">Domain: Commons Jurisprudence, Demarchy / Sortition, Swiss Civil Law</div>
+            <div class="steward-doubt">
+              <strong>Open Dialectic & Doubt:</strong> Are demarchic sortition lotteries mathematically immune to lobbying and oligarchic capture? Does Swiss Association (Verein) law provide bulletproof shielding?
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Join Legal Dialectic →</a>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Simulation -->
+          <div class="steward-card glass-panel steward-active" style="--pillar-accent: var(--accent-cyan);">
+            <div class="steward-card-header">
+              <span class="pillar-num">Pillar 3</span>
+              <span class="steward-badge badge-active">🟢 Active Co-Steward</span>
+            </div>
+            <h3 class="steward-title">Simulation & Scientific Sandbox</h3>
+            <div class="steward-role">
+              <strong>Co-Steward: Rainer Rodrigues</strong> (<a href="https://github.com/rainerrodrigues" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan);">@rainerrodrigues</a> / <code>u/Techman_16</code>)<br>
+              Domain: Julia Discrete-Event Co-Simulation (SIMONE), Agents.jl & MTBF Wear
+            </div>
+            <div class="steward-doubt">
+              <strong>Active Research:</strong> Validating the single-village Julia prototype, stock-and-flow ODE docking tests, and multiscale biophysical solver decoupling.
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Inspect Simulation Work →</a>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Habitat -->
+          <div class="steward-card glass-panel" style="--pillar-accent: var(--accent-magenta, #f43f5e);">
+            <div class="steward-card-header">
+              <span class="pillar-num">Pillar 4</span>
+              <span class="steward-badge badge-seeking">🔍 Seeking Co-Steward & Critics</span>
+            </div>
+            <h3 class="steward-title">Habitat & Open-Hardware Resilience</h3>
+            <div class="steward-role">Domain: Microgrids, Home Assistant Zigbee/MQTT, CNC Timber Cassettes</div>
+            <div class="steward-doubt">
+              <strong>Open Dialectic & Doubt:</strong> Do Modular Habitat Units (MHU) and open-hardware microgrids withstand real-world 40-year thermal cycles and catastrophic grid disconnection?
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Join Habitat Dialectic →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stewards-footer-cta glass-panel" style="margin-top: 32px; padding: 28px 24px; text-align: center;">
+          <h4 style="color:#fff; font-size:1.2rem; margin-bottom:8px;">Ready to Build or Break O.N.E.?</h4>
+          <p style="color:var(--text-muted); font-size:0.95rem; max-width:720px; margin:0 auto 20px; line-height:1.5;">
+            Whether you want to co-steward a foundational pillar or act as an independent critic hunting thermodynamic and nomothetic edge cases, your contribution directly hardens the Genesis Block.
+          </p>
+          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+            <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:10px 24px;">
+              💬 Join Red-Team Dialectic on GitHub (#11)
+            </a>
+            <a href="mailto:kyberlex@proton.me?subject=O.N.E.%20Co-Steward%20/%20Critic%20Inquiry" class="btn btn-secondary" style="padding:10px 24px;">
+              ✉️ Contact Kyberlex (kyberlex@proton.me)
+            </a>
           </div>
         </div>
       </div>
@@ -1198,6 +1258,35 @@
   </div>
 
   <!-- ========================================================================
+       VIDEO BRIEFING MODAL (9:16 VERTICAL SAGA PLAYER)
+       ======================================================================== -->
+  <div class="reader-modal-overlay" id="briefingModal">
+    <div class="briefing-modal-container glass-panel" id="briefingModalContainer">
+      <button class="briefing-close-btn" id="briefingModalCloseBtn" title="Close Briefing (Esc)">✕</button>
+      <div class="briefing-modal-body">
+        <!-- 9:16 Video Player -->
+        <div class="briefing-video-wrap">
+          <video id="briefingVideoPlayer" class="briefing-video" controls playsinline preload="metadata">
+            <source id="briefingVideoSource" src="" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <!-- Volume Intel & Actions -->
+        <div class="briefing-info-wrap">
+          <div class="briefing-act-badge" id="briefingActBadge">ACT I // SVALBARD 2026</div>
+          <h3 class="briefing-title" id="briefingTitle">Volume 0: Genesis</h3>
+          <div class="briefing-subtitle" id="briefingSubtitle">The Conclave — Station 74-Nord</div>
+          <div class="briefing-quote" id="briefingQuote">"If you don't design what comes next... who will?"</div>
+          <p class="briefing-synopsis" id="briefingSynopsis"></p>
+          <div class="briefing-actions" id="briefingActions">
+            <!-- Dynamically populated download buttons -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
        SITE FOOTER
        ======================================================================== -->
   <footer style="padding:48px 0; border-top:1px solid var(--border-subtle); text-align:center; font-size:0.85rem; color:var(--text-muted);">
@@ -1208,6 +1297,7 @@
         <a href="#roadmap" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav.roadmap">Roadmap</a>
         <a href="#challenge" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav.challenge">Challenge</a>
         <a href="#books" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav.thrillers">Thrillers</a>
+        <a href="#co-stewards" style="color: var(--accent-cyan); text-decoration: none;">Co-Stewards</a>
         <a href="https://one-oasis.surge.sh" target="_blank" rel="noopener noreferrer" style="color: #10b981; font-weight: 600; text-decoration: none;" data-i18n="nav.simulator">🎮 Living Game ↗</a>
         <a href="https://github.com/kyberlex/one/discussions" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: none;">Forum / RFC ↗</a>
       </div>
