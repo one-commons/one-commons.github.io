@@ -946,7 +946,7 @@
           </div>
           <div style="margin-top:22px; padding:14px 20px; background:rgba(6, 182, 212, 0.08); border:1px solid rgba(6, 182, 212, 0.2); border-radius:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
             <span style="color:#e2e8f0; font-size:0.92rem;">
-              These principles are codified into 10 chapters of immutable statutory law in the <strong>Living Constitution</strong>.
+              These principles are codified into 11 chapters of immutable statutory law in the <strong>Living Constitution</strong>.
             </span>
             <a href="#constitution" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:8px; font-size:0.88rem; padding:8px 18px;">
               <span>Read the Constitution</span>
