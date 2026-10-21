@@ -477,25 +477,28 @@
   }
 
   function syncVideoSubtitles(lang) {
-    const video = document.getElementById('explainerVideoPlayer');
-    if (!video) return;
-
+    const videoIds = ['explainerVideoPlayer', 'heroVideoPlayer'];
     const targetLang = (lang || 'en').toLowerCase().trim();
 
-    const applyTracks = () => {
-      if (!video.textTracks || video.textTracks.length === 0) return;
-      for (let i = 0; i < video.textTracks.length; i++) {
-        const track = video.textTracks[i];
-        if (track.language && track.language.toLowerCase() === targetLang) {
-          track.mode = 'showing';
-        } else {
-          track.mode = 'disabled';
-        }
-      }
-    };
+    videoIds.forEach(id => {
+      const video = document.getElementById(id);
+      if (!video) return;
 
-    applyTracks();
-    video.addEventListener('loadedmetadata', applyTracks, { once: true });
+      const applyTracks = () => {
+        if (!video.textTracks || video.textTracks.length === 0) return;
+        for (let i = 0; i < video.textTracks.length; i++) {
+          const track = video.textTracks[i];
+          if (track.language && track.language.toLowerCase() === targetLang) {
+            track.mode = 'showing';
+          } else {
+            track.mode = 'disabled';
+          }
+        }
+      };
+
+      applyTracks();
+      video.addEventListener('loadedmetadata', applyTracks, { once: true });
+    });
   }
 
   // Fetch local datasets (lightweight, zero volume chapter bloat)
@@ -557,7 +560,7 @@
     }
 
     // ScrollSpy to highlight active section on scroll
-    const observedSections = ['manifesto', 'gateways', 'co-stewards', 'synoptic', 'constitution', 'benchmark', 'roadmap', 'challenge', 'simulator-section', 'books'];
+    const observedSections = ['manifesto', 'co-stewards', 'gateways', 'synoptic', 'constitution', 'benchmark', 'roadmap', 'challenge', 'simulator-section', 'books'];
     const sectionElements = observedSections.map(id => document.getElementById(id)).filter(Boolean);
 
     if ('IntersectionObserver' in window && sectionElements.length > 0) {
@@ -717,8 +720,10 @@
       elements.langSelectorBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         closeMobileMenu();
-        elements.langDropdown.classList.toggle('active');
-        elements.langSelectorBtn.classList.toggle('active');
+        const willBeActive = !elements.langDropdown.classList.contains('active');
+        elements.langDropdown.classList.toggle('active', willBeActive);
+        elements.langSelectorBtn.classList.toggle('active', willBeActive);
+        elements.langSelectorBtn.closest('.lang-selector-wrap')?.classList.toggle('open', willBeActive);
       });
     }
 
@@ -730,6 +735,7 @@
             setLanguage(lang);
             elements.langDropdown?.classList.remove('active');
             elements.langSelectorBtn?.classList.remove('active');
+            elements.langSelectorBtn?.closest('.lang-selector-wrap')?.classList.remove('open');
           }
         });
       });
@@ -743,6 +749,7 @@
       if (!e.target.closest('.lang-selector-wrap')) {
         elements.langDropdown?.classList.remove('active');
         elements.langSelectorBtn?.classList.remove('active');
+        document.querySelectorAll('.lang-selector-wrap').forEach(w => w.classList.remove('open'));
       }
       if (!e.target.closest('#mobileMenuBtn') && !e.target.closest('#navMenu')) {
         closeMobileMenu();
@@ -771,6 +778,7 @@
         if (elements.langDropdown && elements.langDropdown.classList.contains('active')) {
           elements.langDropdown.classList.remove('active');
           elements.langSelectorBtn?.classList.remove('active');
+          document.querySelectorAll('.lang-selector-wrap').forEach(w => w.classList.remove('open'));
         }
         if (elements.briefingModal && elements.briefingModal.classList.contains('active')) {
           closeVideoBriefing();

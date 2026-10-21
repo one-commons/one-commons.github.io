@@ -34,7 +34,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/one-logo-luminous.svg">
 
   <!-- Master Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=2026102114">
+  <link rel="stylesheet" href="styles.css?v=2026102120">
 
   <!-- Privacy-Friendly Analytics (Zero-Cookie, Open-Source Commons) -->
   <script data-goatcounter="https://open-networked-earth.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -62,9 +62,9 @@
       <nav>
         <ul class="nav-menu" id="navMenu">
           <li><a href="#synoptic" class="nav-link" id="navSynoptic" data-i18n="nav.overview">Overview</a></li>
-          <li><a href="#co-stewards" class="nav-link" id="navStewards">Co-Stewards</a></li>
+          <li><a href="#co-stewards" class="nav-link" id="navStewards" data-i18n="nav.stewards">Co-Stewards</a></li>
           <li><a href="#constitution" class="nav-link" id="navConstitution" data-i18n="nav.constitution">Constitution</a></li>
-          <li><a href="#benchmark" class="nav-link" id="navBenchmark">AI Benchmark</a></li>
+          <li><a href="#benchmark" class="nav-link" id="navBenchmark" data-i18n="nav.benchmark">AI Benchmark</a></li>
           <li><a href="#roadmap" class="nav-link" id="navRoadmap" data-i18n="nav.roadmap">Roadmap</a></li>
           <li><a href="#challenge" class="nav-link" id="navChallenge" data-i18n="nav.challenge">Challenge</a></li>
           <li><a href="#books" class="nav-link" id="navBooks" data-i18n="nav.thrillers">Thrillers</a></li>
@@ -128,11 +128,11 @@
             <div class="hero-actions">
               <a href="#synoptic" class="btn btn-primary" id="heroSynopticBtn">
                 <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                <span data-i18n="hero.btn_discover">Discover Track B →</span>
+                <span data-i18n="hero.btn_discover">Discover O.N.E. →</span>
               </a>
               <a href="#co-stewards" class="btn btn-secondary" id="heroStewardsBtn">
                 <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-                <span data-i18n="hero.btn_stewards">Join as Co-Steward / Builder</span>
+                <span data-i18n="hero.btn_stewards">Build (Co-Steward)</span>
               </a>
             </div>
           </div>
@@ -148,7 +148,21 @@
                   preload="metadata" 
                   poster="assets/hero_video_poster_9_16.jpg">
                   <source src="assets/videos/one-wars-remastered.mp4" type="video/mp4">
+                  <!-- Multi-Language Subtitles (Auto-synchronized with UI language) -->
                   <track kind="subtitles" label="English" srclang="en" src="assets/subtitles/wars_en.vtt" default>
+                  <track kind="subtitles" label="Italiano" srclang="it" src="assets/subtitles/wars_it.vtt">
+                  <track kind="subtitles" label="Español" srclang="es" src="assets/subtitles/wars_es.vtt">
+                  <track kind="subtitles" label="Français" srclang="fr" src="assets/subtitles/wars_fr.vtt">
+                  <track kind="subtitles" label="Deutsch" srclang="de" src="assets/subtitles/wars_de.vtt">
+                  <track kind="subtitles" label="Português" srclang="pt" src="assets/subtitles/wars_pt.vtt">
+                  <track kind="subtitles" label="Русский" srclang="ru" src="assets/subtitles/wars_ru.vtt">
+                  <track kind="subtitles" label="中文" srclang="zh" src="assets/subtitles/wars_zh.vtt">
+                  <track kind="subtitles" label="日本語" srclang="ja" src="assets/subtitles/wars_ja.vtt">
+                  <track kind="subtitles" label="한국어" srclang="ko" src="assets/subtitles/wars_ko.vtt">
+                  <track kind="subtitles" label="العربية" srclang="ar" src="assets/subtitles/wars_ar.vtt">
+                  <track kind="subtitles" label="हिन्दी" srclang="hi" src="assets/subtitles/wars_hi.vtt">
+                  <track kind="subtitles" label="Bahasa Indonesia" srclang="id" src="assets/subtitles/wars_id.vtt">
+                  <track kind="subtitles" label="Türkçe" srclang="tr" src="assets/subtitles/wars_tr.vtt">
                   Your browser does not support HTML5 video playback.
                 </video>
                 <button class="video-play-overlay-btn" id="heroVideoPlayOverlayBtn" aria-label="Play Civilizational Prologue">
@@ -302,7 +316,126 @@
 
     
 
-    <!-- THE 4 GATEWAYS SECTION (MODULAR HUBS) -->
+    <!-- 2. CALL FOR CO-STEWARDS & DOMAIN CRITICS (PHASE 0 GENESIS HARDENING) -->
+    <section class="section" id="co-stewards">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="stewards.tag">Phase 0 Genesis Hardening</span>
+          <h2 class="section-title" data-i18n="stewards.title">Call for Co-Stewards & Domain Critics</h2>
+          <p class="section-desc" data-i18n="stewards.desc">
+            Open Networked Earth is built on open peer production. Before the Living Constitution is permanently deposited under Swiss Civil Law (ZGB Art. 80 ff.), our foundational pillars must be stress-tested through adversarial peer review. We are actively seeking our <strong>Priority 0 Media Co-Steward</strong> and technical domain builders to harden the architecture against entropy.
+          </p>
+        </div>
+
+        <div class="stewards-grid">
+          <!-- Pillar 0: Media, Storytelling & Community (PRIORITY 0 FEATURED SPOTLIGHT) -->
+          <div class="steward-card steward-featured glass-panel">
+            <div class="steward-card-header">
+              <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                <span class="pillar-num" style="color:var(--accent-amber); font-weight:800;" data-i18n="stewards.p0_badge">Pillar 0 • Strategic Inversion</span>
+                <span class="steward-badge badge-priority" data-i18n="stewards.badge_priority">🔥 Priority 0 • Active Search</span>
+              </div>
+              <span class="steward-badge badge-seeking" data-i18n="stewards.badge_seeking_cofounder">Seeking Co-Founder</span>
+            </div>
+            <h3 class="steward-title" data-i18n="stewards.p0_title">Media, Storytelling & Community Co-Steward</h3>
+            <div class="steward-role">
+              <strong data-i18n="stewards.label_target_profile">Target Profile:</strong> <span data-i18n="stewards.p0_role">Open-source comms activist, Solarpunk/Commons creator, independent podcaster, video storyteller, or community builder.</span>
+            </div>
+            <div class="steward-doubt">
+              <strong data-i18n="stewards.label_mandate">The Mandate & Strategic Goal:</strong> <span data-i18n="stewards.p0_doubt">Eliminate the solo-creator bottleneck by taking operational co-ownership of public storytelling, YouTube/Shorts video distribution, Reddit/X dialogue, and leading the outreach campaign to seat the remaining technical domain builders. If you believe a post-work civilization needs a powerful cultural voice, this is the co-founding role.</span>
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/ONE/discussions/13" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-i18n="stewards.p0_btn_cta">Join Media Dialectic (#13) →</a>
+              <a href="mailto:kyberlex@proton.me?subject=Pillar%200%20Media%20Co-Steward%20Application" class="btn btn-secondary btn-sm" data-i18n="stewards.p0_btn_email">Apply Directly via Email →</a>
+            </div>
+          </div>
+
+          <!-- Pillar 1: Economy -->
+          <div class="steward-card glass-panel">
+            <div class="steward-card-header">
+              <span class="pillar-num" data-i18n="stewards.p1_num">Pillar 1</span>
+              <span class="steward-badge badge-seeking" data-i18n="stewards.badge_seeking">Open for Co-Steward</span>
+            </div>
+            <h3 class="steward-title" data-i18n="stewards.p1_title">Economy & Thermodynamic Balances</h3>
+            <div class="steward-role"><strong data-i18n="stewards.label_domain">Domain:</strong> <span data-i18n="stewards.p1_role">Ecological / Heterodox Economics, Leontief Input-Output</span></div>
+            <div class="steward-doubt">
+              <strong data-i18n="stewards.label_doubt">Open Dialectic & Doubt:</strong> <span data-i18n="stewards.p1_doubt">Can money-less thermodynamic accounting completely replace market price discovery and Gosplan bureaucracy without supply shortages or rationing?</span>
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/ONE/discussions/9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" data-i18n="stewards.p1_btn_cta">Join Economic Dialectic (#9) →</a>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Governance -->
+          <div class="steward-card glass-panel">
+            <div class="steward-card-header">
+              <span class="pillar-num" data-i18n="stewards.p2_num">Pillar 2</span>
+              <span class="steward-badge badge-seeking" data-i18n="stewards.badge_seeking">Open for Co-Steward</span>
+            </div>
+            <h3 class="steward-title" data-i18n="stewards.p2_title">Governance, Law & Dynamic Usufruct</h3>
+            <div class="steward-role"><strong data-i18n="stewards.label_domain">Domain:</strong> <span data-i18n="stewards.p2_role">Commons Jurisprudence, Demarchy / Sortition, Swiss Civil Law</span></div>
+            <div class="steward-doubt">
+              <strong data-i18n="stewards.label_doubt">Open Dialectic & Doubt:</strong> <span data-i18n="stewards.p2_doubt">Are demarchic sortition lotteries mathematically immune to lobbying and oligarchic capture? Does Swiss Association (Verein) law provide bulletproof shielding?</span>
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/ONE/discussions/10" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" data-i18n="stewards.p2_btn_cta">Join Legal Dialectic (#10) →</a>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Simulation -->
+          <div class="steward-card glass-panel steward-active">
+            <div class="steward-card-header">
+              <span class="pillar-num" data-i18n="stewards.p3_num">Pillar 3</span>
+              <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
+                <span class="steward-badge badge-seeking" data-i18n="stewards.badge_seeking">Open for Co-Steward</span>
+                <span class="steward-badge badge-active" data-i18n="stewards.badge_active">Actives: 1</span>
+              </div>
+            </div>
+            <h3 class="steward-title" data-i18n="stewards.p3_title">Simulation & Scientific Sandbox</h3>
+            <div class="steward-role"><strong data-i18n="stewards.label_domain">Domain:</strong> <span data-i18n="stewards.p3_role">Julia Discrete-Event Co-Simulation (SIMONE), Agents.jl & MTBF Wear</span></div>
+            <div class="steward-doubt">
+              <strong data-i18n="stewards.label_doubt">Open Dialectic & Doubt:</strong> <span data-i18n="stewards.p3_doubt">Validating the single-village Julia prototype, stock-and-flow ODE docking tests, and multiscale biophysical solver decoupling. Additional co-stewards actively sought.</span>
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/ONE/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" data-i18n="stewards.p3_btn_cta">Join Simulation Dialectic (#11) →</a>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Habitat -->
+          <div class="steward-card glass-panel">
+            <div class="steward-card-header">
+              <span class="pillar-num" data-i18n="stewards.p4_num">Pillar 4</span>
+              <span class="steward-badge badge-seeking" data-i18n="stewards.badge_seeking">Open for Co-Steward</span>
+            </div>
+            <h3 class="steward-title" data-i18n="stewards.p4_title">Habitat & Open-Hardware Resilience</h3>
+            <div class="steward-role"><strong data-i18n="stewards.label_domain">Domain:</strong> <span data-i18n="stewards.p4_role">Microgrids, Home Assistant Zigbee/MQTT, CNC Timber Cassettes</span></div>
+            <div class="steward-doubt">
+              <strong data-i18n="stewards.label_doubt">Open Dialectic & Doubt:</strong> <span data-i18n="stewards.p4_doubt">Do Modular Habitat Units (MHU) and open-hardware microgrids withstand real-world 40-year thermal cycles and catastrophic grid disconnection?</span>
+            </div>
+            <div class="steward-actions">
+              <a href="https://github.com/kyberlex/ONE/discussions/12" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" data-i18n="stewards.p4_btn_cta">Join Habitat Dialectic (#12) →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stewards-footer-cta glass-panel" style="margin-top: 32px; padding: 28px 24px; text-align: center;">
+          <h4 style="color:var(--text-main); font-size:1.25rem; font-weight:700; margin-bottom:8px;" data-i18n="stewards.cta_title">Ready to Build or Break O.N.E.?</h4>
+          <p style="color:var(--text-muted); font-size:0.95rem; max-width:720px; margin:0 auto 20px; line-height:1.5;" data-i18n="stewards.cta_desc">
+            Whether you want to co-steward a foundational pillar or act as an independent critic hunting thermodynamic and nomothetic edge cases, your contribution directly hardens the Genesis Block.
+          </p>
+          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+            <a href="https://github.com/kyberlex/ONE/discussions" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:10px 24px;" data-i18n="stewards.btn_all_discussions">
+              💬 View All Discussions on GitHub
+            </a>
+            <a href="mailto:kyberlex@proton.me?subject=O.N.E.%20Co-Steward%20/%20Critic%20Inquiry" class="btn btn-secondary" style="padding:10px 24px;" data-i18n="stewards.btn_contact">
+              ✉️ Contact Kyberlex (kyberlex@proton.me)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE 4 GATEWAYS SECTION (MODULAR HUBS) -->
     <section class="section gateways-hub-section" id="gateways">
       <div class="container">
         <!-- Four Clear Exploration Gateways -->
@@ -343,104 +476,6 @@
             <p class="funnel-desc" data-i18n="gateway.step4_desc">The high-voltage thriller saga: follow ordinary people defending the new commons in Detroit, the Alps, and Geneva.</p>
             <div class="funnel-link" data-i18n="gateway.step4_link">Explore Map & Ebooks →</div>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CALL FOR CO-STEWARDS & DOMAIN CRITICS (ELEVATED TO FRONT DOOR) -->
-    <!-- 7. CALL FOR CO-STEWARDS & DOMAIN CRITICS (PHASE 0 ARCHITECTURAL HARDENING) -->
-    <section class="section" id="co-stewards">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Phase 0 Genesis Hardening</span>
-          <h2 class="section-title">Call for Co-Stewards & Domain Critics</h2>
-          <p class="section-desc">
-            Open Networked Earth is built on open peer production. Before the Living Constitution is permanently deposited under Swiss Civil Law (ZGB Art. 80 ff.), each of our four foundational pillars must be stress-tested through adversarial peer review. We seek four domain builders (Co-Stewards) and rigorous specialists (Critics) to challenge and harden the architecture.
-          </p>
-        </div>
-
-        <div class="stewards-grid">
-          <!-- Pillar 1: Economy -->
-          <div class="steward-card glass-panel">
-            <div class="steward-card-header">
-              <span class="pillar-num">Pillar 1</span>
-              <span class="steward-badge badge-seeking">Open for Co-Steward</span>
-            </div>
-            <h3 class="steward-title">Economy & Thermodynamic Balances</h3>
-            <div class="steward-role">Domain: Ecological / Heterodox Economics, Leontief Input-Output</div>
-            <div class="steward-doubt">
-              <strong>Open Dialectic & Doubt:</strong> Can money-less thermodynamic accounting completely replace market price discovery and Gosplan bureaucracy without supply shortages or rationing?
-            </div>
-            <div class="steward-actions">
-              <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Join Economic Dialectic →</a>
-            </div>
-          </div>
-
-          <!-- Pillar 2: Governance -->
-          <div class="steward-card glass-panel">
-            <div class="steward-card-header">
-              <span class="pillar-num">Pillar 2</span>
-              <span class="steward-badge badge-seeking">Open for Co-Steward</span>
-            </div>
-            <h3 class="steward-title">Governance, Law & Dynamic Usufruct</h3>
-            <div class="steward-role">Domain: Commons Jurisprudence, Demarchy / Sortition, Swiss Civil Law</div>
-            <div class="steward-doubt">
-              <strong>Open Dialectic & Doubt:</strong> Are demarchic sortition lotteries mathematically immune to lobbying and oligarchic capture? Does Swiss Association (Verein) law provide bulletproof shielding?
-            </div>
-            <div class="steward-actions">
-              <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Join Legal Dialectic →</a>
-            </div>
-          </div>
-
-          <!-- Pillar 3: Simulation -->
-          <div class="steward-card glass-panel steward-active">
-            <div class="steward-card-header">
-              <span class="pillar-num">Pillar 3</span>
-              <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
-                <span class="steward-badge badge-seeking">Open for Co-Steward</span>
-                <span class="steward-badge badge-active">Actives: 1</span>
-              </div>
-            </div>
-            <h3 class="steward-title">Simulation & Scientific Sandbox</h3>
-            <div class="steward-role">Domain: Julia Discrete-Event Co-Simulation (SIMONE), Agents.jl & MTBF Wear</div>
-            <div class="steward-doubt">
-              <strong>Open Dialectic & Doubt:</strong> Validating the single-village Julia prototype, stock-and-flow ODE docking tests, and multiscale biophysical solver decoupling. Additional co-stewards actively sought.
-            </div>
-            <div class="steward-actions">
-              <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Join Simulation Dialectic →</a>
-            </div>
-          </div>
-
-          <!-- Pillar 4: Habitat -->
-          <div class="steward-card glass-panel">
-            <div class="steward-card-header">
-              <span class="pillar-num">Pillar 4</span>
-              <span class="steward-badge badge-seeking">Open for Co-Steward</span>
-            </div>
-            <h3 class="steward-title">Habitat & Open-Hardware Resilience</h3>
-            <div class="steward-role">Domain: Microgrids, Home Assistant Zigbee/MQTT, CNC Timber Cassettes</div>
-            <div class="steward-doubt">
-              <strong>Open Dialectic & Doubt:</strong> Do Modular Habitat Units (MHU) and open-hardware microgrids withstand real-world 40-year thermal cycles and catastrophic grid disconnection?
-            </div>
-            <div class="steward-actions">
-              <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Join Habitat Dialectic →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="stewards-footer-cta glass-panel" style="margin-top: 32px; padding: 28px 24px; text-align: center;">
-          <h4 style="color:var(--text-main); font-size:1.25rem; font-weight:700; margin-bottom:8px;">Ready to Build or Break O.N.E.?</h4>
-          <p style="color:var(--text-muted); font-size:0.95rem; max-width:720px; margin:0 auto 20px; line-height:1.5;">
-            Whether you want to co-steward a foundational pillar or act as an independent critic hunting thermodynamic and nomothetic edge cases, your contribution directly hardens the Genesis Block.
-          </p>
-          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-            <a href="https://github.com/kyberlex/one/discussions/11" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:10px 24px;">
-              💬 Join Red-Team Dialectic on GitHub (#11)
-            </a>
-            <a href="mailto:kyberlex@proton.me?subject=O.N.E.%20Co-Steward%20/%20Critic%20Inquiry" class="btn btn-secondary" style="padding:10px 24px;">
-              ✉️ Contact Kyberlex (kyberlex@proton.me)
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -1443,6 +1478,6 @@
   </footer>
 
   <!-- Application Logic -->
-  <script src="app.js?v=2026102114"></script>
+  <script src="app.js?v=2026102120"></script>
 </body>
 </html>
