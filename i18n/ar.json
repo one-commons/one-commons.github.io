@@ -6,7 +6,9 @@
     "roadmap": "خارطة الطريق",
     "challenge": "حلبة التحدي",
     "thrillers": "الروايات",
-    "simulator": "🎮 لعبة المحاكاة الحية ↗"
+    "simulator": "🎮 لعبة المحاكاة الحية ↗",
+    "stewards": "Co-Stewards",
+    "benchmark": "AI Benchmark"
   },
   "hero": {
     "tag": "المخطط المفتوح لحضارة ما بعد العمل",
@@ -16,7 +18,9 @@
     "btn_primer": "دليل الـ 3 دقائق",
     "btn_constitution": "استكشف الدستور",
     "btn_novels": "اقرأ الروايات (كتب إلكترونية مجانية)",
-    "btn_simulator": "العب O-ASIS MMO ↗"
+    "btn_simulator": "العب O-ASIS MMO ↗",
+    "btn_discover": "Discover O.N.E. →",
+    "btn_stewards": "Build (Co-Steward)"
   },
   "features": {
     "survival_title": "البقاء العالمي المضمون",
@@ -60,10 +64,10 @@
     "tab_roadmap": "🌱 4. خارطة طريق الانتقال"
   },
   "primer_content": {
-    "postwork": "<div class=\"primer-tab-pane\">\n  <h3 style=\"font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin-bottom:12px;\">\n    1. واقع ما بعد العمل الوشيك: لماذا يُغيّر الأتمتة كل الموازين\n  </h3>\n  <p style=\"font-size:1.05rem; color:#cbd5e1; line-height:1.7; margin-bottom:24px;\">\n    على مدى آلاف السنين، خضعت الحضارة الإنسانية لقانون صارم: <em>«من لا يعمل لا يأكل».</em>\n    إن الروبوتات المجسمة والآلات المستقلة والذكاء الاصطناعي التوليدي تكسر هذه المعادلة إلى الأبد. عندما تتولى الآلات الزراعة والبناء والنقل وتوليد الطاقة والرعاية الصحية بتكلفة هامشية تقارب الصفر، يجب فصل البقاء البشري نهائياً عن العمل المأجور.\n  </p>\n  <div class=\"primer-grid\">\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-rose);\">⚠️ السيناريو الكارثي الافتراضي: الإقطاع التقني</h4>\n      <p>في ظل قواعد السوق الحالية، تحتكر شركات التكنولوجيا العملاقة قوة العمل المؤتمتة بالكامل. ويصبح مليارات البشر «غير قابلين للتوظيف»، محرومين من الأجور وغارقين في الفقر، بينما تتركز الثروة في أيدي قلة من الأوليغارشية.</p>\n    </div>\n    <div class=\"primer-feature-card\" style=\"border-color:rgba(16, 185, 129, 0.35);\">\n      <h4 style=\"color:var(--accent-emerald);\">🌱 نموذج O.N.E.: الانعتاق الميكانيكي</h4>\n      <p>تُعلن القوة الإنتاجية للأتمتة إرثاً مشتركاً للبشرية جمعاء. يحرر عمل الآلات الإنسان من الشقاء والفقر وعبودية الأجر، ليحول الغذاء والمأوى والطاقة إلى حقوق ولادة غير مشروطة.</p>\n    </div>\n  </div>\n</div>",
-    "failures": "<div class=\"primer-tab-pane\">\n  <h3 style=\"font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin-bottom:12px;\">\n    2. لماذا انهارت النماذج الحضارية السابقة\n  </h3>\n  <p style=\"font-size:1.05rem; color:#cbd5e1; line-height:1.7; margin-bottom:20px;\">\n    عبر التاريخ، اختبرت البشرية أربعة أنظمة لتنظيم المجتمع. لم ينجح أي منها في تحقيق سلام دائم أو عدالة أو توازن بيئي:\n  </p>\n  <div class=\"model-comparison\">\n    <div class=\"model-box failed\">\n      <div class=\"model-name\">1. الثيوقراطية الدينية</div>\n      <div class=\"model-status red\">فاشلة</div>\n      <div style=\"color:var(--text-muted);\">حروب دينية، محاكم تفتيش وهياكل كهنوتية تتحكم في الضمائر عبر الخوف والذنب.</div>\n    </div>\n    <div class=\"model-box failed\">\n      <div class=\"model-name\">2. الإقطاعية</div>\n      <div class=\"model-status red\">فاشلة</div>\n      <div style=\"color:var(--text-muted);\">ملكيات وراثية تحتكر الأرض بـ «الحق الإلهي»، مستعبدة الشعوب بالسيف.</div>\n    </div>\n    <div class=\"model-box failed\">\n      <div class=\"model-name\">3. شيوعية الدولة المركزية</div>\n      <div class=\"model-status red\">فاشلة</div>\n      <div style=\"color:var(--text-muted);\">استبدال الملاك ببيروقراطية الحزب الواحد، شلل التخطيط المركزي ورعب المعتقلات.</div>\n    </div>\n    <div class=\"model-box failed\">\n      <div class=\"model-name\">4. الرأسمالية المالية</div>\n      <div class=\"model-status red\">فاشلة</div>\n      <div style=\"color:var(--text-muted);\">فوائد مركبة، ديون متصاعدة، ندرة مصطنعة لمقومات الحياة وتدمير بيئي كوكبي.</div>\n    </div>\n  </div>\n  <div class=\"primer-feature-card\" style=\"margin-top:20px; border-color:rgba(16, 185, 129, 0.4); background:rgba(16, 185, 129, 0.06);\">\n    <h4 style=\"color:var(--accent-emerald);\">✨ المسار الخامس: Open Networked Earth (O.N.E.)</h4>\n    <p style=\"color:#e2e8f0;\">لا استغلال تجاري ولا استبداد حكومي: ائتمان حق الانتفاع دون ريع عقاري، مجالس شعبية بالقرعة دون سياسيين محترفين، وضمان البقاء دون نقود ورقية.</p>\n  </div>\n</div>",
-    "pillars": "<div class=\"primer-tab-pane\">\n  <div style=\"display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;\">\n    <h3 style=\"font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin:0;\">\n      3. المبادئ الدستورية الأربعة الحاكمة لـ O.N.E.\n    </h3>\n    <a href=\"#constitution\" class=\"btn btn-secondary\" style=\"display:inline-flex; align-items:center; gap:8px; font-size:0.85rem; padding:8px 16px;\">\n      <span>📜 تصفح الدستور</span>\n      <span>→</span>\n    </a>\n  </div>\n  <div class=\"primer-grid\">\n    <div class=\"primer-feature-card\">\n      <h4>⚡ 1. أرضية البقاء الحيوية (مجتمع بلا نقود)</h4>\n      <p>لكل إنسان يولد على الأرض حق أبدي في ماء نقي، غذاء صحي، مسكن كريم، رعاية طبية شاملة وطاقة نظيفة. البقاء البيولوجي لا يخضع للمساومة أبداً.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4>🏡 2. الملكية كأمانة حق انتفاع</h4>\n      <p>المقتنيات الشخصية (ملابس، أدوات، كتب) محمية بشكل دائم. المساكن العائلية تُحفظ بحق انتفاع مدى الحياة. يُحظر تماماً الاحتكار العقاري والإيجار الربحي والإخلاء القسري.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4>🎲 3. الديمقراطية بالقرعة الإحصائية</h4>\n      <p>الانتخابات تغذي الفساد وشراء الذمم والشعبوية. تُسند القرارات العامة لمجالس تُختار بالقرعة: مواطنون عاديون كهيئة محلفين، تساندهم لجان خبراء مستقلة.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4>🌿 4. الحدود الثرموديناميكية الفيزيائية</h4>\n      <p>النمو الأسي غير المحدود على كوكب محدود انتحار رياضي. المحاسبة الاقتصادية الحقيقية تُقاس بوحدات فيزيائية (كيلوواط ساعة، لترات ماء، خصوبة التربة) وليس بالديون الورقية.</p>\n    </div>\n  </div>\n</div>",
-    "roadmap": "<div class=\"primer-tab-pane\">\n  <div style=\"display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;\">\n    <h3 style=\"font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin:0;\">\n      4. خارطة طريق التحول: كيف نصل إلى الهدف\n    </h3>\n    <a href=\"#roadmap\" class=\"btn btn-secondary\" style=\"display:inline-flex; align-items:center; gap:8px; font-size:0.85rem; padding:8px 16px;\">\n      <span>🌱 استكشف خارطة الطريق</span>\n      <span>→</span>\n    </a>\n  </div>\n  <p style=\"font-size:1.05rem; color:#cbd5e1; line-height:1.7; margin-bottom:20px;\">\n    نحن لا ننتظر انهياراً عالمياً ولا ندعو إلى ثورة مسلحة. تتقدم O.N.E. عبر <strong>استراتيجية مزدوجة منسقة</strong>: بناء المشاعات الصامدة اليوم بينما يستنزف النظام القديم نفسه.\n  </p>\n  <div class=\"primer-grid\">\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-cyan);\">🇨🇭 1. الدرع القانوني (الجمعية السويسرية)</h4>\n      <p>الانطلاق كجمعية سويسرية مستقلة (المادة 60 وما يليها من القانون المدني السويسري) لحماية الملكية الفكرية المفتوحة والأصول المشتركة بدون رأس مال أدنى وبخصوصية كاملة.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-cyan);\">🌱 2. العقد البذرية البيئية المحلية</h4>\n      <p>يكفي ثلاثة أفراد لتأسيس صندوق أراضٍ مجتمعي (CLT)، أو غابة غذائية تعاونية، أو شبكة طاقة متجددة باستخدام مواثيق O.N.E. المفتوحة.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-cyan);\">🤝 3. التحول المدني اللاعنفي</h4>\n      <p>نقابات سلام غير مسلحة تحل محل الشرطة العسكرية عبر الوساطة التصالحية؛ وتُلغى ديون النظام القديم بيوبيل شامل.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-cyan);\">🌍 4. اتحاد الأحواض المائية الكوكبي</h4>\n      <p>تتحد مجالس الأحواض المائية في غرف قارية، مستبدلة صراعات الدول القومية بالتنسيق البيئي والحراري المشترك.</p>\n    </div>\n  </div>\n</div>"
+    "postwork": "<div class=\"primer-tab-pane\">\n  <h3 style=\"font-family:var(--font-heading); font-size:1.6rem; color:var(--text-main); margin-bottom:12px;\">\n    1. واقع ما بعد العمل الوشيك: لماذا يُغيّر الأتمتة كل الموازين\n  </h3>\n  <p style=\"font-size:1.05rem; color:var(--text-secondary); line-height:1.7; margin-bottom:24px;\">\n    على مدى آلاف السنين، خضعت الحضارة الإنسانية لقانون صارم: <em>«من لا يعمل لا يأكل».</em>\n    إن الروبوتات المجسمة والآلات المستقلة والذكاء الاصطناعي التوليدي تكسر هذه المعادلة إلى الأبد. عندما تتولى الآلات الزراعة والبناء والنقل وتوليد الطاقة والرعاية الصحية بتكلفة هامشية تقارب الصفر، يجب فصل البقاء البشري نهائياً عن العمل المأجور.\n  </p>\n  <div class=\"primer-grid\">\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-rose);\">⚠️ السيناريو الكارثي الافتراضي: الإقطاع التقني</h4>\n      <p>في ظل قواعد السوق الحالية، تحتكر شركات التكنولوجيا العملاقة قوة العمل المؤتمتة بالكامل. ويصبح مليارات البشر «غير قابلين للتوظيف»، محرومين من الأجور وغارقين في الفقر، بينما تتركز الثروة في أيدي قلة من الأوليغارشية.</p>\n    </div>\n    <div class=\"primer-feature-card\" style=\"border-color:rgba(16, 185, 129, 0.35);\">\n      <h4 style=\"color:var(--accent-emerald);\">🌱 نموذج O.N.E.: الانعتاق الميكانيكي</h4>\n      <p>تُعلن القوة الإنتاجية للأتمتة إرثاً مشتركاً للبشرية جمعاء. يحرر عمل الآلات الإنسان من الشقاء والفقر وعبودية الأجر، ليحول الغذاء والمأوى والطاقة إلى حقوق ولادة غير مشروطة.</p>\n    </div>\n  </div>\n</div>",
+    "failures": "<div class=\"primer-tab-pane\">\n  <h3 style=\"font-family:var(--font-heading); font-size:1.6rem; color:var(--text-main); margin-bottom:12px;\">\n    2. لماذا انهارت النماذج الحضارية السابقة\n  </h3>\n  <p style=\"font-size:1.05rem; color:var(--text-secondary); line-height:1.7; margin-bottom:20px;\">\n    عبر التاريخ، اختبرت البشرية أربعة أنظمة لتنظيم المجتمع. لم ينجح أي منها في تحقيق سلام دائم أو عدالة أو توازن بيئي:\n  </p>\n  <div class=\"model-comparison\">\n    <div class=\"model-box failed\">\n      <div class=\"model-name\">1. الثيوقراطية الدينية</div>\n      <div class=\"model-status red\">فاشلة</div>\n      <div style=\"color:var(--text-muted);\">حروب دينية، محاكم تفتيش وهياكل كهنوتية تتحكم في الضمائر عبر الخوف والذنب.</div>\n    </div>\n    <div class=\"model-box failed\">\n      <div class=\"model-name\">2. الإقطاعية</div>\n      <div class=\"model-status red\">فاشلة</div>\n      <div style=\"color:var(--text-muted);\">ملكيات وراثية تحتكر الأرض بـ «الحق الإلهي»، مستعبدة الشعوب بالسيف.</div>\n    </div>\n    <div class=\"model-box failed\">\n      <div class=\"model-name\">3. شيوعية الدولة المركزية</div>\n      <div class=\"model-status red\">فاشلة</div>\n      <div style=\"color:var(--text-muted);\">استبدال الملاك ببيروقراطية الحزب الواحد، شلل التخطيط المركزي ورعب المعتقلات.</div>\n    </div>\n    <div class=\"model-box failed\">\n      <div class=\"model-name\">4. الرأسمالية المالية</div>\n      <div class=\"model-status red\">فاشلة</div>\n      <div style=\"color:var(--text-muted);\">فوائد مركبة، ديون متصاعدة، ندرة مصطنعة لمقومات الحياة وتدمير بيئي كوكبي.</div>\n    </div>\n  </div>\n  <div class=\"primer-feature-card\" style=\"margin-top:20px; border-color:rgba(16, 185, 129, 0.4); background:rgba(16, 185, 129, 0.06);\">\n    <h4 style=\"color:var(--accent-emerald);\">✨ المسار الخامس: Open Networked Earth (O.N.E.)</h4>\n    <p style=\"color:var(--text-secondary);\">لا استغلال تجاري ولا استبداد حكومي: ائتمان حق الانتفاع دون ريع عقاري، مجالس شعبية بالقرعة دون سياسيين محترفين، وضمان البقاء دون نقود ورقية.</p>\n  </div>\n</div>",
+    "pillars": "<div class=\"primer-tab-pane\">\n  <div style=\"display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;\">\n    <h3 style=\"font-family:var(--font-heading); font-size:1.6rem; color:var(--text-main); margin:0;\">\n      3. المبادئ الدستورية الأربعة الحاكمة لـ O.N.E.\n    </h3>\n    <a href=\"#constitution\" class=\"btn btn-secondary\" style=\"display:inline-flex; align-items:center; gap:8px; font-size:0.85rem; padding:8px 16px;\">\n      <span>📜 تصفح الدستور</span>\n      <span>→</span>\n    </a>\n  </div>\n  <div class=\"primer-grid\">\n    <div class=\"primer-feature-card\">\n      <h4>⚡ 1. أرضية البقاء الحيوية (مجتمع بلا نقود)</h4>\n      <p>لكل إنسان يولد على الأرض حق أبدي في ماء نقي، غذاء صحي، مسكن كريم، رعاية طبية شاملة وطاقة نظيفة. البقاء البيولوجي لا يخضع للمساومة أبداً.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4>🏡 2. الملكية كأمانة حق انتفاع</h4>\n      <p>المقتنيات الشخصية (ملابس، أدوات، كتب) محمية بشكل دائم. المساكن العائلية تُحفظ بحق انتفاع مدى الحياة. يُحظر تماماً الاحتكار العقاري والإيجار الربحي والإخلاء القسري.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4>🎲 3. الديمقراطية بالقرعة الإحصائية</h4>\n      <p>الانتخابات تغذي الفساد وشراء الذمم والشعبوية. تُسند القرارات العامة لمجالس تُختار بالقرعة: مواطنون عاديون كهيئة محلفين، تساندهم لجان خبراء مستقلة.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4>🌿 4. الحدود الثرموديناميكية الفيزيائية</h4>\n      <p>النمو الأسي غير المحدود على كوكب محدود انتحار رياضي. المحاسبة الاقتصادية الحقيقية تُقاس بوحدات فيزيائية (كيلوواط ساعة، لترات ماء، خصوبة التربة) وليس بالديون الورقية.</p>\n    </div>\n  </div>\n</div>",
+    "roadmap": "<div class=\"primer-tab-pane\">\n  <div style=\"display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;\">\n    <h3 style=\"font-family:var(--font-heading); font-size:1.6rem; color:var(--text-main); margin:0;\">\n      4. خارطة طريق التحول: كيف نصل إلى الهدف\n    </h3>\n    <a href=\"#roadmap\" class=\"btn btn-secondary\" style=\"display:inline-flex; align-items:center; gap:8px; font-size:0.85rem; padding:8px 16px;\">\n      <span>🌱 استكشف خارطة الطريق</span>\n      <span>→</span>\n    </a>\n  </div>\n  <p style=\"font-size:1.05rem; color:var(--text-secondary); line-height:1.7; margin-bottom:20px;\">\n    نحن لا ننتظر انهياراً عالمياً ولا ندعو إلى ثورة مسلحة. تتقدم O.N.E. عبر <strong>استراتيجية مزدوجة منسقة</strong>: بناء المشاعات الصامدة اليوم بينما يستنزف النظام القديم نفسه.\n  </p>\n  <div class=\"primer-grid\">\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-cyan);\">🇨🇭 1. الدرع القانوني (الجمعية السويسرية)</h4>\n      <p>الانطلاق كجمعية سويسرية مستقلة (المادة 60 وما يليها من القانون المدني السويسري) لحماية الملكية الفكرية المفتوحة والأصول المشتركة بدون رأس مال أدنى وبخصوصية كاملة.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-cyan);\">🌱 2. العقد البذرية البيئية المحلية</h4>\n      <p>يكفي ثلاثة أفراد لتأسيس صندوق أراضٍ مجتمعي (CLT)، أو غابة غذائية تعاونية، أو شبكة طاقة متجددة باستخدام مواثيق O.N.E. المفتوحة.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-cyan);\">🤝 3. التحول المدني اللاعنفي</h4>\n      <p>نقابات سلام غير مسلحة تحل محل الشرطة العسكرية عبر الوساطة التصالحية؛ وتُلغى ديون النظام القديم بيوبيل شامل.</p>\n    </div>\n    <div class=\"primer-feature-card\">\n      <h4 style=\"color:var(--accent-cyan);\">🌍 4. اتحاد الأحواض المائية الكوكبي</h4>\n      <p>تتحد مجالس الأحواض المائية في غرف قارية، مستبدلة صراعات الدول القومية بالتنسيق البيئي والحراري المشترك.</p>\n    </div>\n  </div>\n</div>"
   },
   "const": {
     "title": "دستور O.N.E. الحي",
@@ -430,7 +434,7 @@
   ],
   "oasis_showcase": {
     "badge": "🎮 LIVING THERMODYNAMIC SANDBOX & MMO",
-    "title_part1": "Experience the Post-Work Civilization in",
+    "title_part1": "Experience the Post-Labor Commons in",
     "title_part2": "O-ASIS Dual-Track",
     "desc": "Test the constitution with your own hands. Build autonomous solarpunk eco-villages, balance real Leontief physics across 4 physical flows (⚡ kWh, 💧 Liters, 🥗 Calories, 💻 Compute), deliberate on civic crises via Athenian citizen juries, and resist the predatory Legacy Financial AI in a 100% serverless P2P mesh.",
     "feat1_title": "Closed-Loop Thermodynamics",
@@ -441,5 +445,84 @@
     "feat3_desc": "In-game triumphs directly unlock verified, real-world 3D printable .STL open hardware and Home Assistant automations.",
     "btn_launch": "Launch O-ASIS Simulator (Browser 60 FPS) ↗",
     "btn_handbook": "Download Player Field Manual (PDF) ↗"
+  },
+  "hero_video": {
+    "badge": "Civilizational Prologue • 2m 10s",
+    "title": "From 100,000 Years of Warfare to Machine Emancipation",
+    "desc": "Watch the visual prologue illustrating human history from territorial warfare to machine-driven emancipation."
+  },
+  "contrast": {
+    "tag": "Civilizational Operating Systems",
+    "title": "Track A vs. Track B: The Civilizational Fork",
+    "desc": "When marginal labor costs hit zero, the legacy system faces structural paralysis. O.N.E. provides the thermodynamic off-ramp.",
+    "track_a_badge": "Track A • Legacy Default",
+    "track_a_title": "Techno-Feudal Extraction",
+    "track_a_desc": "Monopolized automation, perpetual debt, and speculative rentierism.",
+    "track_a_item1_title": "Conditional Survival:",
+    "track_a_item1_desc": "Basic food, shelter, and care gated behind disappearing wage labor.",
+    "track_a_item2_title": "Allodial Land Speculation:",
+    "track_a_item2_desc": "Predatory landlordism, compounding rents, and algorithmic evictions.",
+    "track_a_item3_title": "Billionaire Oligarchy:",
+    "track_a_item3_desc": "Corporate lobbying, partisan theater, and manufactured consent.",
+    "track_a_item4_title": "Carceral Coercion:",
+    "track_a_item4_desc": "Militarized policing and punitive retribution protecting property over life.",
+    "track_a_item5_title": "Thermodynamic Ecocide:",
+    "track_a_item5_desc": "Infinite exponential compound growth on a strictly finite biosphere.",
+    "track_b_badge": "Track B • Open Networked Earth",
+    "track_b_title": "Universal Usufruct & Demarchy",
+    "track_b_desc": "Machines work for the commons; humanity inherits guaranteed survival and self-governance.",
+    "track_b_item1_title": "Unconditional Birthright:",
+    "track_b_item1_desc": "Food, housing, healthcare, clean water & energy guaranteed for life.",
+    "track_b_item2_title": "Dynamic Usufruct:",
+    "track_b_item2_desc": "Protected personal dwellings; zero rent, zero speculation, zero landlordism.",
+    "track_b_item3_title": "Statistical Sortition:",
+    "track_b_item3_desc": "Citizen juries drawn by lot in strict odd parity; zero career politicians.",
+    "track_b_item4_title": "Restorative Peace Guilds:",
+    "track_b_item4_desc": "De-escalation, conflict mediation, and root-cause civic restoration.",
+    "track_b_item5_title": "Thermodynamic Exergy Limits:",
+    "track_b_item5_desc": "Physical accounting in kWh, liters, and topsoil health—not debt-fiat."
+  },
+  "stewards": {
+    "tag": "Phase 0 Genesis Hardening",
+    "title": "Call for Co-Stewards & Domain Critics",
+    "desc": "Open Networked Earth is built on open peer production. Before the Living Constitution is permanently deposited under Swiss Civil Law (ZGB Art. 80 ff.), our foundational pillars must be stress-tested through adversarial peer review. We are actively seeking our <strong>Priority 0 Media Co-Steward</strong> and technical domain builders to harden the architecture against entropy.",
+    "p0_badge": "Pillar 0 • Strategic Inversion",
+    "badge_priority": "🔥 Priority 0 • Active Search",
+    "badge_seeking_cofounder": "Seeking Co-Founder",
+    "badge_seeking": "Open for Co-Steward",
+    "badge_active": "Actives: 1",
+    "p0_title": "Media, Storytelling & Community Co-Steward",
+    "label_target_profile": "Target Profile:",
+    "p0_role": "Open-source comms activist, Solarpunk/Commons creator, independent podcaster, video storyteller, or community builder.",
+    "label_mandate": "The Mandate & Strategic Goal:",
+    "p0_doubt": "Eliminate the solo-creator bottleneck by taking operational co-ownership of public storytelling, YouTube/Shorts video distribution, Reddit/X dialogue, and leading the outreach campaign to seat the remaining technical domain builders. If you believe a post-labor civilization needs a powerful cultural voice, this is the co-founding role.",
+    "p0_btn_cta": "Join Media Dialectic (#13) →",
+    "p0_btn_email": "Apply Directly via Email →",
+    "p1_num": "Pillar 1",
+    "p1_title": "Economy & Thermodynamic Balances",
+    "label_domain": "Domain:",
+    "p1_role": "Ecological / Heterodox Economics, Leontief Input-Output",
+    "label_doubt": "Open Dialectic & Doubt:",
+    "p1_doubt": "Can money-less thermodynamic accounting completely replace market price discovery and Gosplan bureaucracy without supply shortages or rationing?",
+    "p1_btn_cta": "Join Economic Dialectic (#9) →",
+    "p2_num": "Pillar 2",
+    "p2_title": "Governance, Law & Dynamic Usufruct",
+    "p2_role": "Commons Jurisprudence, Demarchy / Sortition, Swiss Civil Law",
+    "p2_doubt": "Are demarchic sortition lotteries mathematically immune to lobbying and oligarchic capture? Does Swiss Association (Verein) law provide bulletproof shielding?",
+    "p2_btn_cta": "Join Legal Dialectic (#10) →",
+    "p3_num": "Pillar 3",
+    "p3_title": "Simulation & Scientific Sandbox",
+    "p3_role": "Julia Discrete-Event Co-Simulation (SIMONE), Agents.jl & MTBF Wear",
+    "p3_doubt": "Validating the single-village Julia prototype, stock-and-flow ODE docking tests, and multiscale biophysical solver decoupling. Additional co-stewards actively sought.",
+    "p3_btn_cta": "Join Simulation Dialectic (#11) →",
+    "p4_num": "Pillar 4",
+    "p4_title": "Habitat & Open-Hardware Resilience",
+    "p4_role": "Microgrids, Home Assistant Zigbee/MQTT, CNC Timber Cassettes",
+    "p4_doubt": "Do Modular Habitat Units (MHU) and open-hardware microgrids withstand real-world 40-year thermal cycles and catastrophic grid disconnection?",
+    "p4_btn_cta": "Join Habitat Dialectic (#12) →",
+    "cta_title": "Ready to Build or Break O.N.E.?",
+    "cta_desc": "Whether you want to co-steward a foundational pillar or act as an independent critic hunting thermodynamic and nomothetic edge cases, your contribution directly hardens the Genesis Block.",
+    "btn_all_discussions": "💬 View All Discussions on GitHub",
+    "btn_contact": "✉️ Contact Kyberlex (kyberlex@proton.me)"
   }
 }
