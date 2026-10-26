@@ -163,7 +163,6 @@
     setupQuickQuestions();
     setupInitialChat();
     syncVideoSubtitles(state.lang);
-    syncFooterNavigation();
 
     // Resilient deep-link anchor navigation after dynamic DOM population
     handleInitialHashNavigation();
@@ -271,29 +270,6 @@
     // Re-render dynamic components so translations take effect instantly
     renderRoadmapConfigurator();
     renderRoadmapStepper();
-    syncFooterNavigation();
-  }
-
-  // Synchronize footer menu dynamically with header navMenu
-  function syncFooterNavigation() {
-    const navMenu = document.getElementById('navMenu');
-    const footerLinks = document.getElementById('footerLinks');
-    if (!navMenu || !footerLinks) return;
-
-    const links = navMenu.querySelectorAll('a.nav-link');
-    let html = '';
-    links.forEach(link => {
-      const href = link.getAttribute('href');
-      const text = link.innerHTML;
-      const isTargetBlank = link.getAttribute('target') === '_blank';
-      const targetAttr = isTargetBlank ? 'target="_blank" rel="noopener noreferrer"' : '';
-      const i18nAttr = link.getAttribute('data-i18n') ? `data-i18n="${link.getAttribute('data-i18n')}"` : '';
-      const isSimulator = link.classList.contains('nav-link-simulator');
-      const classAttr = isSimulator ? 'class="footer-nav-link footer-nav-simulator"' : 'class="footer-nav-link"';
-      
-      html += `<a href="${href}" ${targetAttr} ${i18nAttr} ${classAttr}>${text}</a>`;
-    });
-    footerLinks.innerHTML = html;
   }
 
   // ==========================================
@@ -472,33 +448,29 @@
     renderRoadmapConfigurator();
     renderRoadmapStepper();
     applyTranslations();
-    syncFooterNavigation();
     syncVideoSubtitles(lang);
   }
 
   function syncVideoSubtitles(lang) {
-    const videoIds = ['explainerVideoPlayer', 'heroVideoPlayer'];
+    const video = document.getElementById('explainerVideoPlayer');
+    if (!video) return;
+
     const targetLang = (lang || 'en').toLowerCase().trim();
 
-    videoIds.forEach(id => {
-      const video = document.getElementById(id);
-      if (!video) return;
-
-      const applyTracks = () => {
-        if (!video.textTracks || video.textTracks.length === 0) return;
-        for (let i = 0; i < video.textTracks.length; i++) {
-          const track = video.textTracks[i];
-          if (track.language && track.language.toLowerCase() === targetLang) {
-            track.mode = 'showing';
-          } else {
-            track.mode = 'disabled';
-          }
+    const applyTracks = () => {
+      if (!video.textTracks || video.textTracks.length === 0) return;
+      for (let i = 0; i < video.textTracks.length; i++) {
+        const track = video.textTracks[i];
+        if (track.language && track.language.toLowerCase() === targetLang) {
+          track.mode = 'showing';
+        } else {
+          track.mode = 'disabled';
         }
-      };
+      }
+    };
 
-      applyTracks();
-      video.addEventListener('loadedmetadata', applyTracks, { once: true });
-    });
+    applyTracks();
+    video.addEventListener('loadedmetadata', applyTracks, { once: true });
   }
 
   // Fetch local datasets (lightweight, zero volume chapter bloat)
@@ -560,7 +532,7 @@
     }
 
     // ScrollSpy to highlight active section on scroll
-    const observedSections = ['manifesto', 'co-stewards', 'gateways', 'synoptic', 'constitution', 'benchmark', 'roadmap', 'challenge', 'simulator-section', 'books'];
+    const observedSections = ['manifesto', 'synoptic', 'constitution', 'roadmap', 'challenge', 'books', 'co-stewards'];
     const sectionElements = observedSections.map(id => document.getElementById(id)).filter(Boolean);
 
     if ('IntersectionObserver' in window && sectionElements.length > 0) {
@@ -720,10 +692,8 @@
       elements.langSelectorBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         closeMobileMenu();
-        const willBeActive = !elements.langDropdown.classList.contains('active');
-        elements.langDropdown.classList.toggle('active', willBeActive);
-        elements.langSelectorBtn.classList.toggle('active', willBeActive);
-        elements.langSelectorBtn.closest('.lang-selector-wrap')?.classList.toggle('open', willBeActive);
+        elements.langDropdown.classList.toggle('active');
+        elements.langSelectorBtn.classList.toggle('active');
       });
     }
 
@@ -735,7 +705,6 @@
             setLanguage(lang);
             elements.langDropdown?.classList.remove('active');
             elements.langSelectorBtn?.classList.remove('active');
-            elements.langSelectorBtn?.closest('.lang-selector-wrap')?.classList.remove('open');
           }
         });
       });
@@ -749,7 +718,6 @@
       if (!e.target.closest('.lang-selector-wrap')) {
         elements.langDropdown?.classList.remove('active');
         elements.langSelectorBtn?.classList.remove('active');
-        document.querySelectorAll('.lang-selector-wrap').forEach(w => w.classList.remove('open'));
       }
       if (!e.target.closest('#mobileMenuBtn') && !e.target.closest('#navMenu')) {
         closeMobileMenu();
@@ -778,7 +746,6 @@
         if (elements.langDropdown && elements.langDropdown.classList.contains('active')) {
           elements.langDropdown.classList.remove('active');
           elements.langSelectorBtn?.classList.remove('active');
-          document.querySelectorAll('.lang-selector-wrap').forEach(w => w.classList.remove('open'));
         }
         if (elements.briefingModal && elements.briefingModal.classList.contains('active')) {
           closeVideoBriefing();
@@ -815,26 +782,6 @@
       });
       explainerVid.addEventListener('ended', () => {
         explainerWrap.classList.remove('is-playing');
-      });
-    }
-
-    // Hero Prologue Video Controls (one-wars-remastered.mp4)
-    const heroVid = document.getElementById('heroVideoPlayer');
-    const heroWrap = document.getElementById('heroVideoWrapper');
-    const heroPlayBtn = document.getElementById('heroVideoPlayOverlayBtn');
-
-    if (heroVid && heroPlayBtn && heroWrap) {
-      heroPlayBtn.addEventListener('click', () => {
-        heroVid.play();
-      });
-      heroVid.addEventListener('play', () => {
-        heroWrap.classList.add('is-playing');
-      });
-      heroVid.addEventListener('pause', () => {
-        heroWrap.classList.remove('is-playing');
-      });
-      heroVid.addEventListener('ended', () => {
-        heroWrap.classList.remove('is-playing');
       });
     }
   }
@@ -910,21 +857,21 @@
     if (tabKey === 'postwork') {
       elements.primerContent.innerHTML = `
         <div class="primer-tab-pane">
-          <h3 class="primer-heading">
+          <h3 style="font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin-bottom:12px;">
             1. The Imminent Post-Work Reality: Why Automation Changes Everything
           </h3>
-          <p class="primer-intro">
+          <p style="font-size:1.05rem; color:#cbd5e1; line-height:1.7; margin-bottom:24px;">
             For thousands of years, human civilization operated on the iron rule: <em>"He who does not work, neither shall he eat."</em> 
             Humanoid robotics, autonomous machinery, and generative AI are breaking that equation forever. When machines perform farming, 
             construction, transportation, energy generation, and healthcare at near-zero marginal cost, human survival must be decoupled from employment.
           </p>
           <div class="primer-grid">
             <div class="primer-feature-card">
-              <h4>⚠️ The Dystopian Default: Techno-Feudalism</h4>
+              <h4 style="color:var(--accent-rose);">⚠️ The Dystopian Default: Techno-Feudalism</h4>
               <p>Under current market rules, tech monopolies own the automated labor force. Billions become "unemployable," stripped of wages, and forced into extreme precarity while wealth concentrates into a handful of corporate oligarchs.</p>
             </div>
-            <div class="primer-feature-card highlight">
-              <h4>🌱 The O.N.E. Blueprint: Machine Liberation</h4>
+            <div class="primer-feature-card" style="border-color:rgba(16, 185, 129, 0.35);">
+              <h4 style="color:var(--accent-emerald);">🌱 The O.N.E. Blueprint: Machine Liberation</h4>
               <p>The productive power of automation is declared the common heritage of all humanity. Machine labor frees human beings from drudgery, poverty, and wage servitude—making food, shelter, and energy free birthrights.</p>
             </div>
           </div>
@@ -933,48 +880,48 @@
     } else if (tabKey === 'failures') {
       elements.primerContent.innerHTML = `
         <div class="primer-tab-pane">
-          <h3 class="primer-heading">
+          <h3 style="font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin-bottom:12px;">
             2. Why Past Civilizational Models Failed
           </h3>
-          <p class="primer-intro">
+          <p style="font-size:1.05rem; color:#cbd5e1; line-height:1.7; margin-bottom:20px;">
             Throughout history, humanity tried four major civilizational operating systems. Every single one failed to produce lasting peace, equity, or ecological balance:
           </p>
           <div class="model-comparison">
             <div class="model-box failed">
               <div class="model-name">1. Religion</div>
               <div class="model-status red">Failed</div>
-              <div class="model-desc">Holy wars, dogmatic superstition, and clergy hierarchies policing human minds with guilt and supernatural fear.</div>
+              <div style="color:var(--text-muted);">Holy wars, dogmatic superstition, and clergy hierarchies policing human minds with guilt and supernatural fear.</div>
             </div>
             <div class="model-box failed">
               <div class="model-name">2. Feudalism</div>
               <div class="model-status red">Failed</div>
-              <div class="model-desc">Hereditary monarchies owning land by "divine right," reducing ordinary people to serfs under the sword.</div>
+              <div style="color:var(--text-muted);">Hereditary monarchies owning land by "divine right," reducing ordinary people to serfs under the sword.</div>
             </div>
             <div class="model-box failed">
               <div class="model-name">3. State Communism</div>
               <div class="model-status red">Failed</div>
-              <div class="model-desc">Private landlords replaced by party dictators, central planning paralysis, and carceral state terror.</div>
+              <div style="color:var(--text-muted);">Private landlords replaced by party dictators, central planning paralysis, and carceral state terror.</div>
             </div>
             <div class="model-box failed">
               <div class="model-name">4. Capitalism</div>
               <div class="model-status red">Failed</div>
-              <div class="model-desc">Compound debt, artificial scarcity, commodification of basic survival, and catastrophic planetary ecocide.</div>
+              <div style="color:var(--text-muted);">Compound debt, artificial scarcity, commodification of basic survival, and catastrophic planetary ecocide.</div>
             </div>
           </div>
-          <div class="primer-feature-card highlight">
-            <h4>✨ The 5th Path: Open Networked Earth (O.N.E.)</h4>
-            <p>Neither corporate exploitation nor state tyranny: usufruct care without landlordism, citizen lotteries without politicians, and guaranteed survival without money.</p>
+          <div class="primer-feature-card" style="margin-top:20px; border-color:rgba(16, 185, 129, 0.4); background:rgba(16, 185, 129, 0.06);">
+            <h4 style="color:var(--accent-emerald);">✨ The 5th Path: Open Networked Earth (O.N.E.)</h4>
+            <p style="color:#e2e8f0;">Neither corporate exploitation nor state tyranny: usufruct care without landlordism, citizen lotteries without politicians, and guaranteed survival without money.</p>
           </div>
         </div>
       `;
     } else if (tabKey === 'pillars') {
       elements.primerContent.innerHTML = `
         <div class="primer-tab-pane">
-          <div class="stepper-header">
-            <h3 class="primer-heading">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+            <h3 style="font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin:0;">
               3. The Four Core Principles of O.N.E.
             </h3>
-            <a href="#constitution" class="btn btn-secondary btn-sm">
+            <a href="#constitution" class="btn btn-secondary" style="display:inline-flex; align-items:center; gap:8px; font-size:0.85rem; padding:8px 16px;">
               <span>📜 Jump to Constitution</span>
               <span>→</span>
             </a>
@@ -997,11 +944,11 @@
               <p>All software, medicine formulas, and machine blueprints are 100% open-source (Copyfarleft). Communities maintain 30-day off-grid solar/water storage and manual mechanical valves that work during blackouts.</p>
             </div>
           </div>
-          <div class="primer-action-banner">
-            <span>
-              These principles are codified into 11 chapters of immutable statutory law in the <strong>Living Constitution</strong>.
+          <div style="margin-top:22px; padding:14px 20px; background:rgba(6, 182, 212, 0.08); border:1px solid rgba(6, 182, 212, 0.2); border-radius:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+            <span style="color:#e2e8f0; font-size:0.92rem;">
+              These principles are codified into 10 chapters of immutable statutory law in the <strong>Living Constitution</strong>.
             </span>
-            <a href="#constitution" class="btn btn-primary btn-sm">
+            <a href="#constitution" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:8px; font-size:0.88rem; padding:8px 18px;">
               <span>Read the Constitution</span>
               <span>↓</span>
             </a>
@@ -1011,41 +958,41 @@
     } else if (tabKey === 'roadmap') {
       elements.primerContent.innerHTML = `
         <div class="primer-tab-pane">
-          <div class="stepper-header">
-            <h3 class="primer-heading">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+            <h3 style="font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin:0;">
               4. The Transition Roadmap: How We Get There
             </h3>
-            <a href="#roadmap" class="btn btn-secondary btn-sm">
+            <a href="#roadmap" class="btn btn-secondary" style="display:inline-flex; align-items:center; gap:8px; font-size:0.85rem; padding:8px 16px;">
               <span>🌱 Jump to Roadmap</span>
               <span>→</span>
             </a>
           </div>
-          <p class="primer-intro">
+          <p style="font-size:1.05rem; color:#cbd5e1; line-height:1.7; margin-bottom:20px;">
             We do not wait for global collapse or violent revolution. O.N.E. spreads through a <strong>dual-track handshake</strong>: building the resilient new commons today while the legacy system falters.
           </p>
           <div class="primer-grid">
             <div class="primer-feature-card">
-              <h4>🇨🇭 1. The Legal Armor (Swiss Verein)</h4>
+              <h4 style="color:var(--accent-cyan);">🇨🇭 1. The Legal Armor (Swiss Verein)</h4>
               <p>Starting as an autonomous Swiss Association (ZGB Art. 60 ff.) holding open IP and assets with zero capital minimums and full member privacy.</p>
             </div>
             <div class="primer-feature-card">
-              <h4>🌱 2. Bioregional Seed Nodes</h4>
+              <h4 style="color:var(--accent-cyan);">🌱 2. Bioregional Seed Nodes</h4>
               <p>Three people can establish a local Community Land Trust (CLT), mutual-aid food forest, or microgrid using open-source O.N.E. governance covenants.</p>
             </div>
             <div class="primer-feature-card">
-              <h4>🤝 3. Non-Violent Civil Conversion</h4>
+              <h4 style="color:var(--accent-cyan);">🤝 3. Non-Violent Civil Conversion</h4>
               <p>Unarmed civic peace guilds replace militarized policing with restorative de-escalation; corporate debt is cleared through universal jubilee.</p>
             </div>
             <div class="primer-feature-card">
-              <h4>🌍 4. Planetary Federation</h4>
+              <h4 style="color:var(--accent-cyan);">🌍 4. Planetary Federation</h4>
               <p>Watershed councils federate into continental chambers, replacing nation-state rivalries with ecological and thermodynamic coordination.</p>
             </div>
           </div>
-          <div class="primer-action-banner">
-            <span>
+          <div style="margin-top:22px; padding:14px 20px; background:rgba(16, 185, 129, 0.08); border:1px solid rgba(16, 185, 129, 0.2); border-radius:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+            <span style="color:#e2e8f0; font-size:0.92rem;">
               Ready to see the engineering sizing, legal armor templates, and 15-year decoupling stages?
             </span>
-            <a href="#roadmap" class="btn btn-primary btn-sm">
+            <a href="#roadmap" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:8px; font-size:0.88rem; padding:8px 18px;">
               <span>Explore Operational Roadmap & Blueprints</span>
               <span>↓</span>
             </a>
@@ -1393,19 +1340,19 @@
     elements.configOutputGrid.innerHTML = `
       <div class="config-card">
         <span class="config-card-tag">${tag1}</span>
-        <div class="config-card-value">${arch.entity_a}</div>
-        <div class="config-card-desc">${descOperating} <strong>${arch.entity_b}</strong>. ${descDebt}</div>
+        <div class="config-card-value" style="font-size:1rem; color:#fff;">${arch.entity_a}</div>
+        <div class="config-card-desc">${descOperating} <strong style="color:#e2e8f0;">${arch.entity_b}</strong>. ${descDebt}</div>
       </div>
 
       <div class="config-card">
         <span class="config-card-tag">${tag2}</span>
-        <div class="config-card-value">${arch.zoning}</div>
+        <div class="config-card-value" style="font-size:1rem; color:#fff;">${arch.zoning}</div>
         <div class="config-card-desc">${arch.escrow}</div>
       </div>
 
       <div class="config-card">
         <span class="config-card-tag">${tag3}</span>
-        <div class="config-card-value">${arch.capital}</div>
+        <div class="config-card-value" style="font-size:1rem; color:#fff;">${arch.capital}</div>
         <div class="config-card-desc">${arch.statutory_defense}</div>
       </div>
 
@@ -1473,15 +1420,15 @@
     const btnDownload = tStepper.btn_download || defaultBtnDownload;
 
     elements.stepperContent.innerHTML = `
-      <div class="stepper-header">
-        <h4 class="stepper-title">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
+        <h4 style="font-family:var(--font-heading); font-size:1.25rem; color:#fff;">
           ${phase.title}
         </h4>
-        <span class="archetype-pill status-pill">
+        <span class="archetype-pill" style="color:var(--accent-emerald); border-color:rgba(16,185,129,0.3); background:rgba(16,185,129,0.1);">
           ${phase.badge}
         </span>
       </div>
-      <p class="stepper-desc">
+      <p style="font-size:0.92rem; color:#cbd5e1; line-height:1.6; margin-bottom:20px;">
         ${phase.desc}
       </p>
       <div class="step-detail-grid">
@@ -1618,8 +1565,8 @@
 
     if (elements.blueprintArticleWrap) {
       elements.blueprintArticleWrap.innerHTML = `
-        <div class="blueprint-loading-box">
-          <div class="spinner-icon">⚙️</div>
+        <div style="text-align:center; padding:80px 20px; color:var(--text-muted);">
+          <div style="font-size:2rem; margin-bottom:14px; animation:spin 2s linear infinite;">⚙️</div>
           <div>Loading Field Blueprint...</div>
         </div>
       `;
@@ -1638,9 +1585,9 @@
     } catch (err) {
       if (elements.blueprintArticleWrap) {
         elements.blueprintArticleWrap.innerHTML = `
-          <div class="blueprint-error-box">
+          <div style="padding:40px; text-align:center; color:#f87171;">
             <h3>Unable to load blueprint text directly</h3>
-            <p>You can download or view the markdown file directly:</p>
+            <p style="margin:16px 0; color:#cbd5e1;">You can download or view the markdown file directly:</p>
             <a href="${docUrl}" download class="btn btn-primary">⬇️ Download ${docUrl.split('/').pop()}</a>
           </div>
         `;
@@ -1665,13 +1612,13 @@
     vol1: {
       act: "ACT II // DETROIT (2027)",
       quote: "“When the factory locks its doors, the city wakes up.”",
-      accent: "var(--accent-cyan)",
+      accent: "var(--accent-amber)",
       video: "assets/videos/one_vol1_briefing.mp4"
     },
     vol2: {
       act: "ACT II // THE ALPS (2028)",
       quote: "“Water, energy, and transit belong to the living watershed.”",
-      accent: "var(--accent-cyan)",
+      accent: "var(--accent-emerald)",
       video: "assets/videos/one_vol2_briefing.mp4"
     },
     vol3: {
@@ -1683,13 +1630,13 @@
     vol4: {
       act: "ACT II // MALACCA (2030)",
       quote: "“A single laser beam through the monsoon to liberate the global fleet.”",
-      accent: "var(--accent-cyan)",
+      accent: "#ffa028",
       video: "assets/videos/one_vol4_briefing.mp4"
     },
     vol5: {
       act: "ACT III // GENEVA (2031)",
       quote: "“500 ordinary citizens chosen by lot to ratify humanity's survival.”",
-      accent: "var(--accent-cyan)",
+      accent: "#ffd700",
       video: "assets/videos/one_vol5_briefing.mp4"
     }
   };
@@ -1786,7 +1733,7 @@
         const v = n.dataset.vol;
         const isParallel = ['vol1', 'vol2', 'vol3', 'vol4'].includes(v);
         n.style.opacity = isParallel ? '1' : '0.25';
-        n.style.filter = isParallel ? 'drop-shadow(0 0 14px var(--accent-cyan))' : 'grayscale(80%)';
+        n.style.filter = isParallel ? 'drop-shadow(0 0 14px rgba(255,180,20,0.8))' : 'grayscale(80%)';
       });
       arcsDispersal.forEach(a => { a.style.opacity = '0.9'; });
       arcsParallel.forEach(a => { a.style.opacity = '0.9'; });
@@ -1795,7 +1742,7 @@
       nodes.forEach(n => {
         const isVol5 = n.dataset.vol === 'vol5';
         n.style.opacity = isVol5 ? '1' : '0.3';
-        n.style.filter = isVol5 ? 'drop-shadow(0 0 20px var(--accent-cyan))' : 'grayscale(80%)';
+        n.style.filter = isVol5 ? 'drop-shadow(0 0 20px #ffd700)' : 'grayscale(80%)';
       });
       arcsDispersal.forEach(a => { a.style.opacity = '0.15'; });
       arcsParallel.forEach(a => { a.style.opacity = '0.15'; });
@@ -1874,7 +1821,7 @@
       const spotlightClass = vol.id === state.selectedTheater ? 'spotlight' : '';
 
       return `
-        <div class="${cardClass} glass-panel ${spotlightClass}" data-vol-id="${vol.id}">
+        <div class="${cardClass} glass-panel ${spotlightClass}" data-vol-id="${vol.id}" style="--vol-accent: ${meta.accent || 'var(--accent-cyan)'};">
           <div class="volume-card-thumb-wrap" onclick="openVideoBriefing('${vol.id}')" title="Click to Watch Video Briefing">
             <img src="${vol.cover_image}" alt="${volTitle}" class="volume-card-thumb">
             <div class="thumb-play-overlay">
@@ -1888,11 +1835,12 @@
                 ${actTag ? `<div class="card-act-tag">${actTag}</div>` : ''}
                 <div class="volume-theater">${volTheater}</div>
                 <h3 class="volume-title">${volTitle}</h3>
-                <div class="volume-subtitle">${volSubtitle}</div>
+                <div style="font-size:0.88rem; color:var(--text-muted); margin-top:2px;">${volSubtitle}</div>
               </div>
+              <span class="volume-badge ${badgeClass}">${currentBadgeText}</span>
             </div>
-            <p class="volume-theme">${volTheme}</p>
-            ${volHook ? `<p class="volume-hook">${volHook}</p>` : ''}
+            <p class="volume-theme" style="margin-bottom:8px;">${volTheme}</p>
+            ${volHook ? `<p style="font-size:0.82rem; color:var(--vol-accent, var(--accent-cyan)); font-style:italic; margin-bottom:12px; line-height:1.4;">${volHook}</p>` : ''}
             <div class="download-bar">
               ${briefingBtnHtml}
               ${epubBtnHtml}
@@ -1907,7 +1855,7 @@
       <!-- ACT I: THE GENESIS -->
       <div class="saga-act-wrap act-1">
         <div class="act-header-banner">
-          <span class="act-badge-pill">ACT I: THE CLANDESTINE GENESIS (2026)</span>
+          <span class="act-badge-pill" style="--badge-color: var(--accent-cyan);">ACT I: THE CLANDESTINE GENESIS (2026)</span>
           <span class="act-header-desc">The Seed of the Commons • Svalbard Arctic Permafrost • Station 74-Nord</span>
         </div>
         ${createCard(vol0, true, "ACT I // SVALBARD 2026")}
@@ -1943,7 +1891,7 @@
       <!-- ACT III: CONVERGENCE -->
       <div class="saga-act-wrap act-3">
         <div class="act-header-banner">
-          <span class="act-badge-pill">ACT III: THE UNIVERSAL JUBILEE (2031)</span>
+          <span class="act-badge-pill" style="--badge-color: #ffd700;">ACT III: THE UNIVERSAL JUBILEE (2031)</span>
           <span class="act-header-desc">The Four Delegations Converge • Ratification of the Living Constitution</span>
         </div>
         ${createCard(vol5, true, "ACT III // GENEVA 2031")}
@@ -2143,7 +2091,7 @@
 
     const tConst = state.translations?.const || {};
     const noArticlesMsg = tConst.no_results || 'No articles match your search criteria.';
-    elements.articlesList.innerHTML = html || `<p class="articles-empty-msg">${noArticlesMsg}</p>`;
+    elements.articlesList.innerHTML = html || `<p style="text-align:center; color:var(--text-muted); padding:30px;">${noArticlesMsg}</p>`;
 
     // Attach click listener to toggle chapter expansion
     elements.articlesList.querySelectorAll('.chapter-header').forEach(header => {
@@ -2200,6 +2148,7 @@
 
     elements.scenarioChips.innerHTML = displayList.map((qa, index) => `
       <div class="scenario-chip ${index === 0 ? 'active' : ''}" data-id="${qa.engagement_id}">
+        <div class="scenario-chip-id">${qa.engagement_id} • ${qa.adversary}</div>
         <div class="scenario-chip-title">${qa.title}</div>
       </div>
     `).join('');
@@ -2322,11 +2271,11 @@
       <div class="chat-msg user">
         <div class="msg-header">
           <span>${labelProbe} [${qa.engagement_id}]</span>
-          <span class="msg-adversary-tag">${qa.adversary}</span>
+          <span style="color:var(--accent-cyan);">${qa.adversary}</span>
         </div>
         <div class="msg-body">
           <p><strong>${qa.title}</strong></p>
-          <p class="msg-scenario">${qa.scenario}</p>
+          <p style="margin-top:6px;">${qa.scenario}</p>
         </div>
       </div>
     `;
@@ -2571,16 +2520,16 @@
       <div class="chat-msg system" id="${streamId}">
         <div class="msg-header">
           <span>${labelAdjudicator}</span>
-          <span class="badge-tier status-pill">
+          <span class="badge-tier" style="background:rgba(16,185,129,0.15); color:var(--accent-emerald); border:1px solid rgba(16,185,129,0.3); font-size:0.75rem; padding:2px 8px; border-radius:4px;">
             ${labelStreamingBadge}
           </span>
         </div>
         <div class="msg-body">
           <div class="human-summary-box ai-adjudication-body">
             <div class="ai-response-content" id="${streamId}_content">
-              <div class="typing-indicator">
+              <div class="chat-msg typing-indicator" style="box-shadow:none; padding:8px 0; background:transparent; border:none;">
                 <span class="typing-dots"><span></span><span></span><span></span></span>
-                <span class="typing-label">${labelAdjudicating}</span>
+                <span style="font-size:0.85rem; color:var(--text-muted); margin-left:8px;">${labelAdjudicating}</span>
               </div>
             </div>
           </div>
@@ -2658,7 +2607,7 @@
 
         if (uniqueArticles.length > 0) {
           const articlesHtml = `
-            <div class="msg-articles">
+            <div class="msg-articles" style="margin-top:12px;">
               ${uniqueArticles.map(art => `<span class="article-tag">${art}</span>`).join('')}
             </div>
           `;
@@ -2713,32 +2662,32 @@
         // Code blocks: ``` ... ```
         if (text.startsWith('```') && text.endsWith('```')) {
           const codeContent = text.replace(/^```[a-z]*\n?/, '').replace(/```$/, '');
-          return `<pre class="reader-code"><code>${codeContent}</code></pre>`;
+          return `<pre style="background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:16px; overflow-x:auto; font-family:var(--font-mono); font-size:0.85rem; color:#38bdf8; margin:20px 0; line-height:1.5;"><code>${codeContent}</code></pre>`;
         }
 
         // Clean headers (remove bold markers within headers)
         if (text.startsWith('# ')) {
           const title = cleanInlineMarkdown(text.slice(2).replace(/\*\*([^*]+)\*\*/g, '$1'));
-          return `<h1 class="reader-h1">${title}</h1>`;
+          return `<h1 class="reader-h1" style="font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin:28px 0 14px 0; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:8px;">${title}</h1>`;
         }
         if (text.startsWith('## ')) {
           const title = cleanInlineMarkdown(text.slice(3).replace(/\*\*([^*]+)\*\*/g, '$1'));
-          return `<h2 class="reader-h2">${title}</h2>`;
+          return `<h2 class="reader-h2" style="font-family:var(--font-heading); font-size:1.35rem; color:#38bdf8; margin:24px 0 12px 0;">${title}</h2>`;
         }
         if (text.startsWith('### ')) {
           const title = cleanInlineMarkdown(text.slice(4).replace(/\*\*([^*]+)\*\*/g, '$1'));
-          return `<h3 class="reader-h3">${title}</h3>`;
+          return `<h3 class="reader-h3" style="font-family:var(--font-heading); font-size:1.15rem; color:#10b981; margin:20px 0 10px 0;">${title}</h3>`;
         }
         if (text.startsWith('#### ')) {
           const title = cleanInlineMarkdown(text.slice(5).replace(/\*\*([^*]+)\*\*/g, '$1'));
-          return `<h4 class="reader-h4">${title}</h4>`;
+          return `<h4 style="font-family:var(--font-heading); font-size:1.05rem; color:#e2e8f0; margin:16px 0 8px 0;">${title}</h4>`;
         }
         if (text.startsWith('> ')) {
           const cleanQuote = cleanInlineMarkdown(text.replace(/^>\s*/gm, '').trim());
-          return `<blockquote class="reader-blockquote">${cleanQuote}</blockquote>`;
+          return `<blockquote class="reader-blockquote" style="border-left:3px solid var(--accent-cyan); padding:10px 16px; margin:18px 0; background:rgba(6,182,212,0.06); font-style:italic; color:#cbd5e1;">${cleanQuote}</blockquote>`;
         }
         if (text === '---' || text === '***' || text === '___') {
-          return `<hr class="reader-hr">`;
+          return `<hr class="reader-hr" style="border:none; border-top:1px solid rgba(255,255,255,0.1); margin:32px 0;">`;
         }
 
         // Markdown Tables: lines starting and containing |
@@ -2750,7 +2699,7 @@
               const cells = row.split('|').slice(1, -1).map(c => `<td>${cleanInlineMarkdown(c.trim())}</td>`).join('');
               return `<tr>${cells}</tr>`;
             }).join('');
-            return `<div class="reader-table-wrap"><table class="blueprint-table"><thead><tr>${headerCells}</tr></thead><tbody>${bodyRows}</tbody></table></div>`;
+            return `<div style="overflow-x:auto; margin:20px 0;"><table class="blueprint-table"><thead><tr>${headerCells}</tr></thead><tbody>${bodyRows}</tbody></table></div>`;
           }
         }
 
@@ -2762,24 +2711,24 @@
             const content = cleanInlineMarkdown(l.replace(/^\s*-\s+\[[ xX]\]\s+/, ''));
             return `<li>${isChecked ? '☑️' : '◻️'} ${content}</li>`;
           }).join('');
-          return `<ul class="blueprint-checklist">${items}</ul>`;
+          return `<ul class="blueprint-checklist" style="margin:16px 0;">${items}</ul>`;
         }
 
         // Unordered lists: lines starting with * or -
         const lines = text.split('\n');
         if (lines.length > 1 && lines.every(l => /^\s*[*•-]\s+/.test(l))) {
           const items = lines.map(l => `<li>${cleanInlineMarkdown(l.replace(/^\s*[*•-]\s+/, ''))}</li>`).join('');
-          return `<ul class="reader-ul">${items}</ul>`;
+          return `<ul style="margin:16px 0; padding-left:24px; line-height:1.85;">${items}</ul>`;
         }
 
         // Ordered lists: lines starting with 1., 2. etc
         if (lines.length > 1 && lines.every(l => /^\s*\d+\.\s+/.test(l))) {
           const items = lines.map(l => `<li>${cleanInlineMarkdown(l.replace(/^\s*\d+\.\s+/, ''))}</li>`).join('');
-          return `<ol class="reader-ol">${items}</ol>`;
+          return `<ol style="margin:16px 0; padding-left:24px; line-height:1.85;">${items}</ol>`;
         }
 
         const formattedLines = cleanInlineMarkdown(text).split('\n').join('<br>');
-        return `<p class="reader-p">${formattedLines}</p>`;
+        return `<p style="margin-bottom:1.25em; line-height:1.85;">${formattedLines}</p>`;
       })
       .join('');
   }

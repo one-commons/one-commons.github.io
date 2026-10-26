@@ -61,7 +61,7 @@
         "id": "Article 2.2",
         "title": "Classificazione Tripartita di Beni e Proprietà Comuni",
         "full_title": "Article 2.2 — Classificazione Tripartita di Beni e Proprietà Comuni",
-        "text": "Al fine di garantire l'inviolabile libertà personale vietando al contempo lo sfruttamento monopolistico, tutti i beni materiali sono ripartiti in tre classi giuridiche mutualmente esclusive:\n1. **Beni Personali Inviolabili:** Abiti, arredi domestici, opere d'arte, oggetti intimi, strumenti artigianali individuali e dispositivi computazionali personali. Restano sotto la sovranità assoluta dell'individuo e non possono mai essere espropriati o collettivizzati da alcuna assemblea civica.\n2. **Usufrutto Possessorio Protetto:** Abitazioni primarie, orti familiari e laboratori artigianali attivamente abitati e curati. Detenuti tramite contratti perpetui fuori mercato sul modello dei Community Land Trust (CLT), garantiscono privacy domestica inviolabile, successione ereditaria tra conviventi attivi e totale immunità da pignoramenti, sfratti o canoni d'affitto.\n3. **Usufrutto Federato dei Beni Comuni:** Bacini idrografici, foreste, falde acquifere, reti energetiche, corridoi di trasporto, centri industriali, ospedali e dorsali di telecomunicazione. Costituiscono beni comuni indivisibili amministrati da consigli municipali per sorteggio e gilde operative dedicate.\nGli impianti industriali avanzati ad alta intensità di capitale (fonderie litografiche per semiconduttori, complessi di sintesi chimica, metallurgia pesante) sono riconosciuti come capitale sociale indivisibile (Livello 2-A); la loro custodia è affidata a gilde di lavoratori specializzati sotto la supervisione delle assemblee per sorteggio, con il deprezzamento del capitale fisico e il ripristino ambientale a ciclo chiuso legalmente prioritari rispetto alla distribuzione discrezionale delle eccedenze."
+        "text": "Al fine di garantire l'inviolabile libertà personale vietando al contempo lo sfruttamento monopolistico, tutti i beni materiali sono ripartiti in tre classi giuridiche mutualmente esclusive:\n1. **Beni Personali Inviolabili:** Abiti, arredi domestici, opere d'arte, oggetti intimi, strumenti artigianali individuali e dispositivi computazionali personali. Restano sotto la sovranità assoluta dell'individuo e non possono mai essere espropriati o collettivizzati da alcuna assemblea civica.\n2. **Usufrutto Possessorio Protetto:** Abitazioni primarie, orti familiari e laboratori artigianali attivamente abitati e curati. Detenuti tramite contratti perpetui fuori mercato sul modello dei Community Land Trust (CLT), garantiscono privacy domestica inviolabile, successione ereditaria tra conviventi attivi e totale immunità da pignoramenti, sfratti o canoni d'affitto.\n3. **Usufrutto Federato dei Beni Comuni:** Bacini idrografici, foreste, falde acquifere, reti energetiche, corridoi di trasporto, centri industriali, ospedali e dorsali di telecomunicazione. Costituiscono beni comuni indivisibili amministrati da consigli municipali per sorteggio e gilde operative dedicate."
       },
       {
         "id": "Article 2.3",
@@ -217,7 +217,7 @@
         "id": "Article 6.1",
         "title": "Mandato di Disaccoppiamento, Autonomia delle Microreti e Protezione Autonomica",
         "full_title": "Article 6.1 — Mandato di Disaccoppiamento, Autonomia delle Microreti e Protezione Autonomica",
-        "text": "1. Tutte le comunità devono essere progettate per funzionare in isolamento energetico e idrico per almeno trenta (30) giorni consecutivi senza dipendere da reti esterne.\n2. Gli impianti di protezione essenziali sono dotati di sgancio automatico e comandi fisici analogici non hackerabili.\n4. Bilanciamento Dinamico dell'Exergia e Simbiosi Termica Industriale: I cluster di calcolo su larga scala e la sintesi chimica esotermica fungono da bilanciatori dinamici dell'exergia: i carichi di machine learning ad alto throughput e le simulazioni pesanti operano come buffer termodinamici interrompibili che riducono istantaneamente il consumo durante i deficit di generazione rinnovabile per proteggere i fabbisogni di Livello 1, mentre il calore di scarto ad alta temperatura viene incanalato nelle reti di teleriscaldamento municipale e nei cicli di biomassa in serra."
+        "text": "1. Tutte le comunità devono essere progettate per funzionare in isolamento energetico e idrico per almeno trenta (30) giorni consecutivi senza dipendere da reti esterne.\n2. Gli impianti di protezione essenziali sono dotati di sgancio automatico e comandi fisici analogici non hackerabili."
       },
       {
         "id": "Article 6.2",
@@ -247,7 +247,7 @@
         "id": "Article 6.6",
         "title": "Governo delle Infrastrutture, Parità e Soglie Decisionali",
         "full_title": "Article 6.6 — Governo delle Infrastrutture, Parità e Soglie Decisionali",
-        "text": "1. I piani di sviluppo infrastrutturale sono approvati dalle Assemblee Civiche per Sorteggio dopo verifica termodinamica di fattibilità e impatto ecologico.\n4. Interruttore Galvanico a Coltello e Kernel Isolato: I sistemi municipali critici per la vita devono incorporare sezionatori fisici galvanici capaci di disconnettere istantaneamente le reti esterne su vasta area durante attacchi cibernetici o fisici. L'isolamento confina le operazioni a controller locali fisicamente protetti da scrittura (ROM), sostenendo i cicli metabolici e ambientali stechiometrici senza alcuna dipendenza da pacchetti esterni."
+        "text": "1. I piani di sviluppo infrastrutturale sono approvati dalle Assemblee Civiche per Sorteggio dopo verifica termodinamica di fattibilità e impatto ecologico."
       }
     ]
   },
@@ -403,7 +403,7 @@
         "id": "Article 10.4",
         "title": "Libertà Termodinamica di Movimento e Capacità Portante Non Coercitiva",
         "full_title": "Article 10.4 — Libertà Termodinamica di Movimento e Capacità Portante Non Coercitiva",
-        "text": "1. Ogni persona ha piena libertà di muoversi e viaggiare attraverso tutti i bacini del pianeta senza bisogno di visti o passaporti nazionali.\n2. Lo stanziamento residenziale permanente rispetta la capacità portante e la disponibilità idrica del bacino ospitante verificate dalle assemblee locali.\n3. Regolazione Reversibile del Flusso Solare (Administratio Insolationis): Per contrastare punti di non ritorno climatici senza ricadute chimiche, la gestione ottica nello spazio profondo tramite schermi parasole diffrattivi passivi al punto lagrangiano L1 è riconosciuta ai sensi dell'Articolo 11.1 come patrimonio comune di Open Networked Sol. Il dispiegamento richiede una maggioranza qualificata del 75% dell'Assemblea dei Beni Comuni Planetari (1.001 delegati) e un voto conforme del 66% tra le Camere Continentali. Le unità occultanti devono incorporare alette di bilanciamento a pressione di radiazione passiva che disperdono l'array automaticamente entro 36 mesi se i radiofari terrestri cessano, prevenendo la cattura amministrativa e lo shock da terminazione."
+        "text": "1. Ogni persona ha piena libertà di muoversi e viaggiare attraverso tutti i bacini del pianeta senza bisogno di visti o passaporti nazionali.\n2. Lo stanziamento residenziale permanente rispetta la capacità portante e la disponibilità idrica del bacino ospitante verificate dalle assemblee locali."
       },
       {
         "id": "Article 10.5",
@@ -416,48 +416,6 @@
         "title": "Architettura Federata per Sorteggio, Parità Dispari e Patto Universale",
         "full_title": "Article 10.6 — Architettura Federata per Sorteggio, Parità Dispari e Patto Universale",
         "text": "1. I bacini idrografici di tutti i continenti si federano nell'Assemblea Planetaria di Convergenza di Open Networked Earth (O.N.E.).\n2. Questo patto perpetuo sancisce la fine della guerra tra esseri umani e tra l'umanità e la Terra, inaugurando la civiltà post-lavoro fondata su dignità, abbondanza comune e pace ecologica."
-      }
-    ]
-  },
-  {
-    "number": "XI",
-    "title": "I BENI COMUNI CELESTI E LA FEDERAZIONE INTERPLANETARIA (OPEN NETWORKED SOL — O.N.S.)",
-    "articles": [
-      {
-        "id": "Article 11.1",
-        "title": "I Beni Comuni Solari e l'Abolizione del Dominium Celeste (Patrimonium Solis)",
-        "full_title": "Article 11.1 — I Beni Comuni Solari e l'Abolizione del Dominium Celeste (Patrimonium Solis)",
-        "text": "1. Lo spazio extra-atmosferico, i corpi celesti, le superfici planetarie, gli asteroidi, le comete, i punti di equilibrio gravitazionale di Lagrange (L1–L5) e le traiettorie orbitali costituiscono beni comuni celesti indivisibili e non recintabili (Patrimonium Solis) appartenenti a tutti gli esseri viventi e ai loro discendenti.\n2. L'annessione nazionale, la sovranità corporativa, le rivendicazioni di capitale privato, i titoli proprietari assenteisti e la speculazione su corpi celesti o slot orbitali sono permanentemente banditi da Open Networked Sol (O.N.S.).\n3. I vantaggi posizionali—inclusi i depositi volatili polari in ombra perenne, le creste solari di luce eterna, le altitudini orbitali stabili e i corridoi di trasferimento—non possono mai essere affittati, venduti o accaparrati. L'accesso è gestito tramite sorteggio pubblico e code fisiche d'attracco non monetizzate.\n4. I minerali abiotici e i volatili estratti esistono unicamente come usufrutto possessorio subordinato a custodia attiva, estrazione non dissipativa e rilascio immediato dei saggi strutturali e dei processi costruttivi nei Beni Comuni Aperti."
-      },
-      {
-        "id": "Article 11.2",
-        "title": "Involucri Metabolici Ingegnerizzati e Capacità Portante a Ciclo Chiuso",
-        "full_title": "Article 11.2 — Involucri Metabolici Ingegnerizzati e Capacità Portante a Ciclo Chiuso",
-        "text": "1. Oltre la biosfera terrestre, l'unità politica ed ecologica fondamentale dell'umanità passa dal bacino idrografico naturale all'involucro metabolico artificiale: il Sistema di Supporto Vitale Ecologico Chiuso (CELSS).\n2. In un CELSS—sia esso situato in un cilindro orbitale, un tubo di lava lunare, una volta di regolite marziana o uno scafo di transito—il bilancio di massa è un limite termodinamico assoluto. Gli inventari volatili di acqua (H2O), azoto (N2), carbonio (C) e fosforo (P) costituiscono patrimoni comuni chiusi e inalterabili.\n3. La telemetria della capacità portante negli habitat artificiali è misurata dall'efficienza di ricircolo, dai tassi di perdita dei volatili, dall'integrità strutturale della pressione e dalla capacità netta di dissipazione termica dei radiatori (W/m²). Le autorizzazioni abitative devono conformarsi rigorosamente all'equilibrio biofisico verificato."
-      },
-      {
-        "id": "Article 11.3",
-        "title": "Sovranità Atmosferica Invariante e Interblocco Anti-Dispotismo",
-        "full_title": "Article 11.3 — Sovranità Atmosferica Invariante e Interblocco Anti-Dispotismo",
-        "text": "1. In tutti gli habitat pressurizzati e nei veicoli di transito, la composizione atmosferica (21% O2, 78% N2 a pressione nominale al livello del mare), l'acqua potabile, la schermatura dalle radiazioni e la regolazione termica costituiscono diritti di sopravvivenza di Livello 1 universali e inderogabili.\n2. I sistemi di supporto vitale non possono mai essere mercificati, vincolati al rendimento lavorativo, monetizzati come debito o usati per condizionamento comportamentale o sottomissione politica. La creazione di un monopsonio dell'ossigeno o della pressione è classificata ai sensi dell'Articolo 1.2 come crimine esistenziale di violenza.\n3. I controlli ambientali devono incorporare interblocchi meccanici analogici non programmabili e condotte di bypass passivo continuo accessibili a tutti gli abitanti. Nessun algoritmo, decreto amministrativo o voto assembleare può interrompere o razionare i circuiti vitali.\n4. Disaccoppiamento Metabolico: Nelle procedure di giustizia riparativa (Art. 5.2), le sanzioni operano a disaccoppiamento metabolico: i residenti non cooperativi possono subire la sospensione di strumenti opzionali di Livello 3 o calcolo discrezionale, ma mai l'espulsione nel vuoto, la reclusione carceraria o il razionamento dell'aria."
-      },
-      {
-        "id": "Article 11.4",
-        "title": "Astrodinamica Termodinamica: Bilanci di Massa, Exergia e Velocità",
-        "full_title": "Article 11.4 — Astrodinamica Termodinamica: Bilanci di Massa, Exergia e Velocità",
-        "text": "1. La logistica interplanetaria e gli scambi materiali non sono governati da valute fiat o debiti finanziari, ma coordinati direttamente attraverso vettori fisici di input-output:\n   x = [E_exergia (kWh), m_secca (kg), V_volatili (L), Δv (km/s)]\n2. La massa di reazione (propellente) e le variazioni di velocità cinetica (Δv) sono riconosciuti come vettori comuni finiti. L'accelerazione della massa attraverso i pozzi gravitazionali planetari comporta spese fisiche che devono essere bilanciate da una reale utilità per la rete federata.\n3. Gli impianti industriali pesanti di raffinazione—forni a induzione sotto vuoto, fonderie centrifughe, concentratori solari e zone di raffinazione del silicio—sono beni comuni indivisibili di Livello 2-A gestiti in custodia fiduciaria per prevenire colli di bottiglia."
-      },
-      {
-        "id": "Article 11.5",
-        "title": "Sussidiarietà del Cono di Luce e Sorteggio Demarchico Asincrono",
-        "full_title": "Article 11.5 — Sussidiarietà del Cono di Luce e Sorteggio Demarchico Asincrono",
-        "text": "1. Poiché la velocità finita della luce impone ritardi di comunicazione attraverso distanze astronomiche (da secondi nel cislunare a ore nel Sistema Solare esterno), la democrazia centralizzata è fisicamente impossibile. La governance opera sulla Sussidiarietà del Cono di Luce: nessuna assemblea remota detiene autorità su decisioni risolvibili all'interno dell'habitat locale.\n2. Architettura del Sorteggio:\n   * Consigli di Sorteggio di Habitat e CELSS (15-101 cittadini): Sovranità operativa interna su vita quotidiana, fab-lab e turni in parità dispari.\n   * Camere Planetarie e di Sistema (301 cittadini): Coordinano corridoi di transito Δv, riserve strategiche di volatili e logistica di fusione.\n   * Assemblea dei Beni Comuni Solari (1.001 delegati): Opera su epoche deliberative asincrone (cicli di 90 giorni), preservando gli invarianti costituzionali, i compilatori aperti deterministici e la prevenzione delle collisioni orbitali.\n3. La sincronizzazione interplanetaria avviene tramite registri crittografici append-only su reti a tolleranza di ritardo (DTN)."
-      },
-      {
-        "id": "Article 11.6",
-        "title": "Non-Aggressione Cinetica, Protezione Planetaria e Spade in Vomeri",
-        "full_title": "Article 11.6 — Non-Aggressione Cinetica, Protezione Planetaria e Spade in Vomeri",
-        "text": "1. Poiché ogni sistema propulsivo ad alta massa o asteroide deviato rappresenta un'arma cinetica di distruzione planetaria, le accensioni dirette lungo traiettorie d'impatto verso corpi abitati o la Terra sono proibite come aggressione di massa strutturale (Art. 8.1).\n2. La deviazione di asteroidi e le manovre orbitali devono essere verificate da matrici ottiche e radar a tolleranza d'errore bizantina (BFT). I software propulsivi devono rimanere aperti e interbloccati fisicamente contro traiettorie di collisione pericolose.\n3. Conformemente al principio delle Spade in Vomeri (Gladii in vomeres), stadi propulsivi dismessi, scafi a pressione e piastre schermanti sono ceduti alle fonderie per essere rifusi in anelli strutturali, radiatori termici e pareti d'acqua protettive.\n2. Il Sistema Immunitario Orbitale (Systema Immunitatis Caelestis): Per proteggere da collisioni balistiche e asteroidi deviati senza eserciti permanenti, la Federazione Solare mantiene stazioni laser phased-array distribuite e rimorchiatori intercettori autonomi. In tempo di pace, questi sistemi spingono vele solari civili e ripuliscono i detriti orbitali. Gli emettitori incorporano otturatori geometrici analogici che tolgono alimentazione se puntati verso coni di esclusione abitati; l'intercettazione terminale opera tramite firmware deterministico pre-compilato verificato dalle assemblee per sorteggio, superando i ritardi della luce."
       }
     ]
   }
