@@ -2,7 +2,7 @@
 ## SEED NODE QUICKSTART & FOUNDERS' SURVIVAL GUIDE
 **Document ID:** HANDBOOK-ONE-SEED-2026  
 **Target:** Seed Node Founders, Working Groups & Field Organizers  
-**Canonical Anchors:** [`bible/ONE NETWORKED EARTH (O.N.E.).md`](#constitution) | [`roadmap/roadmap.md`](#roadmap)
+**Canonical Anchors:** [`bible/ONE NETWORKED EARTH (O.N.E.).md`](#constitution).md) | [`roadmap/roadmap.md`](#roadmap)
 
 ---
 
@@ -43,6 +43,7 @@
 
 ## 4. Stage-by-Stage Field Blueprints Index
 
+* [`SEED_NODE_CANDIDATE_REGISTRY.md`](SEED_NODE_CANDIDATE_REGISTRY.md) — Bioregional candidate node topology, legal shielding archetypes & thermodynamic vectors.
 * [`STAGE_0_LEGAL_INCEPTION_BLUEPRINT.md`](STAGE_0_LEGAL_INCEPTION_BLUEPRINT.md) — Land scouting, trust articles, zoning stealth, guest waivers.
 * [`STAGE_1_SURVIVAL_CORE_BLUEPRINT.md`](STAGE_1_SURVIVAL_CORE_BLUEPRINT.md) — Hydrological cisterns, 48V LFP batteries, BMS cold-weather throttling, 180-day food cache, 50m² thermal core.
 * [`STAGE_2_FABLAB_METABOLIC_BLUEPRINT.md`](STAGE_2_FABLAB_METABOLIC_BLUEPRINT.md) — Air-gapped machine shop, thermophilic composting, greywater reed beds, perennial agroforestry.

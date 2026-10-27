@@ -2,7 +2,7 @@
 ## STAGE 0: LEGAL INCEPTION, LAND SCOUTING & GOVERNANCE
 **Timeline:** Months 0–12 | **Target Autonomy:** 0% Decoupled (Host Shell Compliance)  
 **Classification:** Operational Field Manual & Legal Scaffolding  
-**Canonical Anchors:** [`bible/ONE NETWORKED EARTH (O.N.E.).md`](#constitution) (Arts. 2, 4, 9) | [`roadmap/roadmap.md`](#roadmap)
+**Canonical Anchors:** [`bible/ONE NETWORKED EARTH (O.N.E.).md`](#constitution).md) (Arts. 2, 4, 9) | [`roadmap/roadmap.md`](#roadmap)
 
 ---
 
@@ -13,7 +13,7 @@ Stage 0 establishes the legal armor, secures the land anchor, and institutes the
 
 ## 2. Land Scouting Due Diligence Scorecard (2–5 Hectares)
 
-Every potential parcel must be audited against these five physical and legal invariants:
+Every potential parcel must be audited against these five physical and legal invariants (see initial global archetypes in [`SEED_NODE_CANDIDATE_REGISTRY.md`](SEED_NODE_CANDIDATE_REGISTRY.md)):
 
 | Criterion | Mandatory Minimum | Red-Flag Immediate Disqualification |
 | :--- | :--- | :--- |
@@ -54,8 +54,9 @@ To prevent commercial liabilities, taxes, and supplier disputes from touching th
 * **Common Law (US / UK / Canada / Australia):** Incorporate a 501(c)(3) Community Land Trust (CLT) or Perpetual Purpose Trust (PPT). Recorded deed includes:
   1. *Perpetual Usufruct Restriction:* Land may never be mortgaged, subdivided, or sold for speculative gain.
   2. *Notice of Non-Responsibility:* Entity A’s fee title is insulated against mechanics' liens incurred by Entity B.
-* **Civil Law (Continental Europe / Switzerland):** Incorporate a non-profit Foundation (*Gemeinnützige Stiftung* / ZGB Art. 80 ff.) with immutable asset lock (*Vermögensbindung*). Establish a municipal compliance escrow to prevent administrative code fines (*Zustandsstörerhaftung*) from becoming senior liens (*Sicherungshypothek*) in the *Grundbuch*.
-* **Customary Commons (Latin America / Agrarian Reform):** Inscribe agrarian title through an *Asamblea de Formalidades Especiales* and register with the National Agrarian Registry (RAN) under *Ley Agraria* Arts. 45/46. This eliminates precarious *posesionario irregular* status and bars arbitrary eviction.
+  3. *Fiscal Immunization via Foundation ONE:* Land acquisition and the pre-capitalized **10-Year Municipal Tax Escrow** (The Sinking Fund) are financed centrally through Foundation ONE (Stat. Arts. 2 & 3). Non-residential land is covenanted under a **Perpetual Conservation Easement / Agricultural Present-Use Abatement** (IRC § 170(h) / PUV / ZGB Art. 80 ff.), reducing annual assessed property taxes by 80%–100%. All external fiat revenues generated anywhere across the network flow 100% to Foundation ONE for frictionless redistribution and funding of subsequent seed nodes, keeping local communards 100% post-monetary.
+* **Civil Law (Continental Europe / Switzerland):** Incorporate a non-profit Foundation (*Gemeinnützige Stiftung* / ZGB Art. 80 ff.) with immutable asset lock (*Vermögensbindung*). Register land under statutory agrarian/ecological usufruct (*Landwirtschaftliche Nutzfläche* / *Naturschutz*), and establish a **10-Year Municipal Tax Escrow** funded by Foundation ONE alongside an administrative compliance reserve to prevent administrative code fines (*Zustandsstörerhaftung*) from becoming senior liens (*Sicherungshypothek*) in the *Grundbuch*.
+* **Customary Commons (Latin America / Agrarian Reform):** Inscribe agrarian title through an *Asamblea de Formalidades Especiales* and register with the National Agrarian Registry (RAN) under *Ley Agraria* Arts. 45/46. This eliminates precarious *posesionario irregular* status, secures communal tax-exempt status, and bars arbitrary eviction.
 
 ### 3.2. Entity B: The Operating Cooperative
 * Incorporate as a Worker-Owned Cooperative (Uniform Limited Cooperative Association - ULCAA, or European *Genossenschaft* / *Verein*).
@@ -91,6 +92,8 @@ To prevent commercial liabilities, taxes, and supplier disputes from touching th
 - [ ] Form Entity B (Worker-Owned Operating Co-op) with zero-unsecured-debt bylaws.
 - [ ] Complete Phase I Environmental Site Assessment (ESA) and groundwater hydrological test.
 - [ ] Execute 50-year Ground Lease between Entity A and Entity B with UCC § 9-604 fixture severance.
-- [ ] Seed municipal compliance defense escrow (6–12 months of property taxes + legal retainer).
+- [ ] Pre-capitalize 10-Year Municipal Tax Escrow (The Sinking Fund) to eliminate ongoing freelance tax dependency.
+- [ ] Record Conservation Easement / Agricultural Tax Abatement covenants (slashing assessed tax rolls by 80%–100%).
+- [ ] Seed municipal compliance defense escrow (code defense + legal retainer).
 - [ ] Establish initial 3-person sortition mediation panel roster.
 - [ ] Set up offline emergency archive (MicroSD cards containing O.N.E. Constitution, CAD, and legal docs).
